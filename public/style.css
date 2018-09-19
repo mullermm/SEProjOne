@@ -13,7 +13,7 @@ img {
     justify-content: center;
 }
 
-button {
-    height: 20px;
-    width: 100px;
+input {
+    height: 60px;
+    width: 200px;
 }
