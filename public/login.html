@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="./index.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
         <title>Project 1</title>
         <script src="../../react-0.14.3/react.js"></script>
@@ -13,9 +13,9 @@
 
         <div id="login-wrapper">
 
-            <form action="../../login.php">
-                Username <input type="text" name="fname"><br>
-                Password <input type="password" name="lname"><br>
+            <form action="../src/login.php" method="get">
+                Username <input type="text" name="name"><br>
+                Password <input type="password" name="pass"><br>
                 <input class="login-button" type="submit" value="Submit">
             </form> 
 
