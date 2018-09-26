@@ -173,7 +173,7 @@ section {
 }
 
 .btn-regular {
-	background-color: #0095f7;
+	background-color: #74233d;
 	color: #ffffff;
 	padding: 10px 25px;
 	letter-spacing: .1em;
@@ -188,7 +188,7 @@ section {
 
 .btn-demo {
 	color: #ffffff;
-	background-color: #6772e5;
+	background-color: #74233d;
 	letter-spacing: .1em;
 	padding: 15px 48px;
 	display: inline-block;
@@ -203,7 +203,7 @@ section {
 
 .btn-demo-small {
 	font-size: 12px;
-	background-color: #6772e5;
+	background-color: #74233d;
 	padding: 1px 4px;
 }
 
@@ -217,7 +217,7 @@ section {
 
 .btn-buy {
 	color: #ffffff;
-	background-color: #0095f7;
+	background-color: #74233d;
 	letter-spacing: .1em;
 	padding: 15px 48px;
 	display: inline-block;
@@ -253,7 +253,7 @@ section {
 
 #hero span {
 	font-weight: 400;
-    color: #0095f7;
+    color: #74233d;
     text-transform: uppercase;
     letter-spacing: .05em;
 }
@@ -272,7 +272,7 @@ section {
 
 #marketing span {
 	font-weight: 400;
-	color: #0095f7;
+	color: #74233d;
 	text-transform: uppercase;
 	letter-spacing: .05em;
 }
@@ -330,7 +330,7 @@ section {
 }
 
 .rating {
-	background-color: #0095f7;
+	background-color: #74233d;
 	padding: 2px 12px;
 	border-radius: 50px;
 }
@@ -371,7 +371,7 @@ section {
 	font-size: 22px;
 	font-weight: 300;
 	letter-spacing: .1em;
-	color: #0095f7;
+	color: #74233d;
 }
 
 .pricing-box h6 {
@@ -400,7 +400,7 @@ section {
 
 .pricing-box span {
 	font-weight: 500;
-	color: #0095f7;
+	color: #74233d;
 }
 
 .pricing-box small {
@@ -410,12 +410,12 @@ section {
 
 .pricing-box i {
 	font-size: 20px;
-	color: #0095f7;
+	color: #74233d;
 	margin-right: 10px;
 }
 
 .pricing-box .demo {
-	color: #6772e5!important;
+	color: #74233d!important;
 }
 
 /* ==============================================
@@ -447,7 +447,7 @@ section {
 
 #call-to-action .btn-regular {
 	background-color: #ffffff!important;
-	color: #0095f7!important;
+	color: #74233d!important;
 	padding: 15px 45px;
 }
 
@@ -493,7 +493,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #0095f7;
+	color: #74233d;
 	text-decoration: none;
 }
 
@@ -504,7 +504,7 @@ footer i {
 }
 
 footer i:hover {
-	color: #0095f7;
+	color: #74233d;
 }
 
 footer small {
@@ -513,7 +513,7 @@ footer small {
 }
 
 .external-links {
-	color: #0095f7;
+	color: #74233d;
 }
 
 /* ==============================================
@@ -539,7 +539,7 @@ footer small {
 
 	#call-to-action {
 		background-image: none;
-		background-color: #0095f7;
+		background-color: #74233d;
 	}
 
 	footer {
