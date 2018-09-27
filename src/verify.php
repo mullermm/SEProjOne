@@ -12,7 +12,7 @@
     if (($_POST["name"] == $Query_username) && $_POST["pass"] == $Query_pass) {
         header('Location: home.html');
     } else {
-        header('Location: home.html');
+        header('Location: sdfsfsd.html');
     }
     ?>
 
