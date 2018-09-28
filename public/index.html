@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -14,13 +18,14 @@
             <img src="images/Augsburg_Logo_Maroon.png" alt="Augsburg University">
         </div>
 
-        <div id="wrapper">
-            <form>
-                <input class="front-button" type="button" value="Student" onclick="window.location.href = 'login.html'" />
+        <div id="login-wrapper">
+
+            <form action="../src/verify.php" method="post">
+                Username <input type="text" name="name"><br>
+                Password <input type="password" name="pass"><br>
+                <input class="login-button" type="submit" value="Submit">
             </form> 
-            <form>
-                <input class="front-button" type="button" value="Administrator" onclick="window.location.href = 'login.html'" />
-            </form> 
+
         </div>
 
 
@@ -30,3 +35,23 @@
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

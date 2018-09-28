@@ -1,7 +1,12 @@
 
 <html>
 
-
+    <?php
+    $servername = "localhost";
+    $username = "viewer";
+    $password = "password";
+    $dbname = "myDB";
+    ?> 
 
     <?php
     $Query_username = 'admin';
@@ -13,7 +18,7 @@
         header('Location: home-admin.html');
     } elseif (($_POST["name"] == 'student') && ($_POST["pass"] == '12345')) {
         header('Location: home-student.html');
-    } else{
+    } else {
         header('Location: incorrect.html');
     }
     ?>
