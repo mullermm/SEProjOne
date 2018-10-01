@@ -2,18 +2,19 @@
 <html>
 
     <?php
-    // putting the database (csv) into a multidimensional array - super unsecure 
-    $filename = 'Augs_Students.csv';
-
-    $login_query = $_POST["name"];
-    $password_query = $_POST["pass"];
+    // sanitize input to avois injections
+    $login_query = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $password_query = filter_var($_POST["pass"], FILTER_SANITIZE_STRING);
 
 
-    $string = str_replace(' ', '', $string);
 
+    // variable initialization
     $current_user = '';
     $the_big_array = [];
+    $filename = 'Augs_Students.csv';
+    $failure = TRUE;
 
+    // putting the database (csv) into a multidimensional array - super unsecure 
     if (($h = fopen("{$filename}", "r")) !== FALSE) {
         while (($data = fgetcsv($h, 1000, ",")) !== FALSE) {
             $data = str_replace(' ', '', $data);
@@ -22,17 +23,9 @@
 
         fclose($h);
     }
-    //var_dump($the_big_array[1][3]);
-    // check login against array
+
 
     for ($i = 0; $i < sizeof($the_big_array); $i++) {
-
-        echo "<br>";
-        var_dump($login_query);
-        var_dump($the_big_array[$i][2]);
-        echo "&nbsp;&nbsp;";
-        var_dump($password_query);
-        var_dump($the_big_array[$i][3]);
 
         if ($the_big_array[$i][2] == $login_query) {
 
@@ -43,6 +36,8 @@
                 session_start();
                 $_SESSION['current_user'] = $current_user;
 
+                $failure = FALSE;
+
                 if ($the_big_array[$i][4] == "student") {
                     header('Location: home-student.php');
                 } elseif ($the_big_array[$i][4] == "admin") {
@@ -51,7 +46,10 @@
             }
         }
     }
-    //header('Location: incorrect.php');
+
+    if ($failure) {
+        header('Location: incorrect.php');
+    }
     ?>
 
 </html>
