@@ -1,31 +1,20 @@
 <!doctype html>
 <html lang="en-US">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <!-- Custom Css -->
         <link rel="stylesheet" href="style-home.css" type="text/css" />
-
-        <!-- Ionic icons -->
         <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
-
-        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
-        <title>Prroject 1</title>
-
-
+        <title>Project 1</title>
 
     </head>
 
     <body>
 
-        <!-- N A V B A R -->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
@@ -36,7 +25,7 @@
                     <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="home.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="#addcourses">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
@@ -55,9 +44,7 @@
                 </div>
             </div>
         </nav>
-        <!-- E N D  N A V B A R -->
 
-        <!-- H E R O -->
         <section id="hero">
             <div class="container">
                 <div class="row">
@@ -75,9 +62,7 @@
                 </div>
             </div>
         </section>
-        <!-- E N D  H E R O -->
 
-        <!-- E N D  M A R K E T I N G -->
         <section id="addcourses">
             <div class="container">
                 <div class="row">
@@ -95,9 +80,7 @@
                 </div>
             </div>
         </section>
-        <!-- E N D  M A R K E T I N G -->
 
-        <!-- E N D  M A R K E T I N G -->
         <section id="addcourses2">
             <div class="container">
                 <div class="row">
@@ -116,11 +99,9 @@
                 </div>
             </div>
         </section>
-        <!-- E N D  M A R K E T I N G -->
 
 
 
-        <!-- P R I C I N G -->
         <section id="pricing">
             <div class="container">
                 <div class="title-block">
@@ -131,10 +112,8 @@
 
             </div>
         </section>
-        <!-- E N D  P R I C I N G -->
 
 
-        <!-- T E S T I M O N I A L S -->
         <section id="studentdir">
             <div class="container">
                 <div class="title-block">
@@ -145,10 +124,8 @@
 
             </div>
         </section>
-        <!-- E N D  T E S T I M O N I A L S -->
 
 
-        <!-- C A L L  T O  A C T I O N -->
         <section id="call-to-action">
             <div class="container text-center">
                 <h2>Something Can Go Here</h2>
@@ -158,9 +135,7 @@
                 </div>
             </div>
         </section>
-        <!-- E N D  C A L L  T O  A C T I O N -->
 
-        <!--  F O O T E R  -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -192,11 +167,7 @@
                 </div>
             </div>
         </footer>
-        <!--  E N D  F O O T E R  -->
 
-
-        <!-- External JavaScripts -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
