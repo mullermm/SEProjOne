@@ -125,17 +125,6 @@
             </div>
         </section>
 
-
-        <section id="call-to-action">
-            <div class="container text-center">
-                <h2>Something Can Go Here</h2>
-                <div class="title-block">
-                    <p>Words and such can go here for the bottom of page summary and what not</p>
-                    <a href="#" class="btn btn-regular">A button of sorts</a>
-                </div>
-            </div>
-        </section>
-
         <footer>
             <div class="container">
                 <div class="row">

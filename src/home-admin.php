@@ -83,6 +83,16 @@
         <section id="studentdir">
             <div class="container">
                 <div class="title-block">
+                    <h2>Add Students</h2>
+                    <p>Add Students to the Augsburg Roster</p>
+                    <a href="#" class="btn btn-regular">Add Students</a>
+
+                </div>
+        </section>
+
+        <section id="studentdir2">
+            <div class="container">
+                <div class="title-block">
                     <h2>Augsburg Student Directory</h2>
                     <p>View students and there complete course work, intended major, active classes and more</p>
                     <a href="#" class="btn btn-regular">View Student Directory</a>
@@ -90,17 +100,9 @@
                 </div>
         </section>
 
-        <section id="call-to-action">
-            <div class="container text-center">
-                <h2>Add Students</h2>
-                <div class="title-block">
-                    <p>Add students to the official Augsburg University Roster</p>
-                    <a href="#" class="btn btn-regular">Add Students</a>
-                </div>
-            </div>
-        </section>
 
-        
+
+
         <footer>
             <div class="container">
                 <div class="row">
