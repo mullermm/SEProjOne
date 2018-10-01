@@ -399,7 +399,7 @@ section {
 ===============================================*/
 
 #call-to-action {
-    background-image: url('images/call-to-action.png');
+    background-color: #B5B6BC;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
