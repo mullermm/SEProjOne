@@ -2,26 +2,32 @@
 <html>
 
     <?php
-// Open the file for reading
-    if (($h = fopen("cars.csv", "r")) !== FALSE) {
-        while (($data = fgetcsv($h, 1000, ",")) !== FALSE) {
-        }
-        fclose($h);
-    } else{
-         header('Location: incorrect.html');
-    }
-    
-    
-    
-    
-    ?>
+    $filename = 'Augs_Students.csv';
 
-    <?php
+    $the_big_array = [];
+
+    if (($h = fopen("{$filename}", "r")) !== FALSE) {
+        while (($data = fgetcsv($h, 1000, ",")) !== FALSE) {
+            $the_big_array[] = $data;
+        }
+
+        fclose($h);
+    }
+
+    var_dump($the_big_array[1][1]);
+
+
+
+
+
     if (($_POST["name"] == 'admin') && ($_POST["pass"] == '12345')) {
         header('Location: home-admin.html');
     } elseif (($_POST["name"] == 'student') && ($_POST["pass"] == '12345')) {
         header('Location: home-student.html');
-    } else {
+    }
+    
+    
+    else {
         header('Location: incorrect.html');
     }
     ?>
