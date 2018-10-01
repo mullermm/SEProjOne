@@ -2,7 +2,15 @@
 <html>
 
     <?php
+    // putting the database (csv) into a multidimensional array - super unsecure 
     $filename = 'Augs_Students.csv';
+
+    $login_query = $_POST["name"];
+    $password_query = $_POST["pass"];
+
+
+
+
 
     $the_big_array = [];
 
@@ -13,23 +21,26 @@
 
         fclose($h);
     }
-
-    var_dump($the_big_array[1][1]);
-
+    //var_dump($the_big_array[1][2]);
 
 
+    // check login against array
 
+    for ($i = 1; $i < sizeof($the_big_array); $i++) {
 
-    if (($_POST["name"] == 'admin') && ($_POST["pass"] == '12345')) {
-        header('Location: home-admin.html');
-    } elseif (($_POST["name"] == 'student') && ($_POST["pass"] == '12345')) {
-        header('Location: home-student.html');
+        if ($the_big_array[$i][2] == $login_query) {
+            if ($the_big_array[$i][3] == $login_query) {
+                if ($the_big_array[$i][4] == "student") {
+                    header('Location: home-student.html');
+                } elseif ($the_big_array[$i][4] == "admin") {
+                    header('Location: home-admin.html');
+                }
+            }
+        }
     }
+    header('Location: incorrect.html');
     
     
-    else {
-        header('Location: incorrect.html');
-    }
     ?>
 
 </html>
