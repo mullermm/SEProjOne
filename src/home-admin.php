@@ -50,7 +50,7 @@
 
                     <div class="col-md-7 content-box hero-content">
                         <span>Augsburg University</span>
-                        <h1>Welcome <?php
+                        <h1> <?php
                             session_start();
                             echo $_SESSION['current_user'];
                             ?>
@@ -70,7 +70,7 @@
                             <span>Augsburg University</span>
                             <h2>Add Courses</h2>
                             <p>Add Courses to the Augsburg Course Directory.</p>
-                            <a href="#" class="btn btn-regular">Add Courses</a>
+                            <a href="../subpages_admin/add_courses.php" class="btn btn-regular">Add Courses</a>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -85,7 +85,7 @@
                 <div class="title-block">
                     <h2>Add Students</h2>
                     <p>Add Students to the Augsburg Roster</p>
-                    <a href="#" class="btn btn-regular">Add Students</a>
+                    <a href="../subpages_admin/add_student.php" class="btn btn-regular">Add Students</a>
 
                 </div>
         </section>
@@ -95,7 +95,7 @@
                 <div class="title-block">
                     <h2>Augsburg Student Directory</h2>
                     <p>View students and there complete course work, intended major, active classes and more</p>
-                    <a href="#" class="btn btn-regular">View Student Directory</a>
+                    <a href="../subpages_admin/student_directory.php" class="btn btn-regular">View Student Directory</a>
 
                 </div>
         </section>
@@ -108,7 +108,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h5>Main Tools</h5>
+                        <h5>Site Links</h5>
                         <ul>
                             <li><a href="#addcourses">Add Courses</a></li>
                             <li><a href="#studentdir">Student Directory</a></li>

@@ -51,7 +51,7 @@
 
                     <div class="col-md-7 content-box hero-content">
                         <span>Augsburg University</span>
-                        <h1>Welcome <?php
+                        <h1> <?php
                             session_start();
                             echo $_SESSION['current_user'];
                             ?>
@@ -71,7 +71,7 @@
                             <span>Augsburg University</span>
                             <h2>Course Catalog</h2>
                             <p>View all upcoming courses and sections</p>
-                            <a href="#" class="btn btn-regular">View Courses</a>
+                            <a href="../subpages_student/course_catalog.php" class="btn btn-regular">View Courses</a>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -92,7 +92,7 @@
                             <span>Augsburg University</span>
                             <h2>Major Progress</h2>
                             <p>View the progress you've made in any given major or minor</p>
-                            <a href="#" class="btn btn-regular">View Major Progress</a>
+                            <a href="../subpages_student/major_progress.php" class="btn btn-regular">View Major Progress</a>
                         </div>
                     </div>
 
@@ -107,7 +107,7 @@
                 <div class="title-block">
                     <h2>Course Progress</h2>
                     <p>View active courses and completed courses</p>
-                    <a href="#" class="btn btn-regular">View Course Progress</a>
+                    <a href="../subpages_student/course_progress.php" class="btn btn-regular">View Course Progress</a>
                 </div>
 
             </div>
@@ -119,7 +119,7 @@
                 <div class="title-block">
                     <h2>Payment Portal</h2>
                     <p>Enter payment portal to resolve tuition payment as well as tickets</p>
-                    <a href="#" class="btn btn-regular">Payment Portal</a>
+                    <a href="https://www.schoolpaymentportal.com/Default.aspx" class="btn btn-regular">Payment Portal</a>
                 </div>
 
             </div>
@@ -130,7 +130,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <h5>Main Tools</h5>
+                        <h5>Site Links</h5>
                         <ul>
                             <li><a href="#">Course Catalog</a></li>
                             <li><a href="#">Major Progress</a></li>
