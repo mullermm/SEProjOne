@@ -9,38 +9,45 @@
     $password_query = $_POST["pass"];
 
 
-
+    $string = str_replace(' ', '', $string);
 
 
     $the_big_array = [];
 
     if (($h = fopen("{$filename}", "r")) !== FALSE) {
         while (($data = fgetcsv($h, 1000, ",")) !== FALSE) {
+            $data = str_replace(' ', '', $data);
             $the_big_array[] = $data;
         }
 
         fclose($h);
     }
-    //var_dump($the_big_array[1][2]);
-
-
+    //var_dump($the_big_array[1][3]);
     // check login against array
 
-    for ($i = 1; $i < sizeof($the_big_array); $i++) {
+    for ($i = 0; $i < sizeof($the_big_array); $i++) {
+
+        echo "<br>";
+        var_dump($login_query);
+        var_dump($the_big_array[$i][2]);
+        echo "&nbsp;&nbsp;";
+        var_dump($password_query);
+        var_dump($the_big_array[$i][3]);
 
         if ($the_big_array[$i][2] == $login_query) {
-            if ($the_big_array[$i][3] == $login_query) {
+
+            if ($the_big_array[$i][3] == $password_query) {
+                $current_user = $the_big_array[$i];
+
                 if ($the_big_array[$i][4] == "student") {
-                    header('Location: home-student.html');
+                    header('Location: home-student.php');
                 } elseif ($the_big_array[$i][4] == "admin") {
-                    header('Location: home-admin.html');
+                    header('Location: home-admin.php');
                 }
             }
         }
     }
-    header('Location: incorrect.html');
-    
-    
+    //header('Location: incorrect.php');
     ?>
 
 </html>

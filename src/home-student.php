@@ -61,7 +61,7 @@
 
                     <div class="col-md-7 content-box hero-content">
                         <span>Augsburg University</span>
-                        <h1>Student <b>Portal</b></h1>
+                        <h1><?php echo var_dump($current_user[1]); ?>Student <b>Portal</b></h1>
                         <p>The Augsburg Student Home Page</p>
                     </div>
                 </div>
