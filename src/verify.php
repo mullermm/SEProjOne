@@ -11,7 +11,7 @@
 
     $string = str_replace(' ', '', $string);
 
-
+    $current_user = '';
     $the_big_array = [];
 
     if (($h = fopen("{$filename}", "r")) !== FALSE) {
@@ -37,7 +37,11 @@
         if ($the_big_array[$i][2] == $login_query) {
 
             if ($the_big_array[$i][3] == $password_query) {
-                $current_user = $the_big_array[$i];
+
+                $current_user = (string) $the_big_array[$i][0] . " " . (string) $the_big_array[$i][1];
+
+                session_start();
+                $_SESSION['current_user'] = $current_user;
 
                 if ($the_big_array[$i][4] == "student") {
                     header('Location: home-student.php');

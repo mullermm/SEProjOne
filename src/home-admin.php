@@ -58,7 +58,12 @@
 
                     <div class="col-md-7 content-box hero-content">
                         <span>Augsburg University</span>
-                        <h1>Administrator <b>Portal</b></h1>
+                        <h1>Welcome <?php
+                            session_start();
+                            echo $_SESSION['current_user'];
+                            ?>
+                            <br>
+                            <b> Administrators Portal</b></h1>
                         <p>The Augsburg Administrator Home Page</p>
                     </div>
                 </div>
