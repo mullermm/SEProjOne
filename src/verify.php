@@ -11,7 +11,7 @@
     // variable initialization
     $current_user = '';
     $the_big_array = [];
-    $filename = 'Augs_Students.csv';
+    $filename = 'Augs_Users.csv';
     $failure = TRUE;
 
     // putting the database (csv) into a multidimensional array - super unsecure 

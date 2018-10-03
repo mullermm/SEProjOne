@@ -63,7 +63,22 @@
                     <div class="col-md-5">
                         <div class="content-box">
                             <!-- Student directory goes here -->
-                            <p>Student directory goes here</p>
+
+                            <?php
+                            echo "<html><body><table>\n\n";
+                            $f = fopen("../src/Augs_Users_Names.csv", "r");
+                            while (($line = fgetcsv($f)) !== false) {
+                                echo "<tr>";
+                                foreach ($line as $cell) {
+                                    echo "<td>" . htmlspecialchars($cell) . "</td>";
+                                }
+                                echo "</tr>\n";
+                            }
+                            fclose($f);
+                            echo "\n</table></body></html>";
+                            ?>
+
+
                         </div>
                     </div>
 
