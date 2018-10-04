@@ -11,6 +11,7 @@
         <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
+
         <title>Project 1</title>
 
     </head>
@@ -60,28 +61,7 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="content-box">
-                            <!-- Student directory goes here -->
-
-                            <?php
-                            echo "<html><body><table>\n\n";
-                            $f = fopen("../src/Augs_Users_Names.csv", "r");
-                            while (($line = fgetcsv($f)) !== false) {
-                                echo "<tr>";
-                                foreach ($line as $cell) {
-                                    echo "<td>" . htmlspecialchars($cell) . "</td>";
-                                }
-                                echo "</tr>\n";
-                            }
-                            fclose($f);
-                            echo "\n</table></body></html>";
-                            ?>
-
-
-                        </div>
-                    </div>
-
+                    <iframe src="student_dir.html" seamless></iframe>
                 </div>
             </div>
         </section>
