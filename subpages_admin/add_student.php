@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="../src/style-home.css" type="text/css" />
+        <link rel="stylesheet" href="../css/style-home.css" type="text/css" />
         <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
@@ -59,12 +59,40 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+
+
+
+                    <div class="col-md-7">
                         <div class="content-box">
-                            <!-- Student entry form goes here -->
-                            <p>Student entry form goes here</p>
+                            <span>Augsburg University</span>
+                            <h2>Users Added will Always be Students</h2>
+                            <p>Add a student to the Augsburg registry by entering their name and username in the form</p>
                         </div>
                     </div>
+
+
+                    <div class="col-md-5">
+                        <div class="content-box">
+
+
+                            <form action="../src/adduser.php" method="post" onsubmit="return confirm('Are you sure you want to add this student to the directory?');">
+                                First name:<br>
+                                <input id = "a" type="text" name="firstname" value="">
+                                <br>
+                                Last name:<br>
+                                <input id = "b" type="text" name="lastname" value="">
+                                <br>
+                                Username:<br>
+                                <input id = "c" type="text" name="username" value="">
+                                <br><br>
+                                <input onclick="verify()" type="submit" value="Add Student">
+
+                            </form> 
+
+
+                        </div>
+                    </div>
+
 
                 </div>
             </div>

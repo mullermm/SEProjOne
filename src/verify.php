@@ -48,7 +48,10 @@
     }
 
     if ($failure) {
-        header('Location: incorrect.php');
+        session_start();
+        $_SESSION['login_fail'] = True;
+        header('Location: ../public/index.php');
+        
     }
     ?>
 

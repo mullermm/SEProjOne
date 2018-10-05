@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -27,10 +23,21 @@
             </form> 
 
         </div>
+        <div id="login-wrapper">
+            <?php
+            session_start();
 
+            if (isset($_SESSION['login_fail'])) {
+                if ($_SESSION['login_fail']) {
+                    echo "<p style='color:#CC0000'>Username or password incorrect</p>";
+                    $_SESSION['login_fail'] = False;
+                    exit();
+                }
+            }
+            session_reset();
+            ?>
+        </div>
 
-
-        <div id="root"></div>
 
     </body>
 
