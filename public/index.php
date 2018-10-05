@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -27,9 +22,6 @@
                 <input class="login-button" type="submit" value="Submit">
             </form> 
 
-
-
-
         </div>
         <div id="login-wrapper">
             <?php
@@ -42,7 +34,6 @@
                     exit();
                 }
             }
-
             session_reset();
             ?>
         </div>

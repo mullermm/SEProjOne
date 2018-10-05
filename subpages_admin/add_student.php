@@ -61,8 +61,45 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="content-box">
-                            <!-- Student entry form goes here -->
-                            <p>Student entry form goes here</p>
+
+
+
+
+
+
+                            <script>
+
+                                function verify() {
+                                    alert("New user added");
+                                }
+
+                            </script>
+
+
+
+
+                            <form action="../src/adduser.php" method="post">
+                                First name:<br>
+                                <input type="text" name="firstname" value="">
+                                <br>
+                                Last name:<br>
+                                <input type="text" name="lastname" value="">
+                                <br>
+                                Username:<br>
+                                <input type="text" name="username" value="">
+                                <br><br>
+                                <input onclick="verify()" type="submit" value="Add Student">
+
+                            </form> 
+
+
+
+
+
+
+
+
+
                         </div>
                     </div>
 
