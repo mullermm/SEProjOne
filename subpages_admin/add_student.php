@@ -59,49 +59,50 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
+
+
+
+                    <div class="col-md-7">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Users Added will Always be Students</h2>
+                            <p>Add a student to the Augsburg registry by entering their name and username in the form</p>
+                        </div>
+                    </div>
+
+
                     <div class="col-md-5">
                         <div class="content-box">
 
 
-
-
-
-
                             <script>
 
+
                                 function verify() {
-                                    alert("New user added");
+                                    alert("New Student Added");
                                 }
 
                             </script>
 
 
-
-
                             <form action="../src/adduser.php" method="post">
                                 First name:<br>
-                                <input type="text" name="firstname" value="">
+                                <input id = "a" type="text" name="firstname" value="">
                                 <br>
                                 Last name:<br>
-                                <input type="text" name="lastname" value="">
+                                <input id = "b" type="text" name="lastname" value="">
                                 <br>
                                 Username:<br>
-                                <input type="text" name="username" value="">
+                                <input id = "c" type="text" name="username" value="">
                                 <br><br>
                                 <input onclick="verify()" type="submit" value="Add Student">
 
                             </form> 
 
 
-
-
-
-
-
-
-
                         </div>
                     </div>
+
 
                 </div>
             </div>
