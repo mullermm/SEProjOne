@@ -75,17 +75,7 @@
                         <div class="content-box">
 
 
-                            <script>
-
-
-                                function verify() {
-                                    alert("New Student Added");
-                                }
-
-                            </script>
-
-
-                            <form action="../src/adduser.php" method="post">
+                            <form action="../src/adduser.php" method="post" onsubmit="return confirm('Are you sure you want to add this student to the directory?');">
                                 First name:<br>
                                 <input id = "a" type="text" name="firstname" value="">
                                 <br>
