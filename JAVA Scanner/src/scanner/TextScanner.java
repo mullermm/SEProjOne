@@ -1,3 +1,4 @@
+package scanner;
 /**
  * This class will create the TextScanner object, which is responsible for parsing through courses.txt
  * and then creating a course object out of each course. It then pushes those into an arraylist and writes

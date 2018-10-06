@@ -1,3 +1,4 @@
+package scanner;
 /**
  * @author Maxwell Herron
  * This class embodies the course object, which will hold all the information of each course
