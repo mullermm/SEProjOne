@@ -7,7 +7,10 @@
     $password_query = filter_var($_POST["pass"], FILTER_SANITIZE_STRING);
 
 
-
+    // Access databse in mlab
+    //$m = new MongoClient("mongodb://$reader:$12345A@localhost");
+    
+    
     // variable initialization
     $current_user = '';
     $the_big_array = [];
