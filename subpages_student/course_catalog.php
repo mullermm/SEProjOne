@@ -58,13 +58,7 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="content-box">
-                            <!-- Course catalog goes here -->
-                            <p>Course catalog goes here</p>
-                        </div>
-                    </div>
-
+                    <iframe src="course_dir.html" seamless></iframe>
                 </div>
             </div>
         </section>
