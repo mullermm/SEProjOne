@@ -23,10 +23,10 @@
     <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <div class="container">
-            <img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+            <a href="../src/home-student.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
             <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                 <li class="nav-item nav-custom-link">
-                    <a class="nav-link" href="../src/home-admin.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                    <a class="nav-link" href="../src/home-student.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                 </li>
                 <li class="nav-item nav-custom-link">
 
@@ -48,8 +48,8 @@
                     echo $_SESSION['current_user'];
                     ?>
                     <br>
-                    <b>Add Students</b></h1>
-                <p>Add student's to the Augsburg student roster</p>
+                    <b>View Pending Courses</b></h1>
+                <p>Submit your current transcript to view future courses required for degree completion</p>
             </div>
         </div>
     </div>
@@ -64,8 +64,8 @@
             <div class="col-md-7">
                 <div class="content-box">
                     <span>Augsburg University</span>
-                    <h2>Users Added will Always be Students</h2>
-                    <p>Add a student to the Augsburg registry by entering their name and username in the form</p>
+                    <h2>Plan Your Future</h2>
+                    <p>Upload your transcript in a PDF format to view your future courses</p>
                 </div>
             </div>
 
@@ -73,19 +73,11 @@
             <div class="col-md-5">
                 <div class="content-box">
 
-
-                    <form action="../src/adduser.php" method="post" onsubmit="return confirm('Are you sure you want to add this student to the directory?');">
-                        First name:<br>
-                        <input id = "a" type="text" name="firstname" value="">
+                    <!-- DO NOT USE THIS, I FEAR BAD THINGS MAY HAPPEN -->
+                    <form action="../src/add-transcript.php" method="post" onsubmit="return confirm('TEST DO NOT RUN');">
+                        <input id = "a" type="file" name="firstname" value="" class="btn btn-regular">
                         <br>
-                        Last name:<br>
-                        <input id = "b" type="text" name="lastname" value="">
-                        <br>
-                        Username:<br>
-                        <input id = "c" type="text" name="username" value="">
-                        <br><br>
-                        <input onclick="verify()" type="submit" value="Add Student">
-
+                        <input onclick="verify()" type="submit" value="Enter" class="btn btn-regular">
                     </form>
 
 
@@ -105,7 +97,7 @@
             <div class="col-md-6">
                 <h5>Site Links</h5>
                 <ul>
-                    <li><a href="../src/home-admin.php">Return to Portal Home</a></li>
+                    <li><a href="../src/home-student.php">Return to Portal Home</a></li>
                 </ul>
             </div>
 

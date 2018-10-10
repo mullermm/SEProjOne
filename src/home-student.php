@@ -36,9 +36,13 @@
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="#pricing">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="#planner">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="#pricing">Payment Portal<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
+
 
                     </ul>
                 </div>
@@ -114,7 +118,19 @@
         </section>
 
 
-        <section id="studentdir">
+        <section id="planner" style="background-color: #f6f8f9">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Course Planner</h2>
+                    <p>Evaluate your pending courses</p>
+                    <a href="../subpages_student/course_planner.php" class="btn btn-regular">View Course Planner</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="pricing">
             <div class="container">
                 <div class="title-block">
                     <h2>Payment Portal</h2>
@@ -132,9 +148,10 @@
                     <div class="col-md-6">
                         <h5>Site Links</h5>
                         <ul>
-                            <li><a href="#">Course Catalog</a></li>
-                            <li><a href="#">Major Progress</a></li>
-                            <li><a href="#">Course Progress</a></li>
+                            <li><a href="#addcourses">Course Catalog</a></li>
+                            <li><a href="#addcourses2">Major Progress</a></li>
+                            <li><a href="#pricing">Course Progress</a></li>
+                            <li><a href="#planner">Course Planner</a></li>
                             <li><a href="#">Payment Portal</a></li>
                         </ul>
                     </div>
