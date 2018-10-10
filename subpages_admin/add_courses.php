@@ -71,7 +71,7 @@
                         <div class="content-box">
 
 
-                            <form action="../src/adduser.php" method="post" onsubmit="return confirm('Are you sure you want to add this student to the directory?');">
+                            <form action="../src/add_course.php" method="post" onsubmit="return confirm('Are you sure you want to add this course to the directory?');">
                                 Department:<br>
                                 <input id = "a" type="text" name="department" value="">
                                 <br>
