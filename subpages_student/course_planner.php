@@ -75,7 +75,8 @@
 
                     <!-- DO NOT USE THIS, I FEAR BAD THINGS MAY HAPPEN -->
                     <form action="../src/add-transcript.php" method="post" onsubmit="return confirm('TEST DO NOT RUN');">
-                        <input id = "a" type="file" name="firstname" value="" class="btn btn-regular">
+                        <br><br>
+                        <input id = "a" type="file" name="firstname" value="">
                         <br>
                         <input onclick="verify()" type="submit" value="Enter" class="btn btn-regular">
                     </form>

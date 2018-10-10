@@ -58,10 +58,46 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
+
+                    <div class="col-md-7">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Expanding Horizons</h2>
+                            <p>Register a new course with the required information</p>
+                        </div>
+                    </div>
+
                     <div class="col-md-5">
                         <div class="content-box">
-                            <!-- Course entry form goes here -->
-                            <p>Course entry form goes here</p>
+
+
+                            <form action="../src/adduser.php" method="post" onsubmit="return confirm('Are you sure you want to add this student to the directory?');">
+                                Department:<br>
+                                <input id = "a" type="text" name="department" value="">
+                                <br>
+                                Course Number:<br>
+                                <input id = "b" type="text" name="course-number" value="">
+                                <br>
+                                Course Title:<br>
+                                <input id = "c" type="text" name="course-title" value="">
+                                <br>
+                                Credits:<br>
+                                <input id="d" type="text" name="credits" value="">
+                                <br>
+                                Course Description:<br>
+                                <input id="e" type="text" name="course-description" value="">
+                                <br>
+                                Core Curriculum:<br>
+                                <input id="f" type="text" name="core-curriculum" value="">
+                                <br>
+                                Prerequisites:<br>
+                                <input id="g" type="text" name="prerequisites" value="">
+                                <br><br>
+                                <input onclick="verify()" type="submit" value="Add Course">
+
+                            </form>
+
+
                         </div>
                     </div>
 
