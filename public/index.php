@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Project 1</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <script src="../../react-0.14.3/react.js"></script>
         <script src="../../react-0.14.3/react-dom.js"></script>
     </head>
