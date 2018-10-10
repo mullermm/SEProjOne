@@ -79,7 +79,25 @@
                 </div>
             </div>
         </section>
-
+        
+        <section id="addcourses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Course Catalog</h2>
+                            <p>View all upcoming courses and sections</p>
+                            <a href="../subpages_student/course_catalog.php" class="btn btn-regular">View Courses</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="studentdir">
             <div class="container">
                 <div class="title-block">

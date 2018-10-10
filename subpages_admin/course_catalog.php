@@ -23,10 +23,10 @@
             <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
-                    <a href="../src/home-admin.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
+                    <a href="../src/home-student.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../src/home-admin.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../src/home-student.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
 
@@ -48,8 +48,8 @@
                             echo $_SESSION['current_user'];
                             ?>
                             <br>
-                            <b>Add Augsburg Courses</b></h1>
-                        <p>Add courses to the Augsburg course registry</p>
+                            <b>Course Catalog</b></h1>
+                        <p>View classes and add classes to schedule</p>
                     </div>
                 </div>
             </div>
@@ -58,49 +58,7 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-md-7">
-                        <div class="content-box">
-                            <span>Augsburg University</span>
-                            <h2>Expanding Horizons</h2>
-                            <p>Register a new course with the required information</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="content-box">
-
-
-                            <form action="../src/addcourse.php" method="post" onsubmit="return confirm('Are you sure you want to add this course to the directory?');">
-                                Department:<br>
-                                <input id = "a" type="text" name="department" value="">
-                                <br>
-                                Course Number:<br>
-                                <input id = "b" type="text" name="course-number" value="">
-                                <br>
-                                Course Title:<br>
-                                <input id = "c" type="text" name="course-title" value="">
-                                <br>
-                                Credits:<br>
-                                <input id="d" type="text" name="credits" value="">
-                                <br>
-                                Course Description:<br>
-                                <input id="e" type="text" name="course-description" value="">
-                                <br>
-                                Core Curriculum:<br>
-                                <input id="f" type="text" name="core-curriculum" value="">
-                                <br>
-                                Prerequisites:<br>
-                                <input id="g" type="text" name="prerequisites" value="">
-                                <br><br>
-                                <input onclick="verify()" type="submit" value="Add Course">
-
-                            </form>
-
-
-                        </div>
-                    </div>
-
+                    <iframe src="course_dir.html" seamless></iframe>
                 </div>
             </div>
         </section>
@@ -113,7 +71,7 @@
                     <div class="col-md-6">
                         <h5>Site Links</h5>
                         <ul>
-                            <li><a href="../src/home-admin.php">Return to Portal Home</a></li>
+                            <li><a href="../src/home-student.php">Return to Portal Home</a></li>
                         </ul>
                     </div>
 
@@ -141,3 +99,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
 </html>
+

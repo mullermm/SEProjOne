@@ -9,15 +9,16 @@
     $core_curriculum_in = filter_var($_POST["core-curriculum"], FILTER_SANITIZE_STRING);
     $prerequisites_in = filter_var($_POST["prerequisites"], FILTER_SANITIZE_STRING);
 
-    $csv = fopen("courses.csv", a);
+    $csv = fopen("courses.csv", "a");
 
-    $entry = $department_in . '~' . $course_number_in . '~' . $course_title_in . '~' . $credits_in .'~' . $course_description_in . '~' . $core_curriculum_in . '~' . $prerequisites_in;
+    $entry = "\n" . $department_in . '~' . $course_number_in . '~' . $course_title_in . '~' . $credits_in . '~' . $course_description_in . '~' . $core_curriculum_in . '~' . $prerequisites_in;
 
-    fputcsv($csv, explode('~', $entry));
-
+    
+    fputcsv($csv, explode(',', $entry));
+ 
     fclose($csv);
 
-    header('Location: ../add_courses.php');
+    header('Location: ../subpages_admin/course_catalog.php');
     ?>
 
 </html>
