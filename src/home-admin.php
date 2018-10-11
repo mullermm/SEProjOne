@@ -79,10 +79,13 @@
                 </div>
             </div>
         </section>
-        
-        <section id="addcourses">
+
+        <section id="addcourses2">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-7">
+                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
+                    </div>
                     <div class="col-md-5">
                         <div class="content-box">
                             <span>Augsburg University</span>
@@ -91,22 +94,11 @@
                             <a href="../subpages_student/course_catalog.php" class="btn btn-regular">View Courses</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
-                    </div>
                 </div>
             </div>
         </section>
-        
-        <section id="studentdir">
-            <div class="container">
-                <div class="title-block">
-                    <h2>Add Students</h2>
-                    <p>Add Students to the Augsburg Roster</p>
-                    <a href="../subpages_admin/add_student.php" class="btn btn-regular">Add Students</a>
 
-                </div>
-        </section>
+
 
         <section id="studentdir2">
             <div class="container">
@@ -118,7 +110,15 @@
                 </div>
         </section>
 
+        <section id="studentdir">
+            <div class="container">
+                <div class="title-block">
+                    <h2>Add Students</h2>
+                    <p>Add Students to the Augsburg Roster</p>
+                    <a href="../subpages_admin/add_student.php" class="btn btn-regular">Add Students</a>
 
+                </div>
+        </section>
 
 
         <footer>
