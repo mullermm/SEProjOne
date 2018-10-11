@@ -74,9 +74,9 @@
                 <div class="content-box">
 
                     <!-- DO NOT USE THIS, I FEAR BAD THINGS MAY HAPPEN -->
-                    <form action="../src/add-transcript.php" method="post" onsubmit="return confirm('TEST DO NOT RUN');">
+                    <form action="../src/transcript_reader.php" method="post" onsubmit="return confirm('TEST DO NOT RUN');">
                         <br><br>
-                        <input id = "a" type="file" name="firstname" value="">
+                        <input id = "a" type="file" name="transcript" value="">
                         <br>
                         <input onclick="verify()" type="submit" value="Enter" class="btn btn-regular">
                     </form>
