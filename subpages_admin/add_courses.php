@@ -62,7 +62,7 @@
                     <div class="col-md-7">
                         <div class="content-box">
                             <span>Augsburg University</span>
-                            <h2>Expanding Horizons</h2>
+                            <h2>Add a Course to the Augsburg Course Catalog</h2>
                             <p>Register a new course with the required information</p>
                         </div>
                     </div>
