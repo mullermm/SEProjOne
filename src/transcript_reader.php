@@ -2,9 +2,12 @@
 
     $transcript_in = $_POST["transcript"];
 
+    header("Location: ../subpages_student/course_planner.php");
+
 ?>
 
 <script type="text/javascript">
-    var transcript = '<?php print $transcript_in ?>';
+    let transcript = '<?php print $transcript_in ?>';
+
 
 </script>

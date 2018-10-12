@@ -73,8 +73,7 @@
             <div class="col-md-5">
                 <div class="content-box">
 
-                    <!-- DO NOT USE THIS, I FEAR BAD THINGS MAY HAPPEN -->
-                    <form action="../src/transcript_reader.php" method="post" onsubmit="return confirm('TEST DO NOT RUN');">
+                    <form action="../src/transcript_reader.php" method="post" onsubmit="return confirm('Are you sure you would like to submit this?');">
                         <br><br>
                         <input id = "a" type="file" name="transcript" value="">
                         <br>

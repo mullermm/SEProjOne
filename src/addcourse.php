@@ -14,7 +14,7 @@
     $entry = $department_in . '~' . $course_number_in . '~' . $course_title_in . '~' . $credits_in . '~' . $course_description_in . '~' . $core_curriculum_in . '~' . $prerequisites_in;
 
     
-    fputcsv($csv, explode(',', $entry));
+    fputcsv($csv, explode('~', $entry));
  
     fclose($csv);
 
