@@ -91,7 +91,7 @@
                             <span>Augsburg University</span>
                             <h2>Course Catalog</h2>
                             <p>View all upcoming courses and sections</p>
-                            <a href="../subpages_student/course_catalog.php" class="btn btn-regular">View Courses</a>
+                            <a href="../subpages_admin/course_catalog.php" class="btn btn-regular">View Courses</a>
                         </div>
                     </div>
                 </div>
