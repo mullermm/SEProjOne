@@ -61,8 +61,22 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="content-box">
-                            <!-- course progress goes here -->
-                            <p>Course progress goes here</p>
+                            
+                            
+                            
+                            
+                            <?php
+                           
+                            echo $_SESSION['completed_courses'];
+                            echo $_SESSION['active_courses'];
+                            ?>
+                            
+                            
+
+
+                            
+                            
+                            
                         </div>
                     </div>
 
