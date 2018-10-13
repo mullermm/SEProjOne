@@ -30,35 +30,32 @@
 
 
 <?php
-
 // Get course info + Split string into classes and numbers
 session_start();
-$completed = $_SESSION['completed_courses'];
-$active =  $_SESSION['active_courses'];
+$completed = str_split($_SESSION['completed_courses'], 3);
+$active = str_split($_SESSION['active_courses'], 3);
 
-// Split string into classes and numbers
-$completed_arr = str_split($completed, 3);
-$active_arr = str_split($active, 3);
-
-
-
-// Get completed course begining e.i. COM~100 into array 
-
-
-
-
+// Get completed course begining e.i. COM~100 into array
+$completed_prop = [];
+$j = 0;
+for ($i = 0; $i < sizeof($completed); $i++) {
+    if ($i % 2 == 0) {
+        $completed_prop[$j] = (string) ($completed[$i] . '~' . $completed[$i + 1]);
+        $j++;
+    }
+}
 
 // Get active course begining e.i. COM~100 into array
-var_dump($completed_arr);
-
-
-
-
-
+$active_prop = [];
+$j = 0;
+for ($i = 0; $i < sizeof($active); $i++) {
+    if ($i % 2 == 0) {
+        $active_prop[$j] = (string) ($active[$i] . '~' . $active[$i + 1]);
+        $j++;
+    }
+}
 
 // Write the courses_active and courses_completed csv
-
-
 
 
 
