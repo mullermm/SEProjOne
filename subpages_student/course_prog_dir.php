@@ -31,15 +31,25 @@
 
 <?php
 
+// Get course info + Split string into classes and numbers
+session_start();
+$completed = $_SESSION['completed_courses'];
+$active =  $_SESSION['active_courses'];
+
+// Split string into classes and numbers
+$completed_arr = str_split($completed, 3);
+$active_arr = str_split($active, 3);
+
+
+
 // Get completed course begining e.i. COM~100 into array 
 
 
 
 
 
-
 // Get active course begining e.i. COM~100 into array
-
+var_dump($completed_arr);
 
 
 

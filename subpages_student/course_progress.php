@@ -59,27 +59,7 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="content-box">
-                            
-                            
-                            
-                            
-                            <?php
-                           
-                            echo $_SESSION['completed_courses'];
-                            echo $_SESSION['active_courses'];
-                            ?>
-                            
-                            
-
-
-                            
-                            
-                            
-                        </div>
-                    </div>
-
+                    <iframe src="course_prog_dir.php" seamless></iframe>
                 </div>
             </div>
         </section>
