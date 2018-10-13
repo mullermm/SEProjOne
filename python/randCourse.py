@@ -17,7 +17,9 @@ for x in range (0, random.randint(3,5)):
         chosen_row = random.choice(list(reader))
         ActiveClasses += chosen_row[0]+chosen_row[1]+' '
 
+#Remove last space
+CompletedClasses = CompletedClasses[:-1]
+ActiveClasses = ActiveClasses[:-1]
 
-print CompletedClasses
-print ''
-print ActiveClasses
+#Print in format ready for csv
+print (CompletedClasses) + ', ' + ActiveClasses
