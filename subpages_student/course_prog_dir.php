@@ -55,10 +55,33 @@ for ($i = 0; $i < sizeof($active); $i++) {
     }
 }
 
-// Write the courses_active and courses_completed csv
+// Open write and read files
+$all_courses = fopen("../src/courses.csv", "r");
+$courses_completed = fopen("../src/courses_completed.csv", "w");
+$courses_active = fopen("../src/courses_active.csv", "w");
 
+// Match classes and write to completed course csv
+fwrite($courses_completed, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites" . "\n");
+for ($i = 0; $i < sizeof($completed_prop); $i++) {
+    while (($line = fgets($all_courses)) !== false) {
 
+        if (strpos($line, $completed_prop[$i]) !== false) {
+            fwrite($courses_completed, $line);
+        }
+    }
+    rewind($all_courses);
+}
 
+fwrite($courses_active, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites" . "\n");
+for ($i = 0; $i < sizeof($active_prop); $i++) {
+    while (($line = fgets($all_courses)) !== false) {
+
+        if (strpos($line, $active_prop[$i]) !== false) {
+            fwrite($courses_active, $line);
+        }
+    }
+    rewind($all_courses);
+}
 
 
 ?>
@@ -85,3 +108,5 @@ for ($i = 0; $i < sizeof($active); $i++) {
         custom_formatting: [[4, format_link]]
     });
 </script>
+
+
