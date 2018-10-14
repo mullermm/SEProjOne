@@ -56,13 +56,26 @@
             </div>
         </section>
 
+
+
+
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <iframe src="course_prog_dir.php" seamless></iframe>
+                    <h1>Active Courses</h1>
+                    <iframe src="course_prog_dir_active.php" seamless></iframe>
                 </div>
             </div>
         </section>
+        <section id="addcourses">
+            <div class="container">
+                <div class="row">
+                    <h1>Completed Courses</h1>
+                    <iframe src="course_prog_dir_completed.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
+
 
 
         <footer>
