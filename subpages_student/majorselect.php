@@ -35,14 +35,14 @@ $counter = 0;
 fwrite($maj_prog_csv, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites~Status" . "\n");
 
 while (($line = fgets($all_courses)) !== false) {
-    
+
     $line = trim(preg_replace('/\s\s+/', ' ', $line));
     if (substr($line, 0, 3) === $major_select) {
 
-        if (in_array(substr($line, 0, 6), $completed_prop)) {
+        if (in_array(substr($line, 0, 7), $completed_prop)) {
             fwrite($maj_prog_csv, $line . "~Completed\n");
-        } elseif (in_array(substr($line, 0, 6), $active_prop)) {
-            fwrite($maj_prog_csv, $line, "~In Progress\n");
+        } elseif (in_array(substr($line, 0, 7), $active_prop)) {
+            fwrite($maj_prog_csv, $line . "~Active\n");
         } else {
             fwrite($maj_prog_csv, $line . "~Not Taken\n");
         }
@@ -50,6 +50,7 @@ while (($line = fgets($all_courses)) !== false) {
         $counter++;
     }
 }
+fwrite($maj_prog_csv, $active_prop[1]);
 rewind($all_courses);
 
 
