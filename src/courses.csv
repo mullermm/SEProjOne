@@ -1,4 +1,4 @@
-Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites
+﻿Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites
 ACC~221~Introduction to Financial Accounting~4~Introduction to business activities, basic concepts and fundamentals of accounting, the accounting cycle, and preparation of financial statements. ~None~None
 ACC~222~Introduction to Managerial Accounting~4~A continuation of ACC 221. Introduction to cost accounting for manufacturing. Basic concepts and fundamentals of managerial accounting, planning and controlling processes, decision-making, and behavioral considerations. ~None~ACC221(Introduction to Financial Accounting)
 ACC~295~Topics~4~Lectures, discussions, meetings with members of the staff or visiting faculty regarding research methodology and readings in the areas of business administration. ~None~CONSENT(Consent of Instructor)
@@ -1580,6 +1580,7 @@ WST~355~Cultural Conflict and Change in Latin America~4~An exploration of select
 WST~357~Mexican History, Culture and Cosmovision~4~An exploration of Latin American history from Pre-Columbian times through the conquest and colonial periods up to modern Latin America. The course will use a gendered lens to focus on Mexican history, culture and cosmovision. 363 ~Humanities~1 of HIS101(The Beginning of Western Culture), HIS102(The Shaping of Western Civilization), HIS103(The
 WST~362~Walking the Truth: Culture,Gender and Millennium Development Goals in Sub Saharan Africa~4~This broad-based interdisciplinary course explores the influence of cultural values and gender roles on the achievement of the Millennium Development Goals (MDG’s) in sub-Saharan Africa. The social determinants of health and illness— economic realities, education levels, governmental policies, access to technology, and the availability of health care providers—are examined relation to the unequal burdens of suffering and disease evident in Africa. Leadership skills that promote MDG achievement in local, regional, and national contexts are identified and applied through experiential practical learning activities, lecture, and dialog. ~None~None
 WST~366~Latin American Liberation Theologies~4~An exploration of Latin American theologies of liberation and their relationship to social/political transformation. Examines key theological concepts, critiques, and practical implications. ~Humanities~1 of HON100(Christian Vocation & Search for Meaning I), REL100(Christian Vocation and the Search for
+WST~396~Internship~4~~None~None
 WST~396~Internship~4~~None~None
 WST~397~Internship~2~~Augsburg Experience~None
 WST~398~Internship~2~~None~None
