@@ -59,17 +59,134 @@
         <section id="addcourses">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+
+                    <div class="col-md-7">
                         <div class="content-box">
-                            <!-- Major progress goes here -->
-                            <p>Major progress goes here</p>
+                            <span>Augsburg University</span>
+                            <h2>Select a Major</h2>
+                            <p>Select a major to review your progress within your field</p>
                         </div>
                     </div>
 
+                    <div class="col-md-5">
+                        <div class="content-box">
+
+
+                            <form action="majorselect.php" method="post">
+                                <div class="choice">
+                                    <select name="major">
+                                        <option disabled selected value> -- select an option -- </option>
+                                        <option value="ACC">Accounting</option>
+                                        <option value="AIS">American Indian Studies</option>
+                                        <option value="ECO">Applied Economics</option>
+                                        <option value="ART">Art History</option>
+                                        <option value="ART">Art</option>
+                                        <option value="BIO">Biology</option>
+                                        <option value="BIO">Biophysics</option>
+                                        <option value="PSY">Biopsychology</option>
+                                        <option value="BUS">Business Administration and Economics</option>
+                                        <option value="BUS">Business Administration and Economics</option>
+                                        <option value="BUS">Business Administration</option>
+                                        <option value="CHM">Chemistry</option>
+                                        <option value="PSY">Clinical Psychology</option>
+                                        <option value="COM">Communication Arts/Literature</option>
+                                        <option value="COM">Communication Studies, Film, and New Media</option>
+                                        <option value="COM">Communication Studies</option>
+                                        <option value="CSC">Computational Economics</option>
+                                        <option value="CSC">Computational Philosophy</option>
+                                        <option value="CSC">Computer Science</option>
+                                        <option value="CSC">Creative Writing</option>
+                                        <option value="CCS">Cross-Cultural Studies</option>
+                                        <option value="THP">Directing/Dramaturgy/Playwriting</option>
+                                        <option value="ECO">Economics</option>
+                                        <option value="EDC">Education</option>
+                                        <option value="EDC">Elementary Education</option>
+                                        <option value="ENL">English Literature, Language, and Theory</option>
+                                        <option value="ENL">English</option>
+                                        <option value="ENV">Environmental Studies</option>
+                                        <option value="WEL">Exercise Science</option>
+                                        <option value="FLM">Film</option>
+                                        <option value="MAT">Finance</option>
+                                        <option value="FRE">French</option>
+                                        <option value="WST">Gender, Sexuality, and Women's Studies</option>
+                                        <option value="GER">German</option>
+                                        <option value="WST">Global Women's and Gender Studies</option>
+                                        <option value="ART">Graphic Design</option>
+                                        <option value="HPE">Health Education</option>
+                                        <option value="HPE">Health, Physical Education, and Exercise Science</option>
+                                        <option value="HIS">History</option>
+                                        <option value="HON">Honors Program</option>
+                                        <option value="HUM">Interdisciplinary Studies</option>
+                                        <option value="BUS">International Business</option>
+                                        <option value="HUM">International Relations</option>
+                                        <option value="EDC">K-12 English as a Second Language</option>
+                                        <option value="CCS">Languages and Cross-Cultural Studies</option>
+                                        <option value="SCI">Life Sciences</option>
+                                        <option value="MIS">Management Information Systems</option>
+                                        <option value="BUS">Management</option>
+                                        <option value="MKT">Marketing</option>
+                                        <option value="MAT">Mathematical Economics</option>
+                                        <option value="MAT">Mathematics</option>
+                                        <option value="HIS">Medieval Studies</option>
+                                        <option value="MUS">Music Business</option>
+                                        <option value="MUS">Music Education</option>
+                                        <option value="MUS">Music Performance</option>
+                                        <option value="MUS">Music Therapy</option>
+                                        <option value="MUS">Music</option>
+                                        <option value="COM">New Media</option>
+                                        <option value="THP">Performance</option>
+                                        <option value="PHI">Philosophy</option>
+                                        <option value="WEL">Physical Education</option>
+                                        <option value="PHY">Physics</option>
+                                        <option value="POL">Political Science and Economics</option>
+                                        <option value="POL">Political Science</option>
+                                        <option value="PA">Pre-Dentistry</option>
+                                        <option value="HPE">Pre-Health Science</option>
+                                        <option value="POL">Pre-Law</option>
+                                        <option value="PA">Pre-Medical</option>
+                                        <option value="PA">Pre-Pharmacy</option>
+                                        <option value="WEL">Pre-Physical Therapy</option>
+                                        <option value="WEL">Pre-Physician Assistant</option>
+                                        <option value="RLN">Pre-Seminary</option>
+                                        <option value="COM">Promotional Communication</option>
+                                        <option value="PSY">Psychology and Law</option>
+                                        <option value="PSY">Psychology</option>
+                                        <option value="POL">Public Policy and Political Change</option>
+                                        <option value="RLN">Religion</option>
+                                        <option value="EDC">Secondary Education (license only)</option>
+                                        <option value="WST">Sexuality Studies</option>
+                                        <option value="PSY">Social Psychology</option>
+                                        <option value="SWK">Social Work</option>
+                                        <option value="SOC">Sociology</option>
+                                        <option value="PHY">Space Physics</option>
+                                        <option value="SPA">Spanish</option>
+                                        <option value="EDC">Special Education: Academic Behavioral Strategist</option>
+                                        <option value="ART">Studio Art</option>
+                                        <option value="THP">Theater</option>
+                                        <option value="RLN">Theology and Public Leadership</option>
+                                        <option value="URB">Urban Studies</option>
+                                        <option value="ART">Web Design</option>
+                                    </select> 
+                                    <br><br>
+                                    <input type="submit" value="Submit">
+
+                                    </form>
+
+
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section id="addcourses">
+            <div class="container">
+                <div class="row">
+                    <iframe src="major_prog_dir.php" seamless></iframe>
                 </div>
             </div>
         </section>
-
 
         <footer>
             <div class="container">

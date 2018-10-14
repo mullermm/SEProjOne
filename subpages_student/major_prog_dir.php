@@ -20,37 +20,6 @@
 
 
 
-<?php
-// Get course info + Split string into classes and numbers
-session_start();
-$active = str_split($_SESSION['active_courses'], 3);
-
-// Get active course begining e.i. COM~100 into array
-$active_prop = [];
-$j = 0;
-for ($i = 0; $i < sizeof($active); $i++) {
-    if ($i % 2 == 0) {
-        $active_prop[$j] = (string) ($active[$i] . '~' . $active[$i + 1]);
-        $j++;
-    }
-}
-
-// Open write and read files
-$all_courses = fopen("../src/courses.csv", "r");
-$courses_active = fopen("../src/courses_active.csv", "w");
-
-// Match classes and write to active course csv
-fwrite($courses_active, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites" . "\n");
-for ($i = 0; $i < sizeof($active_prop); $i++) {
-    while (($line = fgets($all_courses)) !== false) {
-
-        if (strpos($line, $active_prop[$i]) !== false) {
-            fwrite($courses_active, $line);
-        }
-    }
-    rewind($all_courses);
-}
-?>
 
 <script type="text/javascript">
     function format_link(link) {
@@ -61,7 +30,7 @@ for ($i = 0; $i < sizeof($active_prop); $i++) {
     }
 
     CsvToHtmlTable.init({
-        csv_path: '../src/courses_active.csv',
+        csv_path: '../src/major_prog.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: '~', delimiter: '`'},
@@ -69,3 +38,4 @@ for ($i = 0; $i < sizeof($active_prop); $i++) {
         custom_formatting: [[4, format_link]]
     });
 </script>
+

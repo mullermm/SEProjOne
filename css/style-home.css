@@ -227,10 +227,29 @@ iframe[seamless] {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+/* ==============================================
+   Choice
+===============================================*/
+
+.choice select{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+}
+
+
+
+
+
 
 /* ==============================================
    5. addcourses
 ===============================================*/
+
+
+
+
+
 
 #addcourses p {
     font-size: 20px;
