@@ -32,6 +32,9 @@
                             <a class="nav-link" href="#addcourses">Add Courses<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="#addcourses2">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="#studentdir">Student Directory<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">

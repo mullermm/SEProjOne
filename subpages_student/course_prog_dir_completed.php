@@ -1,6 +1,5 @@
 <head>
 
-    <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/dataTables.bootstrap.css" rel="stylesheet">
 
@@ -11,7 +10,6 @@
     <div id='table-container'></div>
 
 </div><!-- /.container -->
-
 
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>

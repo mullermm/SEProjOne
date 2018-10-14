@@ -1,13 +1,11 @@
 <head>
 
-    <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/dataTables.bootstrap.css" rel="stylesheet">
 
 </head>
 
 <div class="container-fluid">
-
 
     <div id='table-container'></div>
 
@@ -25,7 +23,6 @@
 <?php
 // Get course info + Split string into classes and numbers
 session_start();
-$completed = str_split($_SESSION['completed_courses'], 3);
 $active = str_split($_SESSION['active_courses'], 3);
 
 // Get active course begining e.i. COM~100 into array
@@ -42,8 +39,7 @@ for ($i = 0; $i < sizeof($active); $i++) {
 $all_courses = fopen("../src/courses.csv", "r");
 $courses_active = fopen("../src/courses_active.csv", "w");
 
-
-
+// Match classes and write to active course csv
 fwrite($courses_active, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites" . "\n");
 for ($i = 0; $i < sizeof($active_prop); $i++) {
     while (($line = fgets($all_courses)) !== false) {
