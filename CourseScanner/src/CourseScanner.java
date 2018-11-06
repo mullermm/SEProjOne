@@ -57,7 +57,7 @@ public class CourseScanner {
             RemoveLeadingWhiteSpace(scanner, fileIn, tempFile); //Removes any white space at the front of a line
 
             scanner = new Scanner(fileIn);              //Our scanner to read in the file from the customer
-            AddListOfCourse(scanner, fileIn, tempFile); //Turns course list file into our database file
+            createCourseCSV(scanner, fileIn, tempFile); //Turns course list file into our database file
 
 
         }
@@ -76,7 +76,7 @@ public class CourseScanner {
      * @param scanner scanner containing file of course descriptions
      * @return CourseList that has had listOfCourses populated
      */
-    public static void AddListOfCourse(Scanner scanner, File fileIn, File tempFile){
+    public static void createCourseCSV(Scanner scanner, File fileIn, File tempFile){
 
         /*
         These regular expressions are used inside the scanner to verify certain input being read in from
@@ -154,7 +154,8 @@ public class CourseScanner {
                 } catch (NoSuchElementException e) {
                     //End of the file has been reached. THIS IS THE CLEANUP WORK!
                     br.close();                                         //Close the writer so the buffer clears to temp.txt
-                    CopyFile(tempFile, fileIn);                         //Copies contents of temp.txt back into original file
+                    File outfile = new File("courses.csv");
+                    CopyFile(tempFile, outfile);                        //Copies contents of temp.txt back into original file
                     tempFile.delete();                                  //Deletes the temp file
                 }
                 br.write("\n");
@@ -163,7 +164,7 @@ public class CourseScanner {
             }
         }
         catch(IOException e){
-            System.out.println("Cant make temp file for writing");
+            //Do nothing because we are at the end of the file :D
         }
     }
 
