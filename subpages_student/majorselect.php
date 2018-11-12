@@ -28,8 +28,8 @@ for ($i = 0; $i < sizeof($active); $i++) {
 }
 
 // Open write and read files
-$all_courses = fopen("../src/courses.csv", "r");
-$maj_prog_csv = fopen("../src/major_prog.csv", "w");
+$all_courses = fopen("../src/csv/courses.csv", "r");
+$maj_prog_csv = fopen("../src/csv/major_prog.csv", "w");
 $counter = 0;
 
 fwrite($maj_prog_csv, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites~Status" . "\n");

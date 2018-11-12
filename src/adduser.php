@@ -8,8 +8,8 @@
     $status = 'student';
 
 
-    $csv1 = fopen("Augs_Users.csv", "a");
-    $csv2 = fopen("Augs_Users_Names.csv", "a");
+    $csv1 = fopen("csv/Augs_Users.csv", "a");
+    $csv2 = fopen("csv/Augs_Users_Names.csv", "a");
 
 
     $entry1 = $firstname_in . ' ,' . $lastname_in . ' ,' . $username_in . ' ,' . $pass . ' ,' . $status;

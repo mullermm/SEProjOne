@@ -11,7 +11,7 @@
     $core_curriculum_in = filter_var($_POST["core-curriculum"], FILTER_SANITIZE_STRING);
     $prerequisites_in = filter_var($_POST["prerequisites"], FILTER_SANITIZE_STRING);
 
-    $file = "courses.csv";
+    $file = "csv/courses.csv";
 
 
     $csv = fopen($file, "a") or die("Unable to open file!");

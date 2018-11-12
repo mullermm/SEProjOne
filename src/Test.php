@@ -21,7 +21,7 @@ class Test extends TestCase
         // variable initialization
         $current_user = '';
         $the_big_array = [];
-        $filename = 'Augs_Users.csv';
+        $filename = 'csv/Augs_Users.csv';
         $failure = TRUE;
 
         // putting the database (csv) into a multidimensional array - super unsecure

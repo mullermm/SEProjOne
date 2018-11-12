@@ -36,8 +36,8 @@ for ($i = 0; $i < sizeof($completed); $i++) {
 }
 
 // Open write and read files
-$all_courses = fopen("../src/courses.csv", "r");
-$courses_completed = fopen("../src/courses_completed.csv", "w");
+$all_courses = fopen("../src/csv/courses.csv", "r");
+$courses_completed = fopen("../src/csv/courses_completed.csv", "w");
 
 // Match classes and write to completed course csv
 fwrite($courses_completed, "Department~Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites" . "\n");
@@ -61,7 +61,7 @@ for ($i = 0; $i < sizeof($completed_prop); $i++) {
     }
 
     CsvToHtmlTable.init({
-        csv_path: '../src/courses_completed.csv',
+        csv_path: '../src/csv/courses_completed.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: '~', delimiter: '`'},
