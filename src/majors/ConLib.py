@@ -1,5 +1,5 @@
 class ConLib:    
-    def __init__(self, transcript, file):
+    def __init__(self, transcript):
         self.transcript = transcript
 #This is for sections where all classes must be completed.
     def do_all(self, section):

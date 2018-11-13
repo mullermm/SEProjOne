@@ -93,7 +93,16 @@ def biology_ba():
     major.do_some(1, section4)
 
 def biopsychology():
-    
+    section1 = ['B10151', 'B10152', 'B10253', 'B10475', 'PSY105', 'PSY215', 'PSY315', 'PSY355']
+    section2 = []
+    section3 = []
+    section4 = []
+    section5 = ['COM111','COM115','HON130']
+    section6 = []
+    section7 = []
+    major = ConLib.ConLib(transcript)
+    major.do_some(1, section5)
+
 
 functions = {
     0 : american_indian_studies,
@@ -102,6 +111,6 @@ functions = {
 
 def main():
 
-    functions[2]()
+    functions[1]()
 if __name__ == "__main__":
     main()
