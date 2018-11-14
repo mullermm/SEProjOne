@@ -14,7 +14,7 @@
     // variable initialization
     $current_user = '';
     $the_big_array = [];
-    $filename = 'Augs_Users.csv';
+    $filename = 'csv/Augs_Users.csv';
     $failure = TRUE;
 
     // putting the database (csv) into a multidimensional array - super unsecure 
@@ -40,8 +40,8 @@
                 $_SESSION['current_user'] = $current_user;
 
                 // for students to take in courses - null if admin
-                $_SESSION['completed_courses'] = $the_big_array[$i][5];
-                $_SESSION['active_courses'] = $the_big_array[$i][6];
+                $_SESSION['csv/completed_courses'] = $the_big_array[$i][5];
+                $_SESSION['csv/active_courses'] = $the_big_array[$i][6];
                 
                 $failure = FALSE;
 
