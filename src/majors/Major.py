@@ -102,6 +102,78 @@ def biopsychology():
     section7 = []
     major = ConLib.ConLib(transcript)
     major.do_some(1, section5)
+    
+    
+############################################################
+##### 			       Added by Matt					####    
+############################################################    
+
+def spacephysics():
+	section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY320', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'PHY420', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
+	section2 = ['PHY327', 'MAT369']
+	section3 = ['PHY317', 'PHY352', 'PHY430', 'PHY486']
+	section4 = ['COM115', 'HON130']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major_do_some(1, section2)
+	major_do_some(2, section3)
+	major_do_some(1, section4)
+
+def clinicalpsychology():
+	section1 = ['PSY105', 'PSY215', 'PSY262', 'PSY315', 'PSY385', 'PSY400']
+	section2 = ['PSY325', 'PSY354', 'PSY355']
+	section3 = ['PSY491', 'PSY493', 'PSY495']
+	section4 = ['PSY261', 'PSY359']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major_do_some(2, section2)
+	major_do_some(1, section3)
+	major_do_some(1, section4)
+
+def psychologyandlaw():
+	section1 = ['PSY105', 'PSY215', 'PSY235', 'PSY262', 'PSY315', 'PSY325', 'PSY354', 'PSY360', 'PSY400', 'PSY491', 'S0C277']
+	section2 = ['PSY359', 'PSY385', 'PSY410']
+	section3 = ['POL170', 'P0L370']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major_do_some(1, section2)
+	major_do_some(1, section3)
+    
+def sociology():
+	section1 = ['SOC121', 'SOC362', 'SOC363', 'SOC485', 'SOC490']
+	section2 = ['SOC111', 'SOC231' ,'SOC240', 'SOC265', 'SOC266', 'SOC277', 'SOC290', 'SOC295', 'SOC299', 'SOC300', 'SOC320', 'SOC349', 'SOC375' ,'SOC377', 'SOC380', 'SOC381', 'SOC387', 'SOC390', 'SOC399', 'URB399', 'SOC495', 'SOC499']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some_upper(5, 3, section2)
+    
+def socialwork():
+	section1 = ['SWK301', 'SWK303', 'SWK306', 'SWK307', 'SWK316', 'SWK317', 'SWK401', 'SWK406', 'SWK407', 'SWK417']
+	section2 = ['BI0121', 'PSY105' ,'S0C121', 'SWK280']
+	section3 = ['SWK100', 'SWK210', 'SWK230']
+	section4 = ['ECO112', 'POL121', 'P0L122', 'P0L325']
+	section5 = ['S0C362', 'MAT163', 'MAT164']
+	major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_all(section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(1, section5)
+    
+def urbanstudies():
+	section1 = ['ECO113', 'POL/URB122', 'SOC/URB111', 'URB/SOC381', 'SOC/URB399', 'URB492']
+	section2 = ['HIS316', 'SOC380', 'ART249/349', 'HIS249/349']
+	section3 = ['POL483', 'SOC362']
+	section4 = ['POL484', 'SOC363']
+	section5 = ['ART243', 'ART244', 'ART249/349', 'HIS249/349', 'ECO365', 'ENV100', 'HIS316', 'POL241', 'POL325', 'SOC265', 'SOC349', 'SOC380', 'URB199', 'URB295' ,'URB299', 'URB395']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some(1, section2)
+	major.do_some(1, section3)
+	major.do_some(1, section4)
+	major.do_some(2, section5)
+	
+	
+	
 
 
 functions = {
