@@ -15,6 +15,7 @@
 
     <body>
 
+        <!--Navigation Bar-->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
@@ -39,16 +40,12 @@
                         <li class="nav-time nav-custom-link">
                             <a class="nav-link" href="#planner">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
-                        <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#pricing">Payment Portal<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
-
-
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <!--Student Information Section-->
         <section id="hero">
             <div class="container">
                 <div class="row">
@@ -67,6 +64,7 @@
             </div>
         </section>
 
+        <!--Course Catalog Section-->
         <section id="addcourses">
             <div class="container">
                 <div class="row">
@@ -79,12 +77,13 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
+                        <img src="images/sec2.png" class="img-fluid" alt="Demo image">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!--Major Progress Section-->
         <section id="addcourses2">
             <div class="container">
                 <div class="row">
@@ -104,42 +103,47 @@
             </div>
         </section>
 
-
-
-        <section id="pricing">
+        <!--Course Progress Section-->
+        <section id="addcourses2">
             <div class="container">
-                <div class="title-block">
-                    <h2>Course Progress</h2>
-                    <p>View active courses and completed courses</p>
-                    <a href="../subpages_student/course_progress.php" class="btn btn-regular">View Course Progress</a>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Course Progress</h2>
+                            <p>VView active courses and completed courses</p>
+                            <a href="../subpages_student/major_progress.php" class="btn btn-regular">View Major Progress</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="images/sec3.png" class="img-fluid" alt="Demo image">
+                    </div>
                 </div>
+            </div>
+        </section>
 
+        <!--Course Planer Section-->
+        <section id="addcourses2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="images/sec4.png" class="img-fluid" alt="Demo image">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Course Planner</h2>
+                            <p>Evaluate your pending courses</p>
+                            <a href="../subpages_student/major_progress.php" class="btn btn-regular">View Major Progress</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
 
-        <section id="planner" style="background-color: #f6f8f9">
-            <div class="container">
-                <div class="title-block">
-                    <h2>Course Planner</h2>
-                    <p>Evaluate your pending courses</p>
-                    <a href="../subpages_student/course_planner.php" class="btn btn-regular">View Course Planner</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="pricing">
-            <div class="container">
-                <div class="title-block">
-                    <h2>Payment Portal</h2>
-                    <p>Enter payment portal to resolve tuition payment as well as tickets</p>
-                    <a href="https://www.schoolpaymentportal.com/Default.aspx" class="btn btn-regular">Payment Portal</a>
-                </div>
-
-            </div>
-        </section>
+        
 
         <footer>
             <div class="container">
@@ -152,7 +156,7 @@
                             <li><a href="#addcourses2">Major Progress</a></li>
                             <li><a href="#pricing">Course Progress</a></li>
                             <li><a href="#planner">Course Planner</a></li>
-                            <li><a href="#">Payment Portal</a></li>
+                           
                         </ul>
                     </div>
 
