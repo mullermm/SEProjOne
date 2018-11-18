@@ -15,22 +15,31 @@
 
     <body>
 
-        <!-- N A V B A R -->
-        <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+         <!--Navigation Bar-->
+         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
             </button>
-            <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+            <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
-                    <a href="../src/home-student.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
+                    <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../src/home-student.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-
-
+                            <a class="nav-link" href="../subpages_student/course_catalog.php">View Courses<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/course_progress.php">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>

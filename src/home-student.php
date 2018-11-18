@@ -29,16 +29,16 @@
                             <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#addcourses">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/course_catalog.php">View Courses<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#addcourses2">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#pricing">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-time nav-custom-link">
-                            <a class="nav-link" href="#planner">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                     </ul>
                 </div>
