@@ -59,6 +59,9 @@ public class CourseScanner {
             scanner = new Scanner(fileIn);              //Our scanner to read in the file from the customer
             createCourseCSV(scanner, fileIn, tempFile); //Turns course list file into our database file
 
+            scanner = new Scanner(fileIn);
+            //cleanupFinalText(scanner, fileIn, tempFile);
+
 
         }
         catch (FileNotFoundException e){
@@ -83,7 +86,7 @@ public class CourseScanner {
         CourseDescriptions.txt.
          */
         final String headerRegex = "([A-Z]{2})(\\s)(–|-).*|([A-Z]{3})(\\s)(–|-).*|([A-Z]{5})(\\s)(–|-).*";
-        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$";
+        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$|[A-Z]{3}[0-9]{3}[L]{1}$";
 
         int lineCount = 0;
 
