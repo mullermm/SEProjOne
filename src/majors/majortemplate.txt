@@ -1,11 +1,17 @@
-    section1 = []
-    section2 = []
-    section3 = []
-    section4 = []
-    section5 = []
-    section6 = []
-    section7 = []
+def ():
+    section1 = ['']
+    section2 = ['']
+    section3 = ['']
+    section4 = ['']
+    section5 = ['']
+    section6 = ['']
+    section7 = ['']
     major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+
 
     class ConLib:    
     def __init__(self, transcript, file):
