@@ -15,8 +15,8 @@
       <file leaf-file-name="PrereqSanner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrereqSanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+            <state relative-caret-position="678">
+              <caret line="285" column="17" lean-forward="false" selection-start-line="285" selection-start-column="17" selection-end-line="285" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createCourseList#0;class#PrereqSanner#0" expanded="false" />
@@ -25,7 +25,6 @@
                 <element signature="docComment;method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="docComment;method#removeOf#0;class#PrereqSanner#0" expanded="false" />
-                <element signature="method#removeOf#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="docComment;method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="docComment;method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
@@ -33,7 +32,6 @@
                 <element signature="docComment;method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="docComment;method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
-                <element signature="method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="docComment;method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
                 <element signature="method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
               </folding>
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrereqListBuilder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PrereqListBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrereqListBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+            <state relative-caret-position="-863">
+              <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#isInteger#0;class#PrereqListBuilder#0" expanded="false" />
@@ -55,11 +53,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="prereqList.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prereqList.txt">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="105">
+              <caret line="7" column="84" lean-forward="false" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="filteredCSV.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filteredCSV.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="175" column="79" lean-forward="true" selection-start-line="175" selection-start-column="79" selection-end-line="175" selection-end-column="79" />
+            <state relative-caret-position="150">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -75,21 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrereqScanner.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PrereqScanner.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courses.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,6 +118,7 @@
         <option value="$PROJECT_DIR$/filteredCSV.txt" />
         <option value="$PROJECT_DIR$/src/PrereqSanner.java" />
         <option value="$PROJECT_DIR$/src/PrereqListBuilder.java" />
+        <option value="$PROJECT_DIR$/courses.csv" />
       </list>
     </option>
   </component>
@@ -314,24 +312,24 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -345,7 +343,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -366,7 +364,6 @@
             <element signature="docComment;method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#removeOf#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeOf#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
@@ -374,7 +371,6 @@
             <element signature="docComment;method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
           </folding>
@@ -409,7 +405,6 @@
             <element signature="docComment;method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#removeOf#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeOf#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
@@ -417,7 +412,6 @@
             <element signature="docComment;method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
             <element signature="docComment;method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
             <element signature="method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
           </folding>
@@ -457,14 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrereqScanner.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26080">
@@ -481,10 +467,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PrereqScanner.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/courseList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrereqSanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="285" column="17" lean-forward="false" selection-start-line="285" selection-start-column="17" selection-end-line="285" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createCourseList#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#concurrentFix#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#concurrentFix#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#removeOf#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="docComment;method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
+            <element signature="method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prereqList.txt">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="105">
+          <caret line="7" column="84" lean-forward="false" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrereqListBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-863">
+          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#isInteger#0;class#PrereqListBuilder#0" expanded="false" />
+            <element signature="method#isInteger#0;class#PrereqListBuilder#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filteredCSV.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -497,56 +549,9 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrereqSanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createCourseList#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#concurrentFix#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#concurrentFix#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeSpaces#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#removeOf#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeOf#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#uppercaseNone#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeTitles#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#removeExtras#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#filterPrereq#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="docComment;method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
-            <element signature="method#CopyFile#0;class#PrereqSanner#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filteredCSV.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="175" column="79" lean-forward="true" selection-start-line="175" selection-start-column="79" selection-end-line="175" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrereqListBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#isInteger#0;class#PrereqListBuilder#0" expanded="false" />
-            <element signature="method#isInteger#0;class#PrereqListBuilder#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

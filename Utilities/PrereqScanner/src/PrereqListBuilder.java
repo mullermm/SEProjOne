@@ -8,17 +8,17 @@ import java.util.Scanner;
 
 public class PrereqListBuilder {
 
-    public void makePrereqList(){
+    public static void makePrereqList(){
 
         try {
-            File infile = new File("filteredCSV.csv");
+            File infile = new File("filteredCSV.txt");
             FileWriter fw = new FileWriter("prereqList.txt");
             BufferedWriter br = new BufferedWriter(fw);
             br.write("[");                              //First bracket for the list of list
             String input = "";
-
+            boolean doneWithLine = false;
             Scanner scan = new Scanner(infile);
-            boolean lineDone = false;
+            int count = 1;
 
             /*This first loop runs for the length of the file. The name of
             each course is written before the prereq inner loop runs*/
@@ -26,31 +26,69 @@ public class PrereqListBuilder {
 
                 scan.useDelimiter("~");                         //delimeter sperating the name from prereqs
                 br.write("['");                             //"[" for the course and the " ' " for the course name string
-                br.write(scan.next() + "', ");              //add the name and the closing " ' "
-                scan.useDelimiter("\\n|;");                     //delimeter sperating the end of the prereqs or seperate prereqs
-                input = scan.next();                            //Store the next token
 
-                while(!lineDone){
+                /*The line below add the name and the closing " ' ". The reason we have a .replace
+                * is because the /n character at the end of each line in filterdCSV is not
+                * dealt with by the scanner. This replace deals with it*/
+                br.write(scan.next().replace("\n","y") + "', ");
+                scan.useDelimiter("\n|;");                       //delimeter seperating the end of the prereqs or seperate prereqs
+                input = scan.next();                             //Store the next token
+                doneWithLine = false;
 
+
+                System.out.println("---------");
+                System.out.print("debug " + count + ": ");
+                while(!doneWithLine){
+                    input = input.replace("~", "");
+                    System.out.println("The input: " + input);
                     /*If there is no prereqs CASE1 BREAK*/
-                    if(input == "NONE"){
-                        br.write(input + "]");
+                    if(input.equals("NONE%")){
+                        br.write("['NONE']]");
+                        doneWithLine = true;
                         break;
                     }
                     /*If the prereqs are a number of a list ex. 1 MAT100, MAT110*/
                     if(input.contains("^")){
-                        variablePrereq(br, input);
+                        /*If the input is the last of the line, remove the % delim, add, and break loop*/
+                        if(input.contains("%")) {
+                            input = input.replace("%", "");
+                            System.out.print(" var ");
+                            variablePrereq(br, input);
+                            doneWithLine = true;
+                            break;
+                        }
+                        else{
+                            variablePrereq(br, input);
+                        }
                     }
                     /*if the classes are all required prereqs*/
-                    
+                    else{
+                        input = input.replace("%", "");
+                        String[] classes = input.split(",");
+                        br.write("['");
+                        for(int i = 0; i < classes.length; i++){
+                            if(i + 1 != classes.length){
+                                br.write(classes[i] + "', ");
+                            }
+                            else{
+                                br.write(classes[i] + "']]");
+                                doneWithLine = true;
+                                break;
+                            }
+                        }
+                    }
                 }
 
-
+                br.write("\n");
+                count++;
             }
+
+            br.write("]");     //close the list of lists
+            br.close();
 
         }
         catch(IOException e){
-            System.out.println("Could not make prereqList.txt");
+            System.out.println(e.getStackTrace());
         }
 
 
@@ -58,11 +96,12 @@ public class PrereqListBuilder {
 
     }
 
-    public void variablePrereq(BufferedWriter br, String input){
+    public static void variablePrereq(BufferedWriter br, String input){
         try {
             br.write("[");
-            String[] prereq = input.split("^");      //split the string into an array into the number and the classes
+            String[] prereq = input.split("@");      //split the string into an array into the number and the classes
             br.write(prereq[0] + ", ");                //Write the number of needed classes completed
+            System.out.print("rereq 0 is " + prereq[0]);
             String[] classes = prereq[1].split(",");  //split the classes into an array
 
             for (int i = 0; i < classes.length; i++) {

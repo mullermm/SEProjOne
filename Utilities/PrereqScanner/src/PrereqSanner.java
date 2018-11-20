@@ -18,6 +18,8 @@ public class PrereqSanner {
         removeOf();                     //Remove the word of. It is not needed
         removeSpaces();                 //Will make all whitespace characters excatly 1 in length
 
+        PrereqListBuilder.makePrereqList();
+
     }
 
     /**
@@ -140,7 +142,7 @@ public class PrereqSanner {
             String lineIn = "";
             while (scan.hasNext()) {
                 lineIn = scan.nextLine();
-                lineIn = lineIn.replace("of", "^");
+                lineIn = lineIn.replace("of", "@");
                 br.write(lineIn + "\n");
             }
 
@@ -279,9 +281,9 @@ public class PrereqSanner {
                     debugLine++;
                 }
 
-                br.write(scan.next() + "\n");               //Write the prereq and the newline
+                br.write(scan.next() + "%\n");               //Write the prereq and the newline
                 debugLine++;
-                System.out.println("inline: " + debugLine);     //prints the line for debugging.
+               // System.out.println("inline: " + debugLine);     //prints the line for debugging.
             }
 
             br.close();                                         //flush the buffer and write the rest to the file
