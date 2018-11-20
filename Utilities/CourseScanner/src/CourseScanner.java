@@ -86,7 +86,7 @@ public class CourseScanner {
         CourseDescriptions.txt.
          */
         final String headerRegex = "([A-Z]{2})(\\s)(–|-).*|([A-Z]{3})(\\s)(–|-).*|([A-Z]{5})(\\s)(–|-).*";
-        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$|[A-Z]{3}[0-9]{3}[L]{1}$";
+        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$|[A-Z]{3}[0-9]{3}[L]{1}$|[A-Z]{3}[0-9]{3}[P]{1}$|[A-Z]{5}[0-9]{1}$]";
 
         int lineCount = 0;
 
