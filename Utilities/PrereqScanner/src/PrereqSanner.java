@@ -16,9 +16,7 @@ public class PrereqSanner {
         concurrentFix();                //Fixes concurrent tag to just be a *
         uppercaseNone();                //Change the word None to NONE
         removeOf();                     //Remove the word of. It is not needed
-        prePadComma();                  //Add space after a comma so the formatComma regex will work correctly on all
-        formatComma();                  //Formats the comma to sit right next to class. Removes unneeded whitespace
-        singleSpaces();                 //Will make all whitespace characters excatly 1 in length
+        removeSpaces();                 //Will make all whitespace characters excatly 1 in length
 
     }
 
@@ -93,7 +91,7 @@ public class PrereqSanner {
     /**
      * This method will make the final file format the list in a way where it goes item, item
      */
-    public static void singleSpaces(){
+    public static void removeSpaces(){
 
         try {
             File infile = new File("filteredCSV.txt");
@@ -107,83 +105,7 @@ public class PrereqSanner {
 
             while (scan.hasNext()) {
                 lineIn = scan.nextLine();                                    //Get the line
-                lineIn = lineIn.replaceAll(regex, " ");          //Remove any course descriptions
-                /*This is so there is no new line at the end of the file*/
-                if(scan.hasNext()) {
-                    br.write(lineIn + "\n");                            //Write with a new line
-                }
-                else{
-                    br.write(lineIn);                                        //Write without a new line
-                }
-            }
-
-            br.close();
-            CopyFile(temp, infile);
-            temp.delete();
-
-        }
-        catch(IOException e){
-            System.out.println("Could not make temp.txt");
-        }
-
-    }
-
-    /**
-     * This method will make the final file format the list in a way where it goes item, item
-     */
-    public static void prePadComma(){
-
-        try {
-            File infile = new File("filteredCSV.txt");
-            File temp = new File("temp.txt");
-            FileWriter fw = new FileWriter(temp);
-            BufferedWriter br = new BufferedWriter(fw);
-            Scanner scan = new Scanner(infile);
-            String lineIn = "";
-            String regex = ",";
-
-
-            while (scan.hasNext()) {
-                lineIn = scan.nextLine();                                    //Get the line
-                lineIn = lineIn.replaceAll(regex, ", ");          //Remove any course descriptions
-                /*This is so there is no new line at the end of the file*/
-                if(scan.hasNext()) {
-                    br.write(lineIn + "\n");                            //Write with a new line
-                }
-                else{
-                    br.write(lineIn);                                        //Write without a new line
-                }
-            }
-
-            br.close();
-            CopyFile(temp, infile);
-            temp.delete();
-
-        }
-        catch(IOException e){
-            System.out.println("Could not make temp.txt");
-        }
-
-    }
-
-    /**
-     * This method will make the final file format the list in a way where it goes item, item
-     */
-    public static void formatComma(){
-
-        try {
-            File infile = new File("filteredCSV.txt");
-            File temp = new File("temp.txt");
-            FileWriter fw = new FileWriter(temp);
-            BufferedWriter br = new BufferedWriter(fw);
-            Scanner scan = new Scanner(infile);
-            String lineIn = "";
-            String regex = "[\\s]+,[\\s]+";
-
-
-            while (scan.hasNext()) {
-                lineIn = scan.nextLine();                                    //Get the line
-                lineIn = lineIn.replaceAll(regex, ", ");          //Remove any course descriptions
+                lineIn = lineIn.replaceAll(regex, "");          //Remove any course descriptions
                 /*This is so there is no new line at the end of the file*/
                 if(scan.hasNext()) {
                     br.write(lineIn + "\n");                            //Write with a new line
@@ -218,7 +140,7 @@ public class PrereqSanner {
             String lineIn = "";
             while (scan.hasNext()) {
                 lineIn = scan.nextLine();
-                lineIn = lineIn.replace("of", "");
+                lineIn = lineIn.replace("of", "^");
                 br.write(lineIn + "\n");
             }
 
