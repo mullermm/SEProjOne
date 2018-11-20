@@ -510,384 +510,328 @@ def social_studies():
     major.do_some(1, section4)
     major.do_all(section5)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def film_production():
+    section1 = ['FLM180', 'FLM216', 'FLM260', 'FLM420', 'FLM490', 'COM247', 'ENL241', 'ENL371']
+    section2 = ['THR232', 'THR233', 'FLM372']
+    section3 = ['ART132', 'ART215', 'ART315', 'ART340', 'COM243', 'ENL228', 'ENL229', 'FLM124', 'FLM240', 'FLM312', 'FLM348', 'FLM399', 'FLM495', 'FLM499', 'MUS130', 'PHY119', 'THR328']
+    section4 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(3, section3)
+    major.do_all(section4)
+
+def theory_culture():
+    section1 = ['FLM180', 'FLM216', 'FLM260', 'FLM420', 'FLM490', 'COM247', 'ENL241', 'ENL371']
+    section2 = ['THR232', 'THR233']
+    section3 = ['A15264', 'A15364', 'A15208', 'ART240', 'ENL221', 'ENL228', 'ENL229', 'ENL240', 'ENL430', 'FLM124', 'FLM399', 'FLM495', 'FLM499', 'PHI120', 'PHY119', 'RLN319', 'SPA248']
+    section4 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(3, section3)
+    major.do_all(section4)
+
+def history():
+    section1 = ['HIS280', 'HIS480']
+    section2 = ['HIS101', 'HIS102', 'HIS360', 'HIS361', 'HIS369', 'HIS370', 'HIS374', 'HIS378', 'HUM120']
+    section3 = ['HIS102, 103, 282, 348, 352, or 354']
+    section4 = ['HIS120', 'HIS121', 'HIS122', 'HIS225', 'HIS234', 'HIS236', 'HIS241', 'HIS242', 'HIS243', 'HIS249', 'HIS349', 'HIS300', 'HIS316', 'HIS331', 'HIS332', 'HIS335', 'HIS336', 'HIS338', 'HIS343']
+    section5 = ['HIS104', 'HIS140', 'HIS440', 'HIS150','HIS350', 'HIS155','HIS355', 'HIS162', 'HIS462', 'HIS323', 'HIS327', 'HIS346', 'HIS357', 'HIS474']
+    section6 = ['HIS369', 'GST200', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'PHI230']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(1, section5)
+    major.do_some(1, section6)
+
+def german():
+    section1 = ['CCS100', 'KEY480']
+    section2 = ['GER351', 'GER354', 'GER295', 'GER495']
+    section3 = ['GST200', 'HIS369', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PHI230', 'PHY119', 'P0L483']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def french():
+    section1 = ['CCS100', 'KEY480']
+    section2 = ['FRE351', 'FRE353', 'FRE295', 'FRE495']
+    section3 = ['GST200', 'HIS369', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PHI230', 'PHY119', 'P0L483']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def medieval_studies():
+    section1 = ['HUM120', 'HIS369', 'HIS370', 'LAT101', 'LAT102', 'HUM490']
+    section2 = ['ENL330', 'ENL332', 'ENL360', 'ENL361', 'SPA352']
+    section3 = ['HIS378', 'PHI242', 'RLN342']
+    section4 = ['ART386', 'ART387', 'MUS231', 'THR361']
+    section5 = ['HIS374', 'HIS440', 'POL380', 'SPA331']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(2, section5)
+
+def mathematics_teaching():
+    section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT252', 'MAT271', 'MAT287', 'MAT314', 'MAT324', 'ESE330']
+    section2 = ['MAT163', 'MAT164', 'MAT373']
+    section3 = ['MAT355', 'MAT369', 'MAT374', 'MAT377']
+    section4 = ['MAT491']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def mathematics_bs():
+    section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT271']
+    section2 = ['MAT304', 'MAT314', 'MAT324']
+    section3 = ['MAT163', 'MAT164', 'MAT373', 'MAT394', 'MIS379', 'PSY215', 'S0C362']
+    section4 = ['MAT355', 'MAT369', 'MAT374', 'MAT377']
+    section5 = ['MAT491']
+    section6 = ['MAT201', 'COM111', 'COM115']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.do_all(section5)
+    major.do_some(1, section6)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def mathematics_ba():
+    section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT271']
+    section2 = ['MAT304', 'MAT314', 'MAT324']
+    section3 = ['MAT252', 'MAT273', 'MAT287', 'MAT304', 'MAT314', 'MAT324', 'MAT355', 'MAT363', 'MAT369', 'MAT373', 'MAT374', 'MAT377', 'MAT394', 'MAT395', 'MAT399', 'MAT499', 'EC0416', 'PHY327']
+    section4 = ['MAT491']
+    section5 = ['MAT201', 'COM111', 'COM115']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(3, section3)
+    major.do_all(section4)
+    major.do_some(1, section5)
+
+def music_business():
+    section1 = ['ACC221', 'ECO113', 'MIS260', 'MUS113', 'MUS114', 'MUS162', 'MUS205', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS335', 'MUS336', 'BUS339', 'MUS399', 'MUS408', 'MUS458']
+    section2 = ['MUS331', 'MUS332', 'MUS333', 'MUS334']
+    section3 = ['BUS200', 'BUS242', 'BUS254']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def music():
+    section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS341', 'MUS458']
+    section2 = ['MUS331', 'MUS332', 'MUS333', 'MUS334']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+
+def music_therapy():
+    section1 = ['MUS113', 'MUS114', 'MUS135', 'MUS136', 'MUS152', 'MUS158', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS237', 'MUS238', 'MUS258', 'MUS271', 'MUS273', 'MUS315', 'MUS340', 'MUS345', 'MUS374', 'MUS375', 'MUS376', 'MUS385', 'MUS458', 'MUS474', 'MUS475', 'MUS480', 'MUS481', 'B10103', 'PSY105', 'PSY203', 'PSY215', 'PSY262']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+
+def music_performance():
+    section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS358', 'MUS459']
+    section2 = ['MUS331', 'MUS332', 'MUS333', 'MUS334']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+
+def music_education():
+    section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS220', 'MUS231', 'MUS232', 'MUS303', 'MUS311', 'MUS341', 'MUS352', 'MUS353', 'MUS355', 'MUS356', 'MUS357', 'MUS358', 'MUS359', 'MUS459', 'HPE115', 'EDC200', 'EDC310', 'ESE300']
+    section2 = ['EDC206', 'EDC210']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+
+def new_media_game_design():
+    section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490', 'CSC240', 'CSC250']
+    section2 = ['NMS399', 'NMS375']
+    section3 = ['CSC373', 'CSC431', 'CSC495']
+    section4 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(2, section3)
+    major.do_some(1, section4)
+
+def new_media():
+    section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490']
+    section2 = ['NMS399', 'NMS375']
+    section3 = ['ART102', 'ART124', 'ART125', 'ART126', 'ART133', 'ART180', 'ART201', 'ART202', 'ART215', 'ART226', 'ART315', 'ART340', 'C0M243', 'CSC250', 'CSC431', 'CSC495', 'EDC220', 'ENL221', 'ENL226', 'ENL228', 'ENL229', 'ENL241', 'ENL290', 'ENL324', 'ENL371', 'ENL427', 'FLM180', 'FLM240', 'FLM260', 'FLM495', 'INS330', 'INS331', 'MUS221', 'MUS272', 'MUS336', 'NMS230', 'NMS260', 'NMS295', 'NMS320', 'NSM495', 'NMS499', 'PHI260', 'PHY261', 'P0L342', 'P0L495', 'RLN216']
+    section4 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(4, section3)
+    major.do_some(1, section4)
+
+def new_media_web_design():
+    section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490', 'ART124', 'ART127', 'ART201', 'ART202', 'ART215', 'ART315', 'P0L495']
+    section2 = ['NMS399', 'NMS375']
+    section3 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def new_media_promotional_communication():
+    section1 = ['NMS220', 'NMS242', 'ENL242', 'COM415', 'POL371', 'NMS490']
+    section2 = ['NMS399', 'NMS375']
+    section3 = ['NMS230', 'NMS260', 'NMS320', 'COM120', 'COM480', 'ENL228', 'ENL427']
+    section4 = ['MAT163', 'MAT164', 'PHY119']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(4, section3)
+    major.do_some(1, section4)
+
+def biophysics():
+    section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY317', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
+    section2 = ['PHY327', 'MAT369']
+    section3 = ['BI0499', 'CHM499', 'MAT499', 'PHY499']
+    section4 = ['PHY320', 'PHY352', 'PHY420', 'PHY430', 'PHY486']
+    section5 = ['BIO253', 'BIO255', 'BI0369', 'BI0471', 'BI0475', 'BI0476', 'BI0486', 'CHM280', 'CHM368', 'CHM464', 'CHM481', 'MAT369', 'PHY327', 'PHY430']
+    section6 = ['COM115', 'HON130']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(2, section4)
+    major.do_some(1, section5)
+    major.do_some(1, section6)
+
+def physics_bs():
+    section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
+    section2 = ['PHY327', 'MAT369']
+    section3 = ['PHY317', 'PHY320', 'PHY352', 'PHY420', 'PHY430', 'PHY486']
+    section4 = ['COM115', 'HON130']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(2, section3)
+    major.do_some(1, section4)
+
+def physics_ba():
+    section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'MAT145', 'MAT146', 'MAT245']
+    section2 = ['PHY327', 'MAT369']
+    section3 = ['PHY261', 'PHY299', 'PHY317', 'PHY320', 'PHY327', 'PHY352', 'PHY399', 'PHY420', 'PHY430', 'PHY486', 'PHY499']
+    section4 = ['COM111', 'COM115', 'MAT201', 'HON130']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(2, section3)
+    major.do_some(1, section4)
+
+def politcal_science():
+    section1 = ['P0L158', 'P0L483', 'P0L484']
+    section2 = ['POL121', 'P0L122', 'POL160', 'POL170']
+    section3 = ['P0L325, POL326, POL342, POL421','P0L350', 'POL359', 'POL459', 'P0L368', 'POL461', 'POL490', 'P0L370', 'POl371', 'P0L380' , 'POL381']
+    section4 = ['POL121', 'P0L122', 'P0L124', 'POL160', 'POL170', 'P0L241', 'P0L295', 'P0L299', 'POL310', 'P0L341', 'P0L353', 'P0L354', 'P0L357', 'P0L399', 'P0L495', 'P0L499']
+    section5 = ['P0L325', 'POL326', 'POL380']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(5, section3)
+    major.do_some(1, section4)
+    major.do_some(1, section5)
+
+def political_science_and_economics():
+    section1 = ['EDC200', 'ESE310', 'ECO112', 'ECO113', 'ECO313', 'POL121']
+    section2 = ['ECO312', 'ECO315']
+    section3 = ['ECO312', 'ECO315', 'ECO318', 'ECO350', 'ECO360', 'ECO365', 'ECO370', 'ECO399', 'EC0416', 'EC0490', 'EC0495', 'EC0499']
+    section4 = ['P0L325, POL326, POL342, POL421','P0L350', 'POL359', 'POL459', 'P0L368', 'POL461', 'POL490', 'P0L370', 'POl371', 'P0L380' , 'POL381']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(2, section4)
+
+def political_science_public_policy():
+    section1 = ['P0L399', 'P0L484']
+    section2 = ['ECO112', 'ECO113']
+    section3 = ['POL121', 'P0L122']
+    section4 = ['POL325', 'P0L326']
+    section5 = ['EC0490', 'P0L483', 'S0C362']
+    section6 = ['POL121', 'P0L122', 'P0L124', 'P0L158', 'POL160', 'POL170']
+    section7 = ['P0L241', 'P0L325', 'P0L326', 'P0L342', 'P0L370', 'P0L371', 'P0L381', 'P0L421', 'P0L461', 'ECO312', 'ECO313', 'S0C381']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.do_some(1, section5)
+    major.do_some(1, section6)
+    major.do_some(4, section7)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def political_science_prelaw():
+    section1 = ['POL121', 'POL170', 'P0L483', 'P0L484']
+    section2 = ['COM111', 'ENL220', 'ENL223', 'PHI230']
+    section3 = ['P0L350', 'P0L370', 'P0L371', 'P0L380', 'P0L381']
+    section4 = ['P0L325', 'POL326', 'POL380', 'COM111']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
+    major.do_some(2, section2)
+    major.do_some(3, section3)
+    major.do_some(2, section4)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def theater_performance():
+    section1 = ['THR228', 'THR229', 'THR232', 'THR250']
+    section2 = ['THR245', 'THR270', 'THR273', 'THR361', 'THR362']
+    section3 = ['THR226', 'THR350', 'THR355', 'THR365']
+    section4 = ['THR226', 'THR230', 'FLM230', 'THR233', 'THR235', 'THR237', 'THR245', 'THR255', 'THR265', 'THR270', 'THR273', 'THR275', 'THR280', 'THR295', 'THR325', 'ENL325', 'THR326','ENL326', 'THR350', 'THR355', 'THR361', 'THR362', 'THR365', 'THR366', 'THR367', 'THR490', 'ENL221', 'ENL330', 'ENL338', 'ENL358', 'ENL368']
+    section5 = ['GST200', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PH1230', 'PHY119']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
+    major.do_some(3, section2)
+    major.do_some(3, section3)
+    major.do_some(2, section4)
+    major.do_some(1, section5)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def theater_directing():
+    section1 = ['THR228', 'THR229', 'THR232', 'THR250']
+    section2 = ['THR245', 'THR270', 'THR273', 'THR361', 'THR362']
+    section3 = ['THR325', 'THR326', 'THR366', 'THR367']
+    section4 = ['THR226', 'THR230', 'FLM230', 'THR233', 'THR235', 'THR237', 'THR245', 'THR255', 'THR265', 'THR270', 'THR273', 'THR275', 'THR280', 'THR295', 'THR325', 'ENL325', 'THR326','ENL326', 'THR350', 'THR355', 'THR361', 'THR362', 'THR365', 'THR366', 'THR367', 'THR490', 'ENL221', 'ENL330', 'ENL338', 'ENL358', 'ENL368']
+    section5 = ['GST200', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PH1230', 'PHY119']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
+    major.do_some(3, section2)
+    major.do_some(3, section3)
+    major.do_some(2, section4)
+    major.do_some(1, section5)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def theater_design_technical():
+    section1 = ['THR228', 'THR229', 'THR232', 'THR250']
+    section2 = ['THR245', 'THR270', 'THR273', 'THR361', 'THR362']
+    section3 = ['THR230', 'THR275', 'THR280', 'THR285']
+    section4 = ['THR226', 'THR230', 'FLM230', 'THR233', 'THR235', 'THR237', 'THR245', 'THR255', 'THR265', 'THR270', 'THR273', 'THR275', 'THR280', 'THR295', 'THR325', 'ENL325', 'THR326','ENL326', 'THR350', 'THR355', 'THR361', 'THR362', 'THR365', 'THR366', 'THR367', 'THR490', 'ENL221', 'ENL330', 'ENL338', 'ENL358', 'ENL368']
+    section5 = ['GST200', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PH1230', 'PHY119']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
+    major.do_some(3, section2)
+    major.do_some(3, section3)
+    major.do_some(2, section4)
+    major.do_some(1, section5)
 
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
+def theater():
+    section1 = ['THR228', 'THR229', 'THR232', 'THR250']
+    section2 = ['THR245', 'THR270', 'THR273', 'THR361', 'THR362']
+    section3 = ['THR226', 'THR230', 'FLM230', 'THR233', 'THR235', 'THR237', 'THR245', 'THR255', 'THR265', 'THR270', 'THR273', 'THR275', 'THR280', 'THR295', 'THR325', 'ENL325', 'THR326','ENL326', 'THR350', 'THR355', 'THR361', 'THR362', 'THR365', 'THR366', 'THR367', 'THR490', 'ENL221', 'ENL330', 'ENL338', 'ENL358', 'ENL368']
+    section4 = ['GST200', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PH1230', 'PHY119']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
+    major.do_some(3, section2)
+    major.do_some(2, section3)
     major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
-def ():
-    section1 = ['']
-    section2 = ['']
-    section3 = ['']
-    section4 = ['']
-    section5 = ['']
-    section6 = ['']
-    section7 = ['']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.do_some(1, section4)
-
 
 functions = {
     0 : american_indian_studies,
