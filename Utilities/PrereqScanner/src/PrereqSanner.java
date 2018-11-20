@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * This scanner will take a csv file of courses and create a filtered CSV file ready to be read in
+ * the PrereqListBuilder class.
+ */
 public class PrereqSanner {
 
     /**
@@ -14,6 +18,7 @@ public class PrereqSanner {
         removeExtras();                 //removes the string "Prerequisite(s): "
         removeTitles();                 //Get rid of title description of each class. We only need the course name
         concurrentFix();                //Fixes concurrent tag to just be a *
+        concurrentFix2();               //Fixes case where the concurrent class ends with a ; but is still part of a list
         uppercaseNone();                //Change the word None to NONE
         removeOf();                     //Remove the word of. It is not needed
         removeSpaces();                 //Will make all whitespace characters excatly 1 in length
@@ -66,6 +71,44 @@ public class PrereqSanner {
             Scanner scan = new Scanner(infile);
             String lineIn = "";
             String regex = "[\\s]*[\\*].*[\\*]";
+
+            while (scan.hasNext()) {
+                lineIn = scan.nextLine();                                    //Get the line
+                lineIn = lineIn.replaceAll(regex, "*");          //Remove any course descriptions
+                /*This is so there is no new line at the end of the file*/
+                if(scan.hasNext()) {
+                    br.write(lineIn + "\n");                            //Write with a new line
+                }
+                else{
+                    br.write(lineIn);                                        //Write without a new line
+                }
+            }
+
+            br.close();
+            CopyFile(temp, infile);
+            //temp.delete();
+
+        }
+        catch(IOException e){
+            System.out.println("Could not make temp.txt");
+        }
+
+    }
+
+    /**
+     * Removes the course titles after the actaul name for the course. For example,
+     * BUS200(Exploring Business as a Vocation) becomes BUS200.
+     */
+    public static void concurrentFix2(){
+
+        try {
+            File infile = new File("filteredCSV.txt");
+            File temp = new File("temp.txt");
+            FileWriter fw = new FileWriter(temp);
+            BufferedWriter br = new BufferedWriter(fw);
+            Scanner scan = new Scanner(infile);
+            String lineIn = "";
+            String regex = "[\\*][;]";
 
             while (scan.hasNext()) {
                 lineIn = scan.nextLine();                                    //Get the line

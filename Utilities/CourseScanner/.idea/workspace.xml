@@ -22,21 +22,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courses.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="-24778">
               <caret line="109" column="172" lean-forward="false" selection-start-line="109" selection-start-column="172" selection-end-line="109" selection-end-column="172" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseScanner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CourseScanner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CourseScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="53" />
+            <state relative-caret-position="370">
+              <caret line="306" column="5" lean-forward="false" selection-start-line="290" selection-start-column="4" selection-end-line="306" selection-end-column="5" />
               <folding>
                 <element signature="docComment;method#ScanCourseList#0;class#CourseScanner#0" expanded="false" />
                 <element signature="docComment;method#RemovePageNumber#0;class#CourseScanner#0" expanded="false" />
@@ -598,10 +598,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CourseDescriptions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="823" column="0" lean-forward="false" selection-start-line="823" selection-start-column="0" selection-end-line="823" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-24778">
+          <caret line="109" column="172" lean-forward="false" selection-start-line="109" selection-start-column="172" selection-end-line="109" selection-end-column="172" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CourseScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="53" />
+        <state relative-caret-position="370">
+          <caret line="306" column="5" lean-forward="false" selection-start-line="290" selection-start-column="4" selection-end-line="306" selection-end-column="5" />
           <folding>
             <element signature="docComment;method#ScanCourseList#0;class#CourseScanner#0" expanded="false" />
             <element signature="docComment;method#RemovePageNumber#0;class#CourseScanner#0" expanded="false" />
@@ -615,28 +637,6 @@
             <element signature="docComment;method#isInteger#0;class#CourseScanner#0" expanded="false" />
             <element signature="method#isInteger#0;class#CourseScanner#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CourseDescriptions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="823" column="0" lean-forward="false" selection-start-line="823" selection-start-column="0" selection-end-line="823" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="269">
-          <caret line="109" column="172" lean-forward="false" selection-start-line="109" selection-start-column="172" selection-end-line="109" selection-end-column="172" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
