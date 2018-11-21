@@ -14,7 +14,7 @@ def american_indian_studies():
     major.do_some_upper(4, 3, section3)
     major.do_some(1, section4)
 
-def american_history():
+def art_history():
     section1 = ['ART240', 'ART388', 'ART305','ART405']
     section2 = ['ART102', 'ART107']
     section3 = ['ART118', 'ART221']
@@ -833,16 +833,281 @@ def theater():
     major.do_some(2, section3)
     major.do_some(1, section4)
 
+def psychology():
+    section1 = ['PSY105', 'PSY215', 'PSY315', 'PSY400']
+    section2 = ['PSY325', 'PSY354', 'PSY355']
+    section3 = ['PSY491', 'PSY493', 'PSY495']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(2, section2)
+    major.do_some(1, section3)
+
+def social_psychology():
+    section1 = ['PSY105', 'PSY215', 'PSY315', 'PSY325', 'PSY400', 'SOC121', 'S0C375']
+    section2 = ['PSY354', 'PSY355']
+    section3 = ['PSY491', 'PSY493', 'PSY495']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def internation_relations():
+    section1 = ['ECO112', 'ECO113']
+    section2 = ['HIS103', 'HIS104']
+    section3 = ['P0L158', 'POL160']
+    section4 = ['P0L490', 'KEY480']
+    section5 = ['HIS332', 'P0L368', 'P0L459', 'P0L461']
+    section6 = ['ANT141', 'INS225', 'P0L241', 'SWK230', 'WST250']
+    section7 = ['BUS362', 'BUS465', 'C0M329', 'ECO360', 'ECO365', 'ECO370', 'ENV310', 'FIN460', 'FRE332', 'GER332', 'HIS323', 'HIS346', 'HIS352', 'HIS354', 'HIS440', 'HIS474', 'MKT466', 'P0L350', 'P0L459', 'P0L483', 'RLN276', 'SPA331', 'SPA332']
+    major = ConLib.ConLib(transcript)
+    major.do_some(1, section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(2, section5)
+    major.do_some(1, section6)
+    major.do_some(5, section7)
+
+def international_relations_business():
+    section1 = ['ECO112', 'ECO113']
+    section2 = ['HIS103', 'HIS104']
+    section3 = ['P0L158', 'POL160']
+    section4 = ['P0L490', 'KEY480']
+    section5 = ['BUS362', 'BUS465', 'FIN460', 'MKT466']
+    section6 = ['ECO360', 'ECO365', 'ECO370']
+    section7 = ['HIS332', 'P0L368', 'P0L459', 'P0L461']
+    section8 = ['BUS362', 'BUS465', 'C0M329', 'ECO360', 'ECO365', 'ECO370', 'ENV310', 'FIN460', 'FRE332', 'GER332', 'HIS323', 'HIS346', 'HIS352', 'HIS354', 'HIS440', 'HIS474', 'MKT466', 'P0L350', 'P0L459', 'P0L483', 'RLN276', 'SPA331', 'SPA332']
+    major = ConLib.ConLib(transcript)
+    major.do_some(1, section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(3, section5)
+    major.do_some(1, section6)
+    major.do_some(2, section7)
+    major.do_some(2, section8)
+
+def nursing():
+    section1 = ['NUR300', 'NUR305', 'NUR306', 'NUR403', 'NUR410', 'NUR411', 'NUR490']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+
+def religion():
+    section1 = ['RLN209', 'RLN400']
+    section2 = ['GST200', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PHI230']
+    section3 = ['RLN342', 'RLN370', 'RLN441']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def philosophy():
+    section1 = ['PHI241', 'PHI242', 'PHI343', 'PHI344']
+    section2 = ['PHI230', 'PHI385']
+    section3 = ['PHI110', 'PHI120', 'PHI125', 'PHI175', 'PHI180', 'PHI230', 'PHI260', 'PHI315', 'PHI350', 'PHI370', 'PHI380', 'PHI385', 'PHI399', 'PHI410', 'PHI499']
+    section4 = ['PHI230']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(2, section3)
+    major.do_all(section4)
+
+def theology_and_public_leadership():
+    section1 = ['RLN209', 'RLN251', 'RLN290', 'RLN295', 'RLN342', 'RLN390', 'RLN399', 'RLN400', 'RLN441']
+    section2 = ['GST200', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PHI230']
+    section3 = ['RLN342', 'RLN370', 'RLN441']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def spanish():
+    section1 = ['CCS100', 'KEY480']
+    section2 = ['SPA334', 'SPA352', 'SPA353', 'SPA354', 'SPA356', 'SPA357']
+    section3 = ['GST200', 'HIS369', 'MAT111', 'MAT145', 'MAT146', 'MAT163', 'MAT164', 'PHL230', 'PHY119', 'P0L483']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+
+def special_education():
+    section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC330', 'EDC331', 'EDC332', 'EDC333', 'EDC410', 'EED225', 'EED325', 'EED326', 'EED336', 'EED350', 'EED360', 'SPE410', 'SPE411', 'SPE415', 'SPE425', 'SPE430', 'SPE490']
+    section2 = ['EDC206', 'EDC210']
+    section3 = ['EDC481', 'SPE489', 'ENL111', 'HPE115', 'MAT137']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_all(section3)
+
+def womens_studies():
+    section1 = ['WST201', 'WST315', 'WST399', 'WST485']
+    section2 = ['GST200', 'MAT163', 'MAT164']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+
+def spacephysics():
+    section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY320', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'PHY420', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
+    section2 = ['PHY327', 'MAT369']
+    section3 = ['PHY317', 'PHY352', 'PHY430', 'PHY486']
+    section4 = ['COM115', 'HON130']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(2, section3)
+    major.do_some(1, section4)
+
+def clinicalpsychology():
+	section1 = ['PSY105', 'PSY215', 'PSY262', 'PSY315', 'PSY385', 'PSY400']
+	section2 = ['PSY325', 'PSY354', 'PSY355']
+	section3 = ['PSY491', 'PSY493', 'PSY495']
+	section4 = ['PSY261', 'PSY359']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some(2, section2)
+	major.do_some(1, section3)
+	major.do_some(1, section4)
+
+def psychologyandlaw():
+	section1 = ['PSY105', 'PSY215', 'PSY235', 'PSY262', 'PSY315', 'PSY325', 'PSY354', 'PSY360', 'PSY400', 'PSY491', 'S0C277']
+	section2 = ['PSY359', 'PSY385', 'PSY410']
+	section3 = ['POL170', 'P0L370']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some(1, section2)
+	major.do_some(1, section3)
+    
+def sociology():
+	section1 = ['SOC121', 'SOC362', 'SOC363', 'SOC485', 'SOC490']
+	section2 = ['SOC111', 'SOC231' ,'SOC240', 'SOC265', 'SOC266', 'SOC277', 'SOC290', 'SOC295', 'SOC299', 'SOC300', 'SOC320', 'SOC349', 'SOC375' ,'SOC377', 'SOC380', 'SOC381', 'SOC387', 'SOC390', 'SOC399', 'URB399', 'SOC495', 'SOC499']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some_upper(5, 3, section2)
+    
+def socialwork():
+    section1 = ['SWK301', 'SWK303', 'SWK306', 'SWK307', 'SWK316', 'SWK317', 'SWK401', 'SWK406', 'SWK407', 'SWK417']
+    section2 = ['BI0121', 'PSY105' ,'S0C121', 'SWK280']
+    section3 = ['SWK100', 'SWK210', 'SWK230']
+    section4 = ['ECO112', 'POL121', 'P0L122', 'P0L325']
+    section5 = ['S0C362', 'MAT163', 'MAT164']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_all(section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(1, section5)
+    
+def urbanstudies():
+	section1 = ['ECO113', 'POL/URB122', 'SOC/URB111', 'URB/SOC381', 'SOC/URB399', 'URB492']
+	section2 = ['HIS316', 'SOC380', 'ART249/349', 'HIS249/349']
+	section3 = ['POL483', 'SOC362']
+	section4 = ['POL484', 'SOC363']
+	section5 = ['ART243', 'ART244', 'ART249/349', 'HIS249/349', 'ECO365', 'ENV100', 'HIS316', 'POL241', 'POL325', 'SOC265', 'SOC349', 'SOC380', 'URB199', 'URB295' ,'URB299', 'URB395']
+	major = ConLib.ConLib(transcript)
+	major.do_all(section1)
+	major.do_some(1, section2)
+	major.do_some(1, section3)
+	major.do_some(1, section4)
+	major.do_some(2, section5)
+    
 functions = {
     0 : american_indian_studies,
-    1 : american_history,
+    1 : art_history,
     2 : art_education,
     3 : graphic_design,
-
+    4 : studio_art,
+    5 : biology_ba,
+    6 : biology_bs,
+    7 : biopsychology,
+    8 : life_sciences,
+    9 : accounting,
+    10 : finance,
+    11 : international_business,
+    12 : managment,
+    13 : marketing,
+    14 : managment_information_systems,
+    15 : music_business,
+    16 : cross_cultural_studies,
+    17 : chemistry_acs,
+    18 : chemistry,
+    19 : chemistry_non_acs,
+    20 : communication_studies,
+    21 : computational_economics,
+    22 : computational_philosophy,
+    23 : computer_science_ba,
+    24 : computer_science_bs,
+    25 : applied_economics,
+    26 : business_economics,
+    27 : economics,
+    28 : mathematical_economics,
+    29 : elementary_education,
+    30 : elementary_education_comm_arts,
+    31 : elementary_education_general_science,
+    32 : elementary_education_math,
+    33 : elementary_education_social_studies,
+    34 : english_commication_arts,
+    35 : english_creative_writing,
+    36 : english_literature,
+    37 : enviormental_studies,
+    38 : enviormental_studies_HECUA,
+    39 : secondary_education,
+    40 : social_studies,
+    41 : english_second_language,
+    42 : film_production,
+    43 : theory_culture,
+    44 : french,
+    45 : german,
+    46 : history,
+    47 : history,
+    48 : history,
+    49 : history,
+    50 : history,
+    51 : history,
+    52 : internation_relations,
+    53 : international_relations_business,
+    54 : mathematics_ba,
+    55 : mathematics_bs,
+    56 : mathematics_teaching,
+    57 : medieval_studies,
+    58 : music,
+    59 : music_business,
+    60 : music_education,
+    61 : music_performance,
+    62 : music_therapy,
+    63 : new_media,
+    64 : new_media_game_design,
+    65 : new_media_promotional_communication,
+    66 : new_media_web_design,
+    67 : nursing,
+    68 : philosophy,
+    69 : biophysics,
+    70 : physics_ba,
+    71 : physics_bs,
+    72 : spacephysics,
+    73 : political_science_and_economics,
+    74 : politcal_science,
+    75 : political_science_prelaw,
+    76 : political_science_public_policy,
+    77 : clinicalpsychology,
+    78 : psychology,
+    79 : psychologyandlaw,
+    80 : social_psychology,
+    81 : religion,
+    82 : theology_and_public_leadership,
+    83 : sociology,
+    84 : spanish,
+    85 : special_education,
+    86 : socialwork,
+    87 : theater,
+    88 : theater_design_technical,
+    89 : theater_directing,
+    90 : theater_performance,
+    91 : urbanstudies,
+    92 : womens_studies,
 }
 
 def main():
+    print(len(functions))
 
-    functions[1]()
 if __name__ == "__main__":
     main()
