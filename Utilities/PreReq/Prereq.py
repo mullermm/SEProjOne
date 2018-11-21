@@ -13,7 +13,7 @@ def hasPrereq(lines):
     for i in lines:
         print()
 
-def countBracks():
+def countBracksAndPad():
 
     outFile = open("temp.txt", "w")                 #This will be used to hold our file that we are building
     outFile.write("[\n")                            #Write the first Left Bracket For the whole list
@@ -36,38 +36,28 @@ def countBracks():
     os.remove("prereqList.txt")                     #Removes the temp file we used to append the blanks to our list
     os.rename('temp.txt', "prereqList.txt")
 
-
-#def junk():
-    # file = open("prereqList.txt", "r")
-    # lines = file.read().split(']').split('').split('[')
-    # lines = [line.strip() for line in file]
-    # print(lines[0])
-    # sub = [[]]
+    #Replace a string with something else using the code below
+    # with open('prereqList.txt', 'r') as infile, \
+    #         open('temp.txt', 'w') as outfile:
+    #     data = infile.read()
+    #     data = data.replace("]", "")
+    #     outfile.write(data)
     #
-    # with open('input.txt', 'r') as f:
-    #     # gets lines as list of strings [['1, 2, 3,', ...]]
-    #     nodes_list = [n.split() for n in f.readlines()]
-    #     # convert strings inside the lists to int's [[1, 2, 3], ...]
-    #     nodes_list = [[int(y[0]), int(y[1]), int(y[2])] for y in nodes_list]
-    #
-    # for line in lines:
-    #     lineHelper = []
-    #     linehelper = list(line)
-    #     sub.append(linehelper)
-    # print(sub[1][1])
-
+    # os.remove("prereqList.txt")  # Removes the temp file we used to append the blanks to our list
+    # os.rename('temp.txt', "prereqList.txt")
 
 def main():
-    countBracks()                                   #This will pad the list file so python can read it in as a list of list
+    countBracksAndPad()                                   #This will pad the list file so python can read it in as a list of list
 
 
     lines = []
     with open("prereqList.txt") as file:
         for line in file:
-            line = line.replace(",","").replace("[","").replace("]","").strip() .split("'")  # or some other preprocessing
+            #line = line.replace(",","").replace("[","").replace("]","").strip() .split("'")  # or some other preprocessing
+            line = line.replace(",", "").strip().split("[")  # or some other preprocessing
             lines.append(line)  # storing everything in memory!
     print(lines)
-    print(lines[140][2])
+    print(lines[140][0])
 
     lines2 = []
     lineBuidler = ""
@@ -85,10 +75,6 @@ def main():
             lines2.append(lineBuidler.split(","))
             lineBuidler = ""
 
-    print(lines2[140])
-
-    #['', 'ACC221', ',[', 'NONE', '],[', 'X', '],[', 'X', '],[', 'X', ']]\n']
-
-
+    print(lines2[140][4])
 
 main()
