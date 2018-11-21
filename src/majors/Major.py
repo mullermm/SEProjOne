@@ -13,6 +13,7 @@ def american_indian_studies():
     major.do_some(1, section2)
     major.do_some_upper(4, 3, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def art_history():
     section1 = ['ART240', 'ART388', 'ART305','ART405']
@@ -26,6 +27,7 @@ def art_history():
     major.do_some(1, section3)
     major.do_some(6, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def art_education():
     section1 = ['ART102', 'ART107', 'ART240','ART280', 'ART305','ART405']
@@ -43,6 +45,7 @@ def art_education():
     major.do_some(1, section5)
     major.do_some(2, section6)
     major.do_some(1, section7)
+    return major.completion_percent()
 
 def graphic_design():
     section1 = ['ART107', 'ART133', 'ART201', 'ART202', 'ART240', 'ART315', 'ART324', 'ART326', 'ART424', 'ART425']
@@ -54,6 +57,7 @@ def graphic_design():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def studio_art():
     section1 = ['ART102', 'ART107', 'ART240', 'ART305','ART405']
@@ -65,6 +69,7 @@ def studio_art():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def biology_bs():
     section1 = ['B10151', 'B10152', 'B10253', 'B10255']
@@ -80,6 +85,7 @@ def biology_bs():
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    return major.completion_percent()
 
 def biology_ba():
     section1 = ['B10151', 'B10152', 'B10253', 'B10255']
@@ -91,6 +97,7 @@ def biology_ba():
     major.do_some(5, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def biopsychology():
     section1 = ['B10151', 'B10152', 'B10253', 'B10475', 'PSY105', 'PSY215', 'PSY315', 'PSY355']
@@ -104,6 +111,7 @@ def biopsychology():
     major.do_some(2, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def life_sciences():
     section1 = ['B10151', 'B10152', 'B10253', 'B10255']
@@ -112,13 +120,14 @@ def life_sciences():
     section4 = ['PHY101', 'SC1106']
     section5 = ['MAT114', 'MAT145', 'MAT163', 'MAT164', 'PSY215']
     section6 = ['COM115', 'COM111', 'HON130']
-    major = ConLib.Conlib(transcript)
+    major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(4, section2)
     major.do_some(1, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    return major.completion_percent()
 
 def accounting():
     section1 = ['ACC221','ACC222','ACC322','ACC323','ACC324','ACC326','ACC423','ACC425', 'BUS301', 'BUS362', 'ECO112', 'ECO113', 'FIN331', 'MIS260', 'MIS379', 'MKT252']
@@ -128,6 +137,7 @@ def accounting():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def managment():
     section1 = ['ACC221', 'ACC222', 'BUS242', 'BUS301', 'BUS340', 'BUS362', 'BUS440', 'BUS465', 'ECO112', 'ECO113', 'FIN331', 'MIS260', 'MKT252']
@@ -141,6 +151,7 @@ def managment():
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def international_business():
     section1 = ['ACC221', 'ACC222', 'BUS242', 'BUS301', 'BUS362', 'BUS465', 'ECO112', 'ECO113', 'ECO360', 'FIN331', 'MIS260', 'MIS264', 'MKT252', 'MKT466']
@@ -152,6 +163,7 @@ def international_business():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def finance():
     section1 = ['ACC221 ', 'ACC222 ', 'ACC322 ', 'BUS242 ', 'BUS301 ', 'BUS362 ', 'ECO112 ', 'ECO113 ', 'ECO315 ', 'FIN331 ', 'FIN433 ', 'FIN438 ', 'FlN460', 'MIS260 ', 'MIS379 ', 'MKT252']
@@ -161,6 +173,7 @@ def finance():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def music_business():
     section1 = ['ACC221', 'ACC222', 'BUS242', 'ECO112', 'ECO113', 'FIN331', 'MIS260', 'MKT252', 'MUS205', 'MUS335', 'MUS336', 'MUS162', 'MUS408']
@@ -172,6 +185,7 @@ def music_business():
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def managment_information_systems():
     section1 = ['ACC221', 'ACC222', 'BUS242', 'BUS301', 'BUS362', 'CSC160', 'ECO112', 'ECO113', 'FIN331', 'MAT171', 'MIS260', 'MIS270', 'MIS375', 'MIS376', 'MIS475', 'MIS476', 'MKT252']
@@ -183,6 +197,7 @@ def managment_information_systems():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def marketing():
     section1 = ['ACC221', 'ACC222', 'BUS242', 'BUS301', 'BUS362', 'ECO112', 'ECO113', 'FIN331', 'MIS260', 'MIS264', 'MKT252', 'MKT352', 'MKT450', 'MKT466']
@@ -196,6 +211,7 @@ def marketing():
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def cross_cultural_studies():
     section1 = ['CCS100', 'CCS399', 'KEY480']
@@ -203,6 +219,7 @@ def cross_cultural_studies():
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    return major.completion_percent()
 
 def communication_studies():
     section1 = ['COM111', 'COM120', 'COM280', 'COM281', 'COM329', 'COM351', 'COM352', 'COM490']
@@ -212,7 +229,7 @@ def communication_studies():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
-    major.do_some(3, section4)
+    return major.completion_percent()
 
 def chemistry_non_acs():
     section1 = ['CHM115', 'CHM116', 'CHM251', 'CHM252', 'CHM280', 'SCI490']
@@ -230,6 +247,7 @@ def chemistry_non_acs():
     major.do_some(3, section5)
     major.do_some(4, section6)
     major.do_some(1, section7)
+    return major.completion_percent()
 
 def chemistry():
     section1 = ['CHM115', 'CHM116', 'CHM251', 'CHM252', 'CHM280', 'SCI490']
@@ -247,6 +265,7 @@ def chemistry():
     major.do_some(3, section5)
     major.do_some(4, section6)
     major.do_some(1, section7)
+    return major.completion_percent()
 
 def chemistry_acs():
     section1 = ['CHM115', 'CHM116', 'CHM251', 'CHM252', 'CHM280', 'CHM362', 'CHM368', 'CHM430', 'CHM440', 'CHM450', 'CHM464', 'CHM481', 'CHM482', 'SCI490']
@@ -259,7 +278,8 @@ def chemistry_acs():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_all(section4)
-    major.do_some(1, section5)    
+    major.do_some(1, section5)
+    return major.completion_percent()    
 
 def computational_economics():
     section1 = ['CSC160', 'CSC170', 'CSC210', 'CSC345', 'ECO112', 'ECO113', 'ECO312', 'ECO313', 'ECO315', 'ECO318', 'MAT145']
@@ -269,6 +289,7 @@ def computational_economics():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def computer_science_bs():
     section1 = ['CSC160', 'CSC170', 'CSC210', 'CSC240', 'CSC320', 'CSC345', 'CSC385', 'CSC450', 'CSC451', 'MAT145', 'MAT271']
@@ -280,6 +301,7 @@ def computer_science_bs():
     major.do_some(2, section2)
     major.do_some(3, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def computer_science_ba():
     section1 = ['CSC160', 'CSC170', 'CSC210', 'CSC240', 'CSC320', 'CSC345', 'CSC385', 'CSC450', 'CSC451', 'MAT114']
@@ -291,6 +313,7 @@ def computer_science_ba():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def computational_philosophy():
     section1 = ['CSC160 ', 'CSC170 ', 'CSC210 ', 'CSC320 ', 'CSC373 ', 'CSC385 ', 'MAT114 ', 'PHI241', 'PHI242', 'PHI343', 'PHI344 ', 'PHI365']
@@ -302,6 +325,7 @@ def computational_philosophy():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def applied_economics():
     section1 = ['ECO112', 'ECO113', 'ECO313', 'ECO318', 'ECO350', 'ECO360', 'EC0490', 'ENL223']
@@ -315,6 +339,7 @@ def applied_economics():
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def mathematical_economics():
     section1 = ['ECO112', 'ECO113', 'ECO312', 'ECO313', 'EC0416', 'EC0490', 'MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT373', 'MAT374']
@@ -324,6 +349,7 @@ def mathematical_economics():
     major.do_all(section1)
     major.do_some_upper(2, 2, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def economics():
     section1 = ['ECO112', 'ECO113', 'ECO312', 'ECO313', 'EC0490']
@@ -335,6 +361,7 @@ def economics():
     major.do_some_upper(3, 3, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def business_economics():
     section1 = ['ECO112', 'ECO113', 'ECO312', 'ECO313', 'ACC221', 'ACC222', 'BUS242', 'MKT252']
@@ -346,6 +373,7 @@ def business_economics():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def elementary_education_general_science():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'EED225', 'EED311', 'EED312', 'EED325', 'EED326', 'EED336', 'EED341', 'EED342', 'EED350', 'EED360', 'EED370', 'EED380', 'EED386']
@@ -357,6 +385,7 @@ def elementary_education_general_science():
     major.do_some(1, section2)
     major.do_all(section3)
     major.do_all(section4)
+    return major.completion_percent()
 
 def elementary_education_comm_arts():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'EED225', 'EED311', 'EED312', 'EED325', 'EED326', 'EED336', 'EED341', 'EED342', 'EED350', 'EED360', 'EED370', 'EED380', 'EED386']
@@ -370,6 +399,7 @@ def elementary_education_comm_arts():
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def elementary_education_social_studies():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'EED225', 'EED311', 'EED312', 'EED325', 'EED326', 'EED336', 'EED341', 'EED342', 'EED350', 'EED360', 'EED370', 'EED380', 'EED386']
@@ -383,6 +413,7 @@ def elementary_education_social_studies():
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def elementary_education_math():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'EED225', 'EED311', 'EED312', 'EED325', 'EED326', 'EED336', 'EED341', 'EED342', 'EED350', 'EED360', 'EED370', 'EED380', 'EED386']
@@ -396,6 +427,7 @@ def elementary_education_math():
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def elementary_education():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'EED225', 'EED311', 'EED312', 'EED325', 'EED326', 'EED336', 'EED341', 'EED342', 'EED350', 'EED360', 'EED370', 'EED380', 'EED386']
@@ -409,6 +441,7 @@ def elementary_education():
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def english_literature():
     section1 = ['ENL220', 'ENL221']
@@ -426,6 +459,7 @@ def english_literature():
     major.do_some(1, section5)
     major.do_some(1, section6)
     major.do_all(section7)
+    return major.completion_percent()
 
 def english_creative_writing():
     section1 = ['ENL226', 'ENL420']
@@ -441,6 +475,7 @@ def english_creative_writing():
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_all(section6)
+    return major.completion_percent()
 
 def english_commication_arts():
     section1 = ['ENL220', 'ENL240', 'ENL365', 'ENL380', 'ENL396', 'COM111', 'C0M254', 'COM351', 'ESE350', 'ESE351']
@@ -456,6 +491,7 @@ def english_commication_arts():
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_all(section6)
+    return major.completion_percent()
 
 def enviormental_studies():
     section1 = ['BI0151', 'BI0152', 'BI0481', 'CHM115', 'CHM116', 'ECO365', 'ENV100', 'ENV120', 'HIS316', 'SWK210']
@@ -467,6 +503,7 @@ def enviormental_studies():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def enviormental_studies_HECUA():
     section1 = ['B10151', 'B10152', 'B10481', 'CHM115', 'CHM116', 'ENV100', 'HIS316', 'INS345', 'INS346', 'INS399', 'INS399', 'SWK210']
@@ -476,6 +513,7 @@ def enviormental_studies_HECUA():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def secondary_education():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EDC490', 'ESE300', 'ESE325']
@@ -487,6 +525,7 @@ def secondary_education():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def english_second_language():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC410', 'EED325', 'EED326', 'ESE325', 'ESL310', 'ESL320', 'ESL330', 'ESL340', 'ESL410', 'ESL420', 'ESL490']
@@ -496,6 +535,7 @@ def english_second_language():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def social_studies():
     section1 = ['ANT141', 'ECO113', 'ESE220', 'POL121', 'PSY105', 'SOC121']
@@ -509,6 +549,7 @@ def social_studies():
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_all(section5)
+    return major.completion_percent()
 
 def film_production():
     section1 = ['FLM180', 'FLM216', 'FLM260', 'FLM420', 'FLM490', 'COM247', 'ENL241', 'ENL371']
@@ -520,6 +561,7 @@ def film_production():
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_all(section4)
+    return major.completion_percent()
 
 def theory_culture():
     section1 = ['FLM180', 'FLM216', 'FLM260', 'FLM420', 'FLM490', 'COM247', 'ENL241', 'ENL371']
@@ -531,6 +573,7 @@ def theory_culture():
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_all(section4)
+    return major.completion_percent()
 
 def history():
     section1 = ['HIS280', 'HIS480']
@@ -546,6 +589,7 @@ def history():
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    return major.completion_percent()
 
 def german():
     section1 = ['CCS100', 'KEY480']
@@ -555,6 +599,7 @@ def german():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def french():
     section1 = ['CCS100', 'KEY480']
@@ -564,6 +609,7 @@ def french():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def medieval_studies():
     section1 = ['HUM120', 'HIS369', 'HIS370', 'LAT101', 'LAT102', 'HUM490']
@@ -577,6 +623,7 @@ def medieval_studies():
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(2, section5)
+    return major.completion_percent()
 
 def mathematics_teaching():
     section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT252', 'MAT271', 'MAT287', 'MAT314', 'MAT324', 'ESE330']
@@ -588,6 +635,7 @@ def mathematics_teaching():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def mathematics_bs():
     section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT271']
@@ -603,6 +651,7 @@ def mathematics_bs():
     major.do_some(1, section4)
     major.do_all(section5)
     major.do_some(1, section6)
+    return major.completion_percent()
 
 def mathematics_ba():
     section1 = ['MAT145', 'MAT146', 'MAT245', 'MAT246', 'MAT271']
@@ -616,6 +665,7 @@ def mathematics_ba():
     major.do_some(3, section3)
     major.do_all(section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def music_business():
     section1 = ['ACC221', 'ECO113', 'MIS260', 'MUS113', 'MUS114', 'MUS162', 'MUS205', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS335', 'MUS336', 'BUS339', 'MUS399', 'MUS408', 'MUS458']
@@ -625,6 +675,7 @@ def music_business():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def music():
     section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS341', 'MUS458']
@@ -632,11 +683,13 @@ def music():
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    return major.completion_percent()
 
 def music_therapy():
     section1 = ['MUS113', 'MUS114', 'MUS135', 'MUS136', 'MUS152', 'MUS158', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS237', 'MUS238', 'MUS258', 'MUS271', 'MUS273', 'MUS315', 'MUS340', 'MUS345', 'MUS374', 'MUS375', 'MUS376', 'MUS385', 'MUS458', 'MUS474', 'MUS475', 'MUS480', 'MUS481', 'B10103', 'PSY105', 'PSY203', 'PSY215', 'PSY262']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
+    return major.completion_percent()
 
 def music_performance():
     section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS358', 'MUS459']
@@ -644,6 +697,7 @@ def music_performance():
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    return major.completion_percent()
 
 def music_education():
     section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS220', 'MUS231', 'MUS232', 'MUS303', 'MUS311', 'MUS341', 'MUS352', 'MUS353', 'MUS355', 'MUS356', 'MUS357', 'MUS358', 'MUS359', 'MUS459', 'HPE115', 'EDC200', 'EDC310', 'ESE300']
@@ -651,6 +705,7 @@ def music_education():
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    return major.completion_percent()
 
 def new_media_game_design():
     section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490', 'CSC240', 'CSC250']
@@ -662,6 +717,7 @@ def new_media_game_design():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def new_media():
     section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490']
@@ -673,6 +729,7 @@ def new_media():
     major.do_some(1, section2)
     major.do_some(4, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def new_media_web_design():
     section1 = ['NMS220', 'NMS242', 'ENL242', 'C0M415', 'P0L371', 'NMS490', 'ART124', 'ART127', 'ART201', 'ART202', 'ART215', 'ART315', 'P0L495']
@@ -682,6 +739,7 @@ def new_media_web_design():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def new_media_promotional_communication():
     section1 = ['NMS220', 'NMS242', 'ENL242', 'COM415', 'POL371', 'NMS490']
@@ -693,6 +751,7 @@ def new_media_promotional_communication():
     major.do_some(1, section2)
     major.do_some(4, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def biophysics():
     section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY317', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
@@ -708,6 +767,7 @@ def biophysics():
     major.do_some(2, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    return major.completion_percent()
 
 def physics_bs():
     section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
@@ -719,6 +779,7 @@ def physics_bs():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def physics_ba():
     section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'MAT145', 'MAT146', 'MAT245']
@@ -730,6 +791,7 @@ def physics_ba():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def politcal_science():
     section1 = ['P0L158', 'P0L483', 'P0L484']
@@ -743,6 +805,7 @@ def politcal_science():
     major.do_some(5, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def political_science_and_economics():
     section1 = ['EDC200', 'ESE310', 'ECO112', 'ECO113', 'ECO313', 'POL121']
@@ -754,6 +817,7 @@ def political_science_and_economics():
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(2, section4)
+    return major.completion_percent()
 
 def political_science_public_policy():
     section1 = ['P0L399', 'P0L484']
@@ -771,6 +835,7 @@ def political_science_public_policy():
     major.do_some(1, section5)
     major.do_some(1, section6)
     major.do_some(4, section7)
+    return major.completion_percent()
 
 def political_science_prelaw():
     section1 = ['POL121', 'POL170', 'P0L483', 'P0L484']
@@ -782,6 +847,7 @@ def political_science_prelaw():
     major.do_some(2, section2)
     major.do_some(3, section3)
     major.do_some(2, section4)
+    return major.completion_percent()
 
 def theater_performance():
     section1 = ['THR228', 'THR229', 'THR232', 'THR250']
@@ -795,6 +861,7 @@ def theater_performance():
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def theater_directing():
     section1 = ['THR228', 'THR229', 'THR232', 'THR250']
@@ -808,6 +875,7 @@ def theater_directing():
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def theater_design_technical():
     section1 = ['THR228', 'THR229', 'THR232', 'THR250']
@@ -821,6 +889,7 @@ def theater_design_technical():
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
 
 def theater():
     section1 = ['THR228', 'THR229', 'THR232', 'THR250']
@@ -832,6 +901,7 @@ def theater():
     major.do_some(3, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def psychology():
     section1 = ['PSY105', 'PSY215', 'PSY315', 'PSY400']
@@ -841,6 +911,7 @@ def psychology():
     major.do_all(section1)
     major.do_some(2, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def social_psychology():
     section1 = ['PSY105', 'PSY215', 'PSY315', 'PSY325', 'PSY400', 'SOC121', 'S0C375']
@@ -850,6 +921,7 @@ def social_psychology():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def internation_relations():
     section1 = ['ECO112', 'ECO113']
@@ -867,6 +939,7 @@ def internation_relations():
     major.do_some(2, section5)
     major.do_some(1, section6)
     major.do_some(5, section7)
+    return major.completion_percent()
 
 def international_relations_business():
     section1 = ['ECO112', 'ECO113']
@@ -886,11 +959,13 @@ def international_relations_business():
     major.do_some(1, section6)
     major.do_some(2, section7)
     major.do_some(2, section8)
+    return major.completion_percent()
 
 def nursing():
     section1 = ['NUR300', 'NUR305', 'NUR306', 'NUR403', 'NUR410', 'NUR411', 'NUR490']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
+    return major.completion_percent()
 
 def religion():
     section1 = ['RLN209', 'RLN400']
@@ -900,6 +975,7 @@ def religion():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def philosophy():
     section1 = ['PHI241', 'PHI242', 'PHI343', 'PHI344']
@@ -911,6 +987,7 @@ def philosophy():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_all(section4)
+    return major.completion_percent()
 
 def theology_and_public_leadership():
     section1 = ['RLN209', 'RLN251', 'RLN290', 'RLN295', 'RLN342', 'RLN390', 'RLN399', 'RLN400', 'RLN441']
@@ -920,6 +997,7 @@ def theology_and_public_leadership():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def spanish():
     section1 = ['CCS100', 'KEY480']
@@ -929,6 +1007,7 @@ def spanish():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    return major.completion_percent()
 
 def special_education():
     section1 = ['EDC200', 'EDC220', 'EDC310', 'EDC330', 'EDC331', 'EDC332', 'EDC333', 'EDC410', 'EED225', 'EED325', 'EED326', 'EED336', 'EED350', 'EED360', 'SPE410', 'SPE411', 'SPE415', 'SPE425', 'SPE430', 'SPE490']
@@ -938,6 +1017,7 @@ def special_education():
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_all(section3)
+    return major.completion_percent()
 
 def womens_studies():
     section1 = ['WST201', 'WST315', 'WST399', 'WST485']
@@ -945,6 +1025,7 @@ def womens_studies():
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    return major.completion_percent()
 
 def spacephysics():
     section1 = ['PHY121', 'PHY122', 'PHY245', 'PHY261', 'PHY320', 'PHY351', 'PHY362', 'PHY363', 'PHY395', 'PHY396', 'PHY420', 'CHM115', 'CHM116', 'MAT145', 'MAT146', 'MAT245']
@@ -956,33 +1037,37 @@ def spacephysics():
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    return major.completion_percent()
 
 def clinicalpsychology():
-	section1 = ['PSY105', 'PSY215', 'PSY262', 'PSY315', 'PSY385', 'PSY400']
-	section2 = ['PSY325', 'PSY354', 'PSY355']
-	section3 = ['PSY491', 'PSY493', 'PSY495']
-	section4 = ['PSY261', 'PSY359']
-	major = ConLib.ConLib(transcript)
-	major.do_all(section1)
-	major.do_some(2, section2)
-	major.do_some(1, section3)
-	major.do_some(1, section4)
+    section1 = ['PSY105', 'PSY215', 'PSY262', 'PSY315', 'PSY385', 'PSY400']
+    section2 = ['PSY325', 'PSY354', 'PSY355']
+    section3 = ['PSY491', 'PSY493', 'PSY495']
+    section4 = ['PSY261', 'PSY359']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(2, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    return major.completion_percent()
 
 def psychologyandlaw():
-	section1 = ['PSY105', 'PSY215', 'PSY235', 'PSY262', 'PSY315', 'PSY325', 'PSY354', 'PSY360', 'PSY400', 'PSY491', 'S0C277']
-	section2 = ['PSY359', 'PSY385', 'PSY410']
-	section3 = ['POL170', 'P0L370']
-	major = ConLib.ConLib(transcript)
-	major.do_all(section1)
-	major.do_some(1, section2)
-	major.do_some(1, section3)
+    section1 = ['PSY105', 'PSY215', 'PSY235', 'PSY262', 'PSY315', 'PSY325', 'PSY354', 'PSY360', 'PSY400', 'PSY491', 'S0C277']
+    section2 = ['PSY359', 'PSY385', 'PSY410']
+    section3 = ['POL170', 'P0L370']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    return major.completion_percent()
     
 def sociology():
-	section1 = ['SOC121', 'SOC362', 'SOC363', 'SOC485', 'SOC490']
-	section2 = ['SOC111', 'SOC231' ,'SOC240', 'SOC265', 'SOC266', 'SOC277', 'SOC290', 'SOC295', 'SOC299', 'SOC300', 'SOC320', 'SOC349', 'SOC375' ,'SOC377', 'SOC380', 'SOC381', 'SOC387', 'SOC390', 'SOC399', 'URB399', 'SOC495', 'SOC499']
-	major = ConLib.ConLib(transcript)
-	major.do_all(section1)
-	major.do_some_upper(5, 3, section2)
+    section1 = ['SOC121', 'SOC362', 'SOC363', 'SOC485', 'SOC490']
+    section2 = ['SOC111', 'SOC231' ,'SOC240', 'SOC265', 'SOC266', 'SOC277', 'SOC290', 'SOC295', 'SOC299', 'SOC300', 'SOC320', 'SOC349', 'SOC375' ,'SOC377', 'SOC380', 'SOC381', 'SOC387', 'SOC390', 'SOC399', 'URB399', 'SOC495', 'SOC499']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some_upper(5, 3, section2)
+    return major.completion_percent()
     
 def socialwork():
     section1 = ['SWK301', 'SWK303', 'SWK306', 'SWK307', 'SWK316', 'SWK317', 'SWK401', 'SWK406', 'SWK407', 'SWK417']
@@ -996,19 +1081,65 @@ def socialwork():
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    return major.completion_percent()
     
 def urbanstudies():
-	section1 = ['ECO113', 'POL/URB122', 'SOC/URB111', 'URB/SOC381', 'SOC/URB399', 'URB492']
-	section2 = ['HIS316', 'SOC380', 'ART249/349', 'HIS249/349']
-	section3 = ['POL483', 'SOC362']
-	section4 = ['POL484', 'SOC363']
-	section5 = ['ART243', 'ART244', 'ART249/349', 'HIS249/349', 'ECO365', 'ENV100', 'HIS316', 'POL241', 'POL325', 'SOC265', 'SOC349', 'SOC380', 'URB199', 'URB295' ,'URB299', 'URB395']
-	major = ConLib.ConLib(transcript)
-	major.do_all(section1)
-	major.do_some(1, section2)
-	major.do_some(1, section3)
-	major.do_some(1, section4)
-	major.do_some(2, section5)
+    section1 = ['ECO113', 'POL/URB122', 'SOC/URB111', 'URB/SOC381', 'SOC/URB399', 'URB492']
+    section2 = ['HIS316', 'SOC380', 'ART249/349', 'HIS249/349']
+    section3 = ['POL483', 'SOC362']
+    section4 = ['POL484', 'SOC363']
+    section5 = ['ART243', 'ART244', 'ART249/349', 'HIS249/349', 'ECO365', 'ENV100', 'HIS316', 'POL241', 'POL325', 'SOC265', 'SOC349', 'SOC380', 'URB199', 'URB295' ,'URB299', 'URB395']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(2, section5)
+    return major.completion_percent()
+
+def exercise_science_ba():
+    section1 = ['HPE104', 'HPE110', 'HPE114', 'HPE115', ' HPE205', 'HPE215', 'HPE220', 'HPE275', 'HPE300', 'HPE304', 'HPE305', 'HPE315', 'HPE350', 'HPE351', 'HPE357','HPE450', 'HPE452', 'HPE490', 'B10103']
+    section2 = ['HPE397', 'HPE399']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    return major.completion_percent()
+
+def exercise_science_pre_health_bs():
+    section1 = ['HPE104', 'HPE110', 'HPE114', 'HPE115', ' HPE205', 'HPE275', 'HPE300', 'HPE304', 'HPE315', 'HPE350', 'HPE351', 'HPE357', 'HPE490']
+    section2 = ['HPE397', 'HPE399']
+    section3 = ['BI0151', 'BI0152', 'CHM115', 'CHM115L', 'CHM116', 'CHM116L', 'PHY107','PHY108', 'PSY105']
+    section4 = ['PSY215', 'MAT163', 'MAT164']
+    section5 = ['PSY203', 'PSY262']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+    major.do_some(1, section5)
+    return major.completion_percent()
+	
+def health_education():
+    section1 = ['HPE104', 'HPE110', 'HPE114', 'HPE115', 'HPE215', 'HPE316', 'HPE320', 'HPE357', 'HPE358', 'HPE390', 'HPE410', 'HPE450', 'B1]I0103' ]
+    section2 = ['PSY250', 'PSY252']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    return major.completion_percent()
+
+def physical_education():
+    section1 = ['HPE104', 'HPE114','HPE115','HPE205','HPE220','HPE254','HPE275','HPE324','HPE334','HPE335','HPE340','HPE350','HPE351','HPE357','HPE358','HPE473','BI0103']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    return major.completion_percent()
+
+def interdisciplinary_studies():
+    section1 = ['GST200', 'MAT145', 'MAT146', 'MAT163', 'PHI230']
+    section2 = ['KEY490']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    return major.completion_percent()
     
 functions = {
     0 : american_indian_studies,
@@ -1058,11 +1189,11 @@ functions = {
     44 : french,
     45 : german,
     46 : history,
-    47 : history,
-    48 : history,
-    49 : history,
-    50 : history,
-    51 : history,
+    47 : exercise_science_ba,
+    48 : exercise_science_pre_health_bs,
+    49 : health_education,
+    50 : physical_education,
+    51 : interdisciplinary_studies,
     52 : internation_relations,
     53 : international_relations_business,
     54 : mathematics_ba,
@@ -1107,7 +1238,18 @@ functions = {
 }
 
 def main():
-    print(len(functions))
+    majors = []
+    top = []
+    for x in range(0, len(functions)):
+        majors.append(functions[x]())
+    majors = sorted(set(majors))[-3:]
+    for y in range(0, len(functions)):
+        if functions[y]() in majors:
+            top.append(y)
+    top = sorted(top)
+    for z in top:
+        print(functions[z])
+        print(functions[z]())
 
 if __name__ == "__main__":
     main()
