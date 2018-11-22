@@ -74,7 +74,7 @@ def makeSubList(courseList):
 #is labeled as 'NONE'. If so, it returns false, otherwise
 #it returns true.
 #############################################################
-def hasPrereq(courseList, classToLookFor, x):
+def hasPrereq(courseList, classToLookFor):
     for i in range(0,len(courseList) - 1):
         if courseList[i][0] == classToLookFor:
             if courseList[i][1] == "NONE":
@@ -86,11 +86,9 @@ def prereqMet(courseList, classToLookFor, transcript):
     for i in range(0,len(courseList) - 1):                              #For all the courses
         if courseList[i][0] == classToLookFor:                          #If the class is found
             for j in range(1,5):                                        #For all 5 sub list
-                print("sublist")
-                print(courseList[i][j])
                 # Case 1 : Must Complete all of the courses
                 if courseList[i][j] == 'X':
-                    print("x")
+                    pass                                                #Do nothing because we dont want errors looking at 'X' as an int
                 # Case 2 : Complete a number of a list
                 elif (len(courseList[i][j]) > 1 and str(courseList[i][j][0]).isdigit == True ):#If the length of the sublist is greater than 1
                     coursesToComplete = int(courseList[i][j][0])        #Number of prereqs to complete
@@ -105,25 +103,26 @@ def prereqMet(courseList, classToLookFor, transcript):
                     for k in range(0, len(courseList[i][j])):           #For all the courses in the sublist
                         if courseList[i][j][k] not in transcript:       # If the course is NOT in transcript
                             completedState = False                      #The prereq is not completed
-    print(completedState)
+    return completedState
 
 #############################################################
 #This is our driver for this project
 #############################################################
-def main(option, input1):
+def main(option, input1, input2, input3):
     countBracksAndPad()                         #This will pad the list file so python can read it in as a list of list
     CourseList = readInList()                   #Will read in the list of courses and save it to list
     CourseList = makeSubList(CourseList)        #Create the sublist for each prereq
 
     # print(CourseList[28][1][1])
     # print("\n")
-    prereqMet(CourseList, "ART202", "ART201, ART225, ART215")
+    print(prereqMet(CourseList, "ART202", "ART201, ART225, ART215"))
 
     #Option to check if a class has no prereqs
     if(option == 1):
         hasPrereq(input1)
     #Option to return
-    if(option == 2):
-        print("")
-
-main(sys.argv[0], sys.argv[1])
+    elif(int(input1) == 2):
+        print(prereqMet(CourseList, input1, input2))
+    print(input2)
+    print(hasPrereq(CourseList,input2))
+main(sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3])
