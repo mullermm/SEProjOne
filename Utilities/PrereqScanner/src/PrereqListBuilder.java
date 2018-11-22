@@ -29,7 +29,7 @@ public class PrereqListBuilder {
             while (scan.hasNext()) {
 
                 scan.useDelimiter("~");                         //delimeter sperating the name from prereqs
-                br.write("[");                             //"[" for the course and the " ' " for the course name string
+                br.write("");                             //"[" for the course and the " ' " for the course name string
 
                 /*The line below add the name and the closing " ' ". The reason we have a .replace
                 * is because the /n character at the end of each line in filterdCSV is not
@@ -67,13 +67,13 @@ public class PrereqListBuilder {
                     else{
                         input = input.replace("%", "");
                         String[] classes = input.split(",|\\*");            //split with the * too because classes being conccurrent
-                        br.write("[");
+                        br.write("");
                         for(int i = 0; i < classes.length; i++){                  //for all the classes required
                             if(i + 1 != classes.length){                          //if its not the last class in the list
                                 br.write(classes[i] + "|");                  //add the classes
                             }
                             else{                                                 //its the last class
-                                br.write(classes[i] + "]]");                 //write the class and close the list
+                                br.write(classes[i] + "]");                 //write the class and close the list
                                 doneWithLine = true;
                                 break;
                             }
@@ -132,7 +132,7 @@ public class PrereqListBuilder {
      */
     public static void variablePrereq(BufferedWriter br, String input){
         try {
-            br.write("[");
+            br.write("");
             String[] prereq = input.split("\\@");      //split the string into an array into the number and the classes
             br.write(prereq[0] + "|");                //Write the number of needed classes completed
             String[] classes = prereq[1].split(",");  //split the classes into an array
@@ -141,7 +141,7 @@ public class PrereqListBuilder {
                 if (i + 1 != classes.length) {
                     br.write("" + classes[i] + "|");
                 } else {
-                    br.write("" + classes[i] + "]");
+                    br.write("" + classes[i] + "");
                 }
             }
         }
