@@ -50,7 +50,7 @@ def readInList():
     with open("prereqList.txt") as file:
         for line in file:
             # line = line.replace(",","").replace("[","").replace("]","").strip() .split("'")  # or some other preprocessing
-            line = line.strip("\s\\n").split(",")  # or some other preprocessing
+            line = line.strip("\n").split(",")  # or some other preprocessing
             lines.append(line)  # storing everything in memory!
 
     return lines
@@ -82,25 +82,31 @@ def hasPrereq(courseList, classToLookFor, x):
     return False
 
 def prereqMet(courseList, classToLookFor, transcript):
-    completedState = True                                           #Will turn false if prereqs have not been met
-    for i in range(0,len(courseList) - 1):                          #For all the courses
-        if courseList[i][0] == classToLookFor:                      #If the class is found
-            for j in range(1,4):                                    #For all 5 sub list
-                if (len(courseList[i][j]) > 1):                     #If the length of the sublist is greater than 1
-                    # Case 1 : Complete a number of a list
-                    if str(courseList[i][j][0]).isdigit:            #If the fist element of sublist is a number
-                        coursesToComplete = courseList[i][j]        #Number of prereqs to complete
-                        coursesCompleted = 0                        #Count the number of courses completed
-                        for k in range(1,len(courseList[i][j])):    #For all the courses in the prereq
-                            #print("tmp")
-                            if courseList[i][j][k] in transcript:   #If the course is in transcript
-                                coursesCompleted += 1               #Add to the number of needed completed courses
-                        if coursesCompleted < coursesToComplete:
-                            completedState = False
-                     # Case 2 : Must Complete all of the courses
+    completedState = True                                               #Will turn false if prereqs have not been met
+    for i in range(0,len(courseList) - 1):                              #For all the courses
+        if courseList[i][0] == classToLookFor:                          #If the class is found
+            for j in range(1,5):                                        #For all 5 sub list
+                print("sublist")
+                print(courseList[i][j])
+                # Case 1 : Must Complete all of the courses
+                if courseList[i][j] == 'X':
+                    print("x")
+                # Case 2 : Complete a number of a list
+                elif (len(courseList[i][j]) > 1 and str(courseList[i][j][0]).isdigit == True ):#If the length of the sublist is greater than 1
+                    coursesToComplete = int(courseList[i][j][0])        #Number of prereqs to complete
+                    coursesCompleted = 0                                #Count the number of courses completed
+                    for k in range(1,len(courseList[i][j])):            #For all the courses in the prereq
+                        if courseList[i][j][k] in transcript:           #If the course is in transcript
+                            coursesCompleted += 1                       #Add to the number of needed completed courses
+                    if coursesCompleted < coursesToComplete:            #If the completed courses don't meet the requirements
+                        completedState = False                          #The prereq is not completed
+                # Case 3: All the courses in the sublist must be completed
+                else:
+                    for k in range(0, len(courseList[i][j])):           #For all the courses in the sublist
+                        if courseList[i][j][k] not in transcript:       # If the course is NOT in transcript
+                            completedState = False                      #The prereq is not completed
+    print(completedState)
 
-#['1', 'AIS105', 'AIS205', 'AIS233', 'AIS264', 'WST201', 'WST205', 'WST208', 'WST241', 'WST265', 'WST281']
-#['AIS408', ['1', 'AIS105', 'AIS205', 'AIS233', 'AIS264', 'WST201', 'WST205', 'WST208', 'WST241', 'WST265', 'WST281'], 'X', 'X', 'X\n']
 #############################################################
 #This is our driver for this project
 #############################################################
@@ -109,15 +115,15 @@ def main(option, input1):
     CourseList = readInList()                   #Will read in the list of courses and save it to list
     CourseList = makeSubList(CourseList)        #Create the sublist for each prereq
 
-    print(CourseList[28][1][1])
-    print("\n")
-    prereqMet(CourseList, "AIS408", "")
+    # print(CourseList[28][1][1])
+    # print("\n")
+    prereqMet(CourseList, "ART202", "ART201, ART225, ART215")
 
     #Option to check if a class has no prereqs
     if(option == 1):
         hasPrereq(input1)
     #Option to return
     if(option == 2):
-        print("temp")
+        print("")
 
 main(sys.argv[0], sys.argv[1])

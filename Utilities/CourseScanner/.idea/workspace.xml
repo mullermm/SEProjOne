@@ -22,17 +22,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="courses.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courses.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="-26111">
               <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseScanner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseScanner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CourseScanner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1331">
@@ -635,20 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courses.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="-24778">
-          <caret line="109" column="172" lean-forward="false" selection-start-line="109" selection-start-column="172" selection-end-line="109" selection-end-column="172" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CourseDescriptions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -674,6 +660,20 @@
             <element signature="docComment;method#isInteger#0;class#CourseScanner#0" expanded="false" />
             <element signature="method#isInteger#0;class#CourseScanner#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courses.csv">
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="-24778">
+          <caret line="109" column="172" lean-forward="false" selection-start-line="109" selection-start-column="172" selection-end-line="109" selection-end-column="172" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26111">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
