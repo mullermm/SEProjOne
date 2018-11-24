@@ -103,26 +103,45 @@ def prereqMet(courseList, classToLookFor, transcript):
                     for k in range(0, len(courseList[i][j])):           #For all the courses in the sublist
                         if courseList[i][j][k] not in transcript:       # If the course is NOT in transcript
                             completedState = False                      #The prereq is not completed
+
     return completedState
 
 #############################################################
 #This is our driver for this project
 #############################################################
-def main(option, input1, input2, input3):
+def main(option, courseFocusedOn, allScriptARGS):
+
+    #These three lines take the input, preformat it, and then make a list
+    # of all the courses with the prerqs. We can then use this course list
+    #to check all courses prereqs.
     countBracksAndPad()                         #This will pad the list file so python can read it in as a list of list
     CourseList = readInList()                   #Will read in the list of courses and save it to list
     CourseList = makeSubList(CourseList)        #Create the sublist for each prereq
 
-    # print(CourseList[28][1][1])
-    # print("\n")
-    print(prereqMet(CourseList, "ART202", "ART201, ART225, ART215"))
+    # These three lines take any string inputted after the first two arguments
+    # and makes a list/string of them. This list can then be treated as a transcript
+    transcript = ""
+    for i in range(3,len(allScriptARGS)):                                  #For all arguments past the script path, option, and course to look at
+        transcript = transcript + allScriptARGS[i].replace(",[]'", "")     #Add the arguments to the trasncript variable
+
 
     #Option to check if a class has no prereqs
     if(option == 1):
-        hasPrereq(input1)
+        print(hasPrereq(CourseList, courseFocusedOn))
     #Option to return
-    elif(int(input1) == 2):
-        print(prereqMet(CourseList, input1, input2))
-    print(input2)
-    print(hasPrereq(CourseList,input2))
-main(sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3])
+    elif(int(option) == 2):
+        print(prereqMet(CourseList, courseFocusedOn, transcript))
+
+
+
+
+
+    #############################
+    #Debug Area
+    #############################
+    #Print course has prereq for course
+    #print("Does inputted class have a prereq?")
+    #print(hasPrereq(CourseList,courseFocusedOn))
+
+        
+main(sys.argv[1], sys.argv[2], sys.argv)
