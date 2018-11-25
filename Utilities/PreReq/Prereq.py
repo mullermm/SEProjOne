@@ -82,6 +82,17 @@ def hasPrereq(courseList, classToLookFor):
     return False
 
 #############################################################
+#Returns true if input is an integer, false if not
+#############################################################
+def is_int(input):
+  try:
+    num = int(input)
+  except ValueError:
+    return False
+  return True
+
+
+#############################################################
 #This function is used to check to see if the prereqs for
 #a class have been satisfied. It takes in the list of courses
 #the class beign checked for prereq completion, and the
@@ -97,7 +108,7 @@ def prereqMet(courseList, classToLookFor, transcript):
                 if courseList[i][j] == 'X':
                     pass                                                #Do nothing because we dont want errors looking at 'X' as an int
                 # Case 2 : Complete a number of a list
-                elif (len(courseList[i][j]) > 1 and str(courseList[i][j][0]).isdigit == True ):#If the length of the sublist is greater than 1
+                elif is_int(courseList[i][j][0]):                       #If the first item in list is an integer
                     coursesToComplete = int(courseList[i][j][0])        #Number of prereqs to complete
                     coursesCompleted = 0                                #Count the number of courses completed
                     for k in range(1,len(courseList[i][j])):            #For all the courses in the prereq
@@ -112,6 +123,60 @@ def prereqMet(courseList, classToLookFor, transcript):
                             completedState = False                      #The prereq is not completed
 
     return completedState
+
+#############################################################
+#This function is used to return a list of prereqs left to
+#complete. If there is a need for 1 of the following, it will
+#return a list of how many is needed of the remaining list.
+#Otherwise, the list will be of all classes needed to take.
+#############################################################
+def prereqsLeft(courseList, classToLookFor, transcript):
+    leftToComplete = ""                                                 #Will turn false if prereqs have not been met
+    for i in range(0,len(courseList) - 1):                              #For all the courses
+        if courseList[i][0] == classToLookFor:                          #If the class is found
+            for j in range(1,5):                                        #For all 5 sub list
+                # Case 1 : Must Complete all of the courses
+                if courseList[i][j] == 'X':
+                    pass                                                #Do nothing because we dont want errors looking at 'X' as an int
+                # Case 2 : Complete a number of a list
+                elif is_int(courseList[i][j][0]):                       #If the first item in list is an integer
+                    coursesToComplete = int(courseList[i][j][0])        #Number of prereqs to complete
+                    coursesCompleted = 0                                #Count the number of courses completed
+                    for k in range(1,len(courseList[i][j])):            #For all the courses in the prereq
+                        if courseList[i][j][k] in transcript:           #If the course is in transcript
+                            coursesCompleted += 1                       #Add to the number of needed completed courses
+                    if coursesCompleted < coursesToComplete:            #If the completed courses don't meet the requirements
+                        if len(leftToComplete) != 0:                    #If this is the first list of prerecs to complete
+                            leftToComplete += ","                       #The prereq is not completed. Add it to string to return
+                        leftToComplete += "["                           #Begin the list with a bracket
+                        coursesNeeded = coursesToComplete - coursesCompleted #Calulate how many prereqs are left to complete
+                        leftToComplete += "'" + str(coursesNeeded) + "',"    #Add how many courses are left to take
+                        for k in range(1, len(courseList[i][j])):       # For all the courses in the prereq
+                            if courseList[i][j][k] not in transcript:       # If the course is in transcript
+                                leftToComplete += "'" + courseList[i][j][k] + "',"
+                        leftToComplete = leftToComplete[0: len(leftToComplete) - 2] #Remove the last comma from list
+                        leftToComplete += "]"                           #Close the list with a bracket
+
+                # Case 3: All the courses in the sublist must be completed
+                else:
+                    beginingBracAdded = False                           #Used to keep track of if the bracket at the begining of list has been added
+                    for k in range(0, len(courseList[i][j])):           #For all the courses in the sublist
+                        if courseList[i][j][k] not in transcript:       # If the course is NOT in transcript
+                            if beginingBracAdded == False:              #If this is the first prereq in the list to not be completed
+                                if len(leftToComplete) != 0:            #If there are previous prereqs not completed
+                                    leftToComplete += ","               #add a comma
+                                leftToComplete = leftToComplete + "["   #add the begining bracked
+                                beginingBracAdded = True                #Backet hass been added to begining so we turn the helper false
+                            leftToComplete += "'" + str(courseList[i][j][k] + "', ")    #The prereq is not completed
+                    if beginingBracAdded == True:                       #If we added a prereq to leftToComplete
+                        leftToComplete = leftToComplete[0:len(leftToComplete) - 2]      #Remove the last comma added in the line above
+                        leftToComplete += "]"                           #Add closing bracket for list
+
+
+    if len(leftToComplete) == 0:
+        leftToComplete = "Prereqs Have Been Satisfied"
+
+    return leftToComplete
 
 #############################################################
 #This is our driver for this project
@@ -133,17 +198,20 @@ def main(option, courseFocusedOn, allScriptARGS):
 
 
     #Option to check if a class has no prereqs
-    if(option == 1):
-        print(hasPrereq(CourseList, courseFocusedOn))
-    #Option to return
-    elif(int(option) == 2):
-        print(prereqMet(CourseList, courseFocusedOn, transcript))
+    try:
+        if(option == 1):
+            print(hasPrereq(CourseList, courseFocusedOn))
+        #Option to return
+        elif(int(option) == 2):
+            print(prereqMet(CourseList, courseFocusedOn, transcript))
+        elif(int(option) == 3):
+            print(prereqsLeft(CourseList, courseFocusedOn, transcript))
+        else:
+            raise ValueError('Option was not 1,2, or 3')
+    except:
+        print("Argument error, check input parameters")
 
-
-
-
-
-
+    print(prereqsLeft(CourseList, courseFocusedOn, transcript))
     #############################
     #Debug Area
     #############################
