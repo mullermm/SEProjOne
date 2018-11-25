@@ -81,6 +81,13 @@ def hasPrereq(courseList, classToLookFor):
                 return True
     return False
 
+#############################################################
+#This function is used to check to see if the prereqs for
+#a class have been satisfied. It takes in the list of courses
+#the class beign checked for prereq completion, and the
+#transcript of classes completed. If the prereqs have been
+#satisfied, true is returned. Otherwise, false is returned
+#############################################################
 def prereqMet(courseList, classToLookFor, transcript):
     completedState = True                                               #Will turn false if prereqs have not been met
     for i in range(0,len(courseList) - 1):                              #For all the courses
@@ -136,6 +143,7 @@ def main(option, courseFocusedOn, allScriptARGS):
 
 
 
+
     #############################
     #Debug Area
     #############################
@@ -143,5 +151,5 @@ def main(option, courseFocusedOn, allScriptARGS):
     #print("Does inputted class have a prereq?")
     #print(hasPrereq(CourseList,courseFocusedOn))
 
-        
+
 main(sys.argv[1], sys.argv[2], sys.argv)

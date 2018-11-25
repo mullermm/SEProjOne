@@ -24,8 +24,8 @@
       <file leaf-file-name="Prereq.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Prereq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="145" column="8" lean-forward="false" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#22#83#0" expanded="false" />
@@ -37,7 +37,7 @@
                 <element signature="e#2751#2812#0" expanded="false" />
                 <element signature="e#2969#3286#0" expanded="false" />
                 <element signature="e#3288#3349#0" expanded="false" />
-                <element signature="e#3655#3828#0" expanded="false" />
+                <element signature="e#3830#3891#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,6 +87,7 @@
       <find>AIS</find>
       <find>AIS408</find>
       <find>print</find>
+      <find>replaceString</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -213,7 +214,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -282,7 +283,7 @@
             <element signature="e#2751#2812#0" expanded="false" />
             <element signature="e#2969#3286#0" expanded="false" />
             <element signature="e#3288#3349#0" expanded="false" />
-            <element signature="e#3655#3828#0" expanded="false" />
+            <element signature="e#3830#3891#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -338,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Prereq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="145" column="8" lean-forward="false" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#22#83#0" expanded="false" />
@@ -351,7 +352,7 @@
             <element signature="e#2751#2812#0" expanded="false" />
             <element signature="e#2969#3286#0" expanded="false" />
             <element signature="e#3288#3349#0" expanded="false" />
-            <element signature="e#3655#3828#0" expanded="false" />
+            <element signature="e#3830#3891#0" expanded="false" />
           </folding>
         </state>
       </provider>
