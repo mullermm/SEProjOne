@@ -1,5 +1,6 @@
 import sys
 import ConLib
+import csv
 
 transcript = ['AlS105', 'AlS205', 'HIS236', 'RLN370','A15264', 'A15299', 'A15305', 'A15320', 'A15332',  'PHI230']
 
@@ -1237,9 +1238,106 @@ functions = {
     92 : womens_studies,
 }
 
+names = {
+    0 : 'American Indian Studies',
+    1 : 'Art History',
+    2 : 'Art Education',
+    3 : 'Graphic Design',
+    4 : 'Studio Art',
+    5 : 'Biology BA',
+    6 : 'Biology BS',
+    7 : 'Biopsychology',
+    8 : 'Life Sciences',
+    9 : 'Accounting',
+    10 : 'Finance',
+    11 : 'International Business',
+    12 : 'Managment',
+    13 : 'Marketing',
+    14 : 'Managment Information Systems',
+    15 : 'Music Business',
+    16 : 'Cross Cultural Studies',
+    17 : 'Chemistry ACS',
+    18 : 'Chemistry',
+    19 : 'Chemistry NON ACS',
+    20 : 'Communication Studies',
+    21 : 'Computational Economics',
+    22 : 'Computational Philosophy',
+    23 : 'Computer Science BA',
+    24 : 'Computer Science BS',
+    25 : 'Applied Economics',
+    26 : 'Business Economics',
+    27 : 'Economics',
+    28 : 'Mathematical Economics',
+    29 : 'Elementary Education',
+    30 : 'Elementary Education Comm Arts',
+    31 : 'Elementary Education General Science',
+    32 : 'Elementary Education Math',
+    33 : 'Elementary Education Social Studies',
+    34 : 'English Commication Arts',
+    35 : 'English Creative Writing',
+    36 : 'English Literature',
+    37 : 'Enviormental Studies',
+    38 : 'Enviormental Studies HECUA',
+    39 : 'Secondary Education',
+    40 : 'Social Studies',
+    41 : 'English Second Language',
+    42 : 'Film Production',
+    43 : 'Theory Culture',
+    44 : 'French',
+    45 : 'German',
+    46 : 'History',
+    47 : 'Exercise Science BA',
+    48 : 'Exercise Science Pre-Health BS',
+    49 : 'Health Education',
+    50 : 'Physical Education',
+    51 : 'Interdisciplinary Studies',
+    52 : 'Internation Relations',
+    53 : 'International Relations Business',
+    54 : 'Mathematics BA',
+    55 : 'Mathematics BS',
+    56 : 'Mathematics Teaching',
+    57 : 'Medieval Studies',
+    58 : 'Music',
+    59 : 'Music Business',
+    60 : 'Music Education',
+    61 : 'Music Performance',
+    62 : 'Music Therapy',
+    63 : 'New Media',
+    64 : 'New Media Game Design',
+    65 : 'New Media Promotional Communication',
+    66 : 'New Media Web Design',
+    67 : 'Nursing',
+    68 : 'Philosophy',
+    69 : 'Biophysics',
+    70 : 'Physics BA',
+    71 : 'Physics BS',
+    72 : 'Spacephysics',
+    73 : 'Political Science and Economics',
+    74 : 'Politcal Science',
+    75 : 'Political Science Prelaw',
+    76 : 'Political Science Public Policy',
+    77 : 'Clinical Psychology',
+    78 : 'Psychology',
+    79 : 'Psychology and Law',
+    80 : 'Social Psychology',
+    81 : 'Religion',
+    82 : 'Theology and Public Leadership',
+    83 : 'Sociology',
+    84 : 'Spanish',
+    85 : 'Special Education',
+    86 : 'Social Work',
+    87 : 'Theater',
+    88 : 'Theater Design Technical',
+    89 : 'Theater Directing',
+    90 : 'Theater Performance',
+    91 : 'Urban Studies',
+    92 : 'Womens Studies',
+}
+
 def main():
     majors = []
     top = []
+
     for x in range(0, len(functions)):
         majors.append(functions[x]())
     majors = sorted(set(majors))[-3:]
@@ -1248,8 +1346,15 @@ def main():
             top.append(y)
     top = sorted(top)
     for z in top:
-        print(functions[z])
+        print(names[z])
         print(functions[z]())
+
+    with open('major_progress.csv', mode='w') as major_file:
+        major_writer = csv.writer(major_file, delimiter='~', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        major_writer.writerow(["Major", "Percent Complete"])
+        for x in top:
+            major_writer.writerow([names[x], functions[x]()])
+    
 
 if __name__ == "__main__":
     main()

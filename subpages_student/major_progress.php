@@ -16,6 +16,10 @@
 
     <body>
 
+        <?php
+            $output=shell_exec('python C:\xampp\htdocs\src\majors\Major.py');
+        ?>
+
         <!-- N A V B A R -->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +45,6 @@
         <section id="hero">
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-7 content-box hero-content">
                         <span>Augsburg University</span>
                         <h1> <?php

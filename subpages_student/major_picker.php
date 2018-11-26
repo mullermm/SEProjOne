@@ -6,6 +6,12 @@
 </head>
 
 <div class="container-fluid">
+    
+<?php
+$output=shell_exec('python src\majors\Major.py');
+print $output;
+
+?>
 
     <div id='table-container'></div>
 
@@ -30,7 +36,7 @@
     }
 
     CsvToHtmlTable.init({
-        csv_path: 'major_progress.csv',
+        csv_path: '../src/csv/major_prog.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: '~', delimiter: '`'},
@@ -38,4 +44,3 @@
         custom_formatting: [[4, format_link]]
     });
 </script>
-
