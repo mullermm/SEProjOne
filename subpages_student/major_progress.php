@@ -75,7 +75,7 @@
                         <div class="content-box">
 
 
-                            <form action="majorselect.php" method="post">
+                            <form action="#" method="post">
                                 <div class="choice">
                                     <select name="major">
                                         <option disabled selected value> -- select an option -- </option>
@@ -171,11 +171,14 @@
                                         <option value="ART">Web Design</option>
                                     </select> 
                                     <br><br>
-                                    <input type="submit" value="Submit">
-
+                                    <input type="submit" name="submit" value="Submit">
                                     </form>
-
-
+                                    <?php
+                                        if(isset($_POST['submit'])){
+                                        $selected_val = $_POST['major'];  // Storing Selected Value In Variable
+                                        echo "You have selected :" .$selected_val;  // Displaying Selected Value
+                                        }
+                                        ?>
                                 </div>
                         </div>
 
@@ -183,10 +186,24 @@
                 </div>
         </section>
 
-        <section id="addcourses">
+        <h1>
+        Major Progress
+        </h1>
+        <section id="addmajors">
             <div class="container">
                 <div class="row">
-                    <iframe src="major_prog_dir.php" seamless></iframe>
+                    <iframe src="major_picker.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
+
+        <h1>
+        Minor Progress
+        </h1>
+        <section id="addminors">
+            <div class="container">
+                <div class="row">
+                    <iframe src="major_picker.php" seamless></iframe>
                 </div>
             </div>
         </section>

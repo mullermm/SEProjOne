@@ -1340,20 +1340,20 @@ def main():
 
     for x in range(0, len(functions)):
         majors.append(functions[x]())
-    majors = sorted(set(majors))[-3:]
-    for y in range(0, len(functions)):
-        if functions[y]() in majors:
-            top.append(y)
-    top = sorted(top)
-    for z in top:
-        print(names[z])
-        print(functions[z]())
-
+    majors = list(set(majors))
+    majors.sort(reverse = True)
+    majors = majors[:(majors.index(0))]
+    for y in majors:
+        for z in range(0, len(functions)):
+            if functions[z]() == y:
+                top.append(z)
     with open('major_progress.csv', mode='w') as major_file:
         major_writer = csv.writer(major_file, delimiter='~', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        major_writer.writerow(["Major", "Percent Complete"])
+        major_writer.writerow(["Number","Major", "Percent Complete"])
+        index = 0
         for x in top:
-            major_writer.writerow([names[x], functions[x]()])
+            index = index + 1
+            major_writer.writerow([index,names[x], functions[x]()])
     
 
 if __name__ == "__main__":
