@@ -220,14 +220,6 @@
             </div>
         </section>
 
-        <section id="addcourses">
-            <div class="container">
-                <div class="row">
-                    <iframe src="major_prog_dir.php" seamless></iframe>
-                </div>
-            </div>
-        </section>
-
 
         <footer>
             <div class="container">
