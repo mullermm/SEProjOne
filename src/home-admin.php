@@ -15,7 +15,7 @@
 
     <body>
 
-        <!-- N A V B A R -->
+        <!--Navigation Bar-->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
@@ -26,26 +26,29 @@
                     <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="home-admin.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#addcourses">Add Courses<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/course_catalog.php">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#addcourses2">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#studentdir">Student Directory<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/course_progress.php">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
-                        <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="#call-to-action">Add Students<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
-
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../verify_admin.php">Admin Menu<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- E N D  N A V B A R -->
+        <!-- End Navigation Bar -->
+
 
         <section id="hero">
             <div class="container">

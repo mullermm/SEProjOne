@@ -8,7 +8,8 @@ $password_query = filter_var($_POST["pass"], FILTER_SANITIZE_STRING);
 
 
 // variable initialization
-$current_user =session_start(); echo $_SESSION['current_user'];
+$current_user = session_start(); echo $_SESSION['current_user'];
+Console.log($current_user);
 $the_big_array = [];
 $filename = 'csv/Augs_Users.csv';
 $failure = TRUE;
@@ -31,18 +32,11 @@ for ($i = 0; $i < sizeof($the_big_array); $i++) {
 
         //if that user is an admin, go to admin page
         if ($the_big_array[$i][4] == "admin") {
-            header('Location: home-admin.php');
+            header('Location: /home-admin.php');
         } 
     }
 }
 
-//If failure, go back to student home
-if ($failure) {
-    session_start();
-    $_SESSION['login_fail'] = True;
-    header('Location: ../home-student.php');
-    
-}
 ?>
 
 </html>

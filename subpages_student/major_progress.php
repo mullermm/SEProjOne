@@ -16,8 +16,8 @@
 
     <body>
 
-         <!--Navigation Bar-->
-         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
             </button>
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/course_catalog.php">View Courses<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/course_catalog.php">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
@@ -41,13 +41,16 @@
                         <li class="nav-time nav-custom-link">
                             <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../verify_admin.php">Admin Menu<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- E N D  N A V B A R -->
+        <!-- End Navigation Bar -->
 
-        <section id="hero">
+       <section id="hero">
             <div class="container">
                 <div class="row">
 
@@ -232,4 +235,3 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
 </html>
-
