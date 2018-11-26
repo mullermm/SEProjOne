@@ -44,11 +44,11 @@
                 $_SESSION['csv/active_courses'] = $the_big_array[$i][6];
                 
                 $failure = FALSE;
-
+                
                 if ($the_big_array[$i][4] == "student") {
-                    header('Location: home-student.php');
+                    header('Location: ../subpages_student/home-student.php');
                 } elseif ($the_big_array[$i][4] == "admin") {
-                    header('Location: home-admin.php');
+                    header('Location: subpages_student/home-admin.php');
                 }
             }
         }

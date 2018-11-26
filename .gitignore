@@ -1,4 +1,6 @@
 /nbproject/private/
-.cache
-.gitconfig
 .bash_history
+.bin
+.cache
+.viminfo
+
