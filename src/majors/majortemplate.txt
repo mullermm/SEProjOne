@@ -1,0 +1,44 @@
+def ():
+    section1 = ['']
+    section2 = ['']
+    section3 = ['']
+    section4 = ['']
+    section5 = ['']
+    section6 = ['']
+    section7 = ['']
+    major = ConLib.ConLib(transcript)
+    major.do_all(section1)
+    major.do_some(1, section2)
+    major.do_some(1, section3)
+    major.do_some(1, section4)
+
+
+    class ConLib:    
+    def __init__(self, transcript, file):
+        self.transcript = transcript
+#This is for sections where all classes must be completed.
+    def do_all(self, section):
+        todo = [x for x in section if x not in self.transcript]
+        if len(todo) == 0:
+            print("Complete")
+        else:
+            print(todo)
+#This is for sections where a specific number of classes must be done.
+    def do_some(self, numofclass, section):
+        todo = [x for x in section if x not in self.transcript]
+        if numofclass <= (len(section) - len(todo)):
+            print("Complete")
+        else:
+            print(todo)
+#Same as above but with a checker to make sure the courses taken are upper div
+    def do_some_upper(self, numofclass, numofdiv, section):
+        todo = [x for x in section if x not in self.transcript]
+        upperdiv = [x for x in section if x in self.transcript]
+        count = 0
+        for course in upperdiv:
+            if int(course[-3:]) >= 300:
+                count = count + 1
+        if numofclass <= (len(section) - len(todo)) and count >= numofdiv:
+            print("Complete")
+        else:
+            print(todo)

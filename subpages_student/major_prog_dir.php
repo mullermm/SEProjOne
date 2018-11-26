@@ -32,7 +32,7 @@
     CsvToHtmlTable.init({
         csv_path: '../src/csv/major_prog.csv',
         element: 'table-container',
-        allow_download: true,
+        allow_download: false,
         csv_options: {separator: '~', delimiter: '`'},
         datatables_options: {"paging": false},
         custom_formatting: [[4, format_link]]
