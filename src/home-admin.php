@@ -76,8 +76,13 @@
                             <a href="../subpages_admin/add_courses.php" class="btn btn-regular">Add Courses</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
+                    <div class="col-md-5">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Course Catalog</h2>
+                            <p>View  the course catalog containing all course offerings</p>
+                            <a href="../subpages_admin/course_catalog.php" class="btn btn-regular">View Courses</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,44 +91,28 @@
         <section id="addcourses2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
-                        <img src="images/demo-image.png" class="img-fluid" alt="Demo image">
+                    <div class="col-md-5">
+                        <div class="content-box">
+                            <span>Augsburg University</span>
+                            <h2>Add Students</h2>
+                            <p>Add Students to the Augsburg Student Directory</p>
+                            <a href="../subpages_admin/add_student.php" class="btn btn-regular">Add Students</a>
+                        </div>
                     </div>
                     <div class="col-md-5">
                         <div class="content-box">
                             <span>Augsburg University</span>
-                            <h2>Course Catalog</h2>
-                            <p>View all upcoming courses and sections</p>
-                            <a href="../subpages_admin/course_catalog.php" class="btn btn-regular">View Courses</a>
+                            <h2> Student Directory</h2>
+                            <p>View students and there complete course work, intended major, active classes and more</p>
+                            <a href="../subpages_admin/student_directory.php" class="btn btn-regular">View Student Directory</a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
 
-
-
-        <section id="studentdir2">
-            <div class="container">
-                <div class="title-block">
-                    <h2>Augsburg Student Directory</h2>
-                    <p>View students and there complete course work, intended major, active classes and more</p>
-                    <a href="../subpages_admin/student_directory.php" class="btn btn-regular">View Student Directory</a>
-
-                </div>
-        </section>
-
-        <section id="studentdir">
-            <div class="container">
-                <div class="title-block">
-                    <h2>Add Students</h2>
-                    <p>Add Students to the Augsburg Roster</p>
-                    <a href="../subpages_admin/add_student.php" class="btn btn-regular">Add Students</a>
-
-                </div>
-        </section>
-
-
+        <!--FOOTER-->
         <footer>
             <div class="container">
                 <div class="row">
@@ -154,6 +143,7 @@
                 </div>
             </div>
         </footer>
+        <!--END FOOTER-->
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
