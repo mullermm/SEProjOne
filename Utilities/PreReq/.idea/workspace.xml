@@ -14,7 +14,7 @@
       <file leaf-file-name="Transcript.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Transcript.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="435">
               <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding />
             </state>
@@ -24,26 +24,9 @@
       <file leaf-file-name="Prereq.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Prereq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-619">
-              <caret line="154" column="55" lean-forward="false" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#22#83#0" expanded="false" />
-                <element signature="e#279#1632#0" expanded="false" />
-                <element signature="e#1635#1696#0" expanded="false" />
-                <element signature="e#1853#2178#0" expanded="false" />
-                <element signature="e#2180#2241#0" expanded="false" />
-                <element signature="e#2387#2749#0" expanded="false" />
-                <element signature="e#2751#2812#0" expanded="false" />
-                <element signature="e#2969#3286#0" expanded="false" />
-                <element signature="e#3288#3349#0" expanded="false" />
-                <element signature="e#3655#3828#0" expanded="false" />
-                <element signature="e#3830#3891#0" expanded="false" />
-                <element signature="e#4026#4103#0" expanded="false" />
-                <element signature="e#4106#4167#0" expanded="false" />
-                <element signature="e#4583#6598#0" expanded="false" />
-                <element signature="e#6600#6661#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="3000">
+              <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,27 +35,7 @@
         <entry file="file://$PROJECT_DIR$/prereqList.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TranscriptList.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TranscriptList.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="122" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transcript.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Transcript.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="394" column="4" lean-forward="true" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -103,8 +66,8 @@
         <option value="$PROJECT_DIR$/Transcript.txt" />
         <option value="$PROJECT_DIR$/Transcript.py" />
         <option value="$PROJECT_DIR$/TranscriptList.txt" />
-        <option value="$PROJECT_DIR$/Prereq.py" />
         <option value="$PROJECT_DIR$/prereqList.txt" />
+        <option value="$PROJECT_DIR$/Prereq.py" />
       </list>
     </option>
   </component>
@@ -127,6 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,7 +102,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -158,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Prereq">
+  <component name="RunManager" selected="Python.Unnamed">
     <configuration name="Prereq" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,7 +135,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PreReq" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prereq.py" />
-      <option name="PARAMETERS" value="2 ACC324 ['AUG101','ACC222','CSC160','HON100','HON120','HON120L', 'MAT145','BUS200', 'MUE141', 'MUE143', 'MUP134', 'CSC170', 'CSC170L', 'HON230', 'MAT146', 'MUE141', 'MUE143', 'MUP134', 'HON200', 'CSC210', 'CSC210L', 'CSC352', 'HON220', 'HON340', 'MAT245', 'MUE141', 'MUE143', 'MUP134', 'CSC240', 'CSC320', 'CSC385', 'HON340', 'MAT271', 'MUE141', 'MUE143', 'MUP134', 'WEL111', 'CSC345', 'CSC395', 'CSC450', 'HON490', 'MUE143', 'MUP134']" />
+      <option name="PARAMETERS" value="2 ACC324 ['AUG101','ACC222','CSC160','HON100','HON120','HON120L', 'MAT145', 'MUE141', 'MUE143', 'MUP134', 'CSC170', 'CSC170L', 'HON230', 'MAT146', 'MUE141', 'MUE143', 'MUP134', 'HON200', 'CSC210', 'CSC210L', 'CSC352', 'HON220', 'HON340', 'MAT245', 'MUE141', 'MUE143', 'MUP134', 'CSC240', 'CSC320', 'CSC385', 'HON340', 'MAT271', 'MUE141', 'MUE143', 'MUP134', 'WEL111', 'CSC345', 'CSC395', 'CSC450', 'HON490', 'MUE143', 'MUP134']" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -193,9 +156,27 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="2">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PreReq" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prereq.py" />
+      <option name="PARAMETERS" value="1 BUS200" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.Prereq" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Transcript" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Transcript" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -218,7 +199,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18888889" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -232,6 +212,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -245,61 +226,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Transcript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prereqList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TranscriptList.txt">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Transcript.txt">
+    <entry file="file://$PROJECT_DIR$/Transcript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5910">
-          <caret line="394" column="4" lean-forward="true" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
+        <state relative-caret-position="435">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prereq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#22#83#0" expanded="false" />
-            <element signature="e#279#1632#0" expanded="false" />
-            <element signature="e#1635#1696#0" expanded="false" />
-            <element signature="e#1853#2178#0" expanded="false" />
-            <element signature="e#2180#2241#0" expanded="false" />
-            <element signature="e#2387#2749#0" expanded="false" />
-            <element signature="e#2751#2812#0" expanded="false" />
-            <element signature="e#2969#3286#0" expanded="false" />
-            <element signature="e#3288#3349#0" expanded="false" />
-            <element signature="e#3655#3828#0" expanded="false" />
-            <element signature="e#3830#3891#0" expanded="false" />
-            <element signature="e#4026#4103#0" expanded="false" />
-            <element signature="e#4106#4167#0" expanded="false" />
-            <element signature="e#4583#6598#0" expanded="false" />
-            <element signature="e#6600#6661#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/prereqList.txt" />
+    <entry file="file://$PROJECT_DIR$/TranscriptList.txt" />
+    <entry file="file://$PROJECT_DIR$/Transcript.txt" />
+    <entry file="file://$PROJECT_DIR$/Prereq.py" />
     <entry file="file://$PROJECT_DIR$/Prereq" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -317,25 +261,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp" />
     <entry file="file://$PROJECT_DIR$/temp.txt" />
-    <entry file="file://$PROJECT_DIR$/Transcript.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="394" column="4" lean-forward="true" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TranscriptList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="122" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Transcript.txt" />
+    <entry file="file://$PROJECT_DIR$/TranscriptList.txt" />
     <entry file="file://$PROJECT_DIR$/Transcript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="435">
           <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding />
         </state>
@@ -344,33 +274,16 @@
     <entry file="file://$PROJECT_DIR$/prereqList.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Prereq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="154" column="55" lean-forward="false" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#22#83#0" expanded="false" />
-            <element signature="e#279#1632#0" expanded="false" />
-            <element signature="e#1635#1696#0" expanded="false" />
-            <element signature="e#1853#2178#0" expanded="false" />
-            <element signature="e#2180#2241#0" expanded="false" />
-            <element signature="e#2387#2749#0" expanded="false" />
-            <element signature="e#2751#2812#0" expanded="false" />
-            <element signature="e#2969#3286#0" expanded="false" />
-            <element signature="e#3288#3349#0" expanded="false" />
-            <element signature="e#3655#3828#0" expanded="false" />
-            <element signature="e#3830#3891#0" expanded="false" />
-            <element signature="e#4026#4103#0" expanded="false" />
-            <element signature="e#4106#4167#0" expanded="false" />
-            <element signature="e#4583#6598#0" expanded="false" />
-            <element signature="e#6600#6661#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="3000">
+          <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="22" selection-end-line="201" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -199,7 +199,7 @@ def main(option, courseFocusedOn, allScriptARGS):
 
     #Option to check if a class has no prereqs
     try:
-        if(option == 1):
+        if(int(option) == 1):
             print(hasPrereq(CourseList, courseFocusedOn))
         #Option to return
         elif(int(option) == 2):
@@ -211,7 +211,7 @@ def main(option, courseFocusedOn, allScriptARGS):
     except:
         print("Argument error, check input parameters")
 
-    print(prereqsLeft(CourseList, courseFocusedOn, transcript))
+    #print(prereqsLeft(CourseList, courseFocusedOn, transcript))
     #############################
     #Debug Area
     #############################
