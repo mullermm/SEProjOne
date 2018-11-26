@@ -34,9 +34,6 @@
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
-                        <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/course_progress.php">Course Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
                         <li class="nav-time nav-custom-link">
                             <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
