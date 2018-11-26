@@ -15,7 +15,7 @@
 
     <body>
 
-          <!--Navigation Bar-->
+        <!--Navigation Bar-->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
@@ -23,10 +23,10 @@
             <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
-                    <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+                    <img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../subpages_student/home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
                             <a class="nav-link" href="../subpages_student/course_catalog.php">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
@@ -49,7 +49,7 @@
         </nav>
         <!-- End Navigation Bar -->
 
-        <!--Student Information Section-->
+        <!-- Page Header With Student Info -->
         <section id="hero">
             <div class="container">
                 <div class="row">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <img src="images/sec2.png" class="img-fluid" alt="Demo image">
+                        <img src="../src/images/sec2.png" class="img-fluid" alt="Demo image">
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <img src="images/sec.png" class="img-fluid" alt="Demo image">
+                        <img src="../src/images/sec.png" class="img-fluid" alt="Demo image">
                     </div>
                     <div class="col-md-5">
                         <div class="content-box">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <img src="images/sec3.png" class="img-fluid" alt="Demo image">
+                        <img src="../src/images/sec3.png" class="img-fluid" alt="Demo image">
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <img src="images/sec4.png" class="img-fluid" alt="Demo image">
+                        <img src="../src/images/sec4.png" class="img-fluid" alt="Demo image">
                     </div>
                     <div class="col-md-5">
                         <div class="content-box">

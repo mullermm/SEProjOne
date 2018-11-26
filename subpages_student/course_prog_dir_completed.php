@@ -24,6 +24,8 @@
 // Get course info + Split string into classes and numbers
 session_start();
 $completed = str_split($_SESSION['completed_courses'], 3);
+// HERE IS THE ISSUE ^^^^^^^^^^^^ NEED PYTHON CODE FOR CLASSES
+
 
 // Get completed course begining e.i. COM~100 into array
 $completed_prop = [];
@@ -63,10 +65,10 @@ for ($i = 0; $i < sizeof($completed_prop); $i++) {
     CsvToHtmlTable.init({
         csv_path: '../src/csv/courses_completed.csv',
         element: 'table-container',
-        allow_download: true,
+        allow_download: false,
         csv_options: {separator: '~', delimiter: '`'},
         datatables_options: {"paging": false},
-        custom_formatting: [[4, format_link]]
+        //custom_formatting: [[4, format_link]]
     });
 </script>
 

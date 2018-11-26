@@ -49,7 +49,7 @@
         </nav>
         <!-- End Navigation Bar -->
 
-
+        <!-- Page Header With Student Info -->
         <section id="hero">
             <div class="container">
                 <div class="row">
