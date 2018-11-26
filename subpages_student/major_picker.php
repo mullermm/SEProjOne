@@ -38,7 +38,7 @@ print $output;
     CsvToHtmlTable.init({
         csv_path: 'major_progress.csv',
         element: 'table-container',
-        allow_download: true,
+        allow_download: false,
         csv_options: {separator: '~', delimiter: '`'},
         datatables_options: {"paging": false},
         custom_formatting: [[4, format_link]]
