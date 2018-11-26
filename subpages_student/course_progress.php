@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
             </button>
-            <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+            <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
                     <img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
