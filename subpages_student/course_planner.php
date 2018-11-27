@@ -58,8 +58,7 @@
                     echo $_SESSION['current_user'];
                     ?>
                     <br>
-                    <b>View Pending Courses</b></h1>
-                <p>Submit your current transcript to view future courses required for degree completion</p>
+                    
             </div>
         </div>
     </div>
@@ -83,11 +82,10 @@
             <div class="col-md-5">
                 <div class="content-box">
 
-                    <form action="../src/transcript_reader.php" method="post" onsubmit="return confirm('Are you sure you would like to submit this?');">
-                        <br><br>
-                        <input id = "a" type="file" name="transcript" value="">
-                        <br>
-                        <input onclick="verify()" type="submit" value="Enter" class="btn btn-regular">
+                    <form enctype="multipart/form-data" action="transcript_reader.php" method="post">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                        Upload this file: <input type="file" name="file" />
+                        <input type="submit" value="Submit File" />
                     </form>
 
 
