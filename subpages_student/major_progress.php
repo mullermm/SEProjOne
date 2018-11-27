@@ -181,6 +181,7 @@
                                         if(isset($_POST['submit'])){
                                         $major = $_POST['major'];  // Storing Selected Value In Variable
                                         echo "You have selected :" .$major;  // Displaying Selected Value
+                                        $output=shell_exec("python src\majors\Class_Progress.py $major");
                                         }
                                         ?>
                                 </div>
