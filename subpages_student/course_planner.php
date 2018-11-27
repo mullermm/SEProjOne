@@ -15,7 +15,7 @@
 
 <body>
 <?php
-$output = shell_exec('python ../htdocs/src/TranscriptScanner/TranscriptScanner.py');
+$output = shell_exec('python C:\xampp\htdocs\src\TranscriptScanner\TranscriptScanner.py');
 ?>
 
 
