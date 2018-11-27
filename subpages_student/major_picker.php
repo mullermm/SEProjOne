@@ -41,5 +41,6 @@ print $output;
         allow_download: false,
         csv_options: {separator: '~', delimiter: '`'},
         datatables_options: {"paging": false},
+        custom_formatting: [[4, format_link]]
     });
 </script>
