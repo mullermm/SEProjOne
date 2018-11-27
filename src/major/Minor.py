@@ -1,5 +1,31 @@
 ##Minor.py
 
+def american_indian_studies():
+	section1 = ['AIS105']
+	# 4 total, 2 upper
+	section2 = ['AIS205', 'AIS208', 'AIS233', 'AIS264', 'AIS299', 'AIS305', 'AIS320', 'AIS332', 'AIS332', 'AIS396', 'AIS405', 'AIS408', 'AIS490', 'AIS495', 'AIS498', 'AIS499', 'ART290', 'DAK111', 'DAK112', 'ENL255', 'ENL355', 'HIS236', 'OJB111', 'OJB112', 'REL370']
+
+def architecture():
+	section1 = ['ART105', 'ART210', 'ART243', 'ART244', 'ART249', 'ART349']
+	
+def art_history():
+	section1 = ['ART249']
+	# 4 of
+	section2 = ['ART231', 'ART243', 'ART244', 'ART249', 'ART349', 'ART290', 'ART390', 'ART352', 'ART382', 'ART385', 'ART386', 'ART387', 'ART388', 'ART389']
+	
+def graphic_design():
+	section1 = ['ART107', 'ART124', 'ART125', 'ART126', 'ART127', 'ART201', 'ART202', 'ART315', 'ART324']
+	
+def studio_art():
+	section1 = ['ART107', 'ART240']
+	# 3 of
+	section2 = ['ART124', 'ART125', 'ART126', 'ART127', 'ART201', 'ART202', 'ART315', 'ART324']
+
+def biology():
+	section1 = ['BIO151', 'BIO152', 'CHM115', 'CHM115L', 'CHM116', 'CHM116L']
+	# 3 of
+	section2 = ['BIO253', 'BIO255', 'BIO351', 'BIO353', 'BIO361', 'BIO369', 'BIO440', 'BIO471', 'BIO473', 'BIO474', 'BIO475', 'BIO476', 'BIO481', 'BIO486', 'BIO495', 'PHY317']
+
 def accounting():
 	section1 = ['ACC221', 'ACC222', 'ACC322', 'ACC323', 'ACC324']
 	# 1 of
@@ -20,6 +46,36 @@ def business_analytics():
 	section3 = ['MAT171', 'MAT145', 'MAT122']
 	# 1 of
 	section4 = ['MIS270', 'CSC352']
+	
+def business_for_science():
+	section1  = ['ACC221', 'ECO113', 'MKT252', 'PHI120']
+	# 1 of
+	section2 = ['BUS242', 'BUS254']
+	# 1 of
+	section3 = ['BUS397', 'BUS399']
+	
+def international_business():
+	section1 = ['ACC221']
+	# 1 of
+	section2 = ['BUS242', 'MKT252']
+	# 1 of
+	section3 = ['ECO112', 'ECO113']
+	# 3 of
+	section4 = ['BUS362', 'BUS465', 'ECO360', 'ECO370', 'FIN460', 'MKT466']
+	
+def management_information_systems():
+	section1 = ['ACC221', 'ECO113', 'ECO113']
+	# 1 of
+	section2 = ['BUS242', 'MKT252']
+	# 2 of
+	section3 = ['MIS270', 'MIS375', 'MIS376', 'ECO318']
+	
+def marketing():
+	section1 = ['MKT252', 'MKT352']
+	# 1 of
+	section2 = ['MKT355', 'MKT357']
+	# 2 of
+	section3 = ['MKT350', 'MKT354', 'MKT450', 'MKT466']
 
 def chemistry():
 	section1 = ['CHM115', 'CHM115L', 'CHM116', 'CHM116L', 'CHM280', 'CHM280L']
