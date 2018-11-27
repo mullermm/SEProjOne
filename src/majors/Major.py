@@ -2,18 +2,19 @@ import sys
 import ConLib
 import csv
 
-transcript = ['AlS105', 'AlS205', 'HIS236', 'RLN370','A15264', 'A15299', 'A15305', 'A15320', 'A15332',  'PHI230']
+transcript = ['AIS105', 'AIS205', 'HIS236', 'RLN370','AIS264', 'AIS299', 'AIS305', 'AIS320', 'AIS332',  'PHI230']
 
 def american_indian_studies(transcript, type):
-    section1 = ['AlS105', 'AlS205', 'HIS236', 'RLN370']
-    section2 = ['A15264', 'ENL255']
-    section3 = ['A15208', 'A15233', 'A15264', 'A15299', 'A15305', 'A15320', 'A15332', 'A15364', 'A15396', 'A15399', 'A15405', 'A15408', 'A15490', 'A15495', 'A15498', 'A15499', 'ART290', 'DAK111', 'DAK112', 'ENL255', 'ENL355', 'OJB111', 'OJB112']
+    section1 = ['AIS105', 'AIS205', 'HIS236', 'RLN370']
+    section2 = ['AIS264', 'ENL255']
+    section3 = ['AIS208', 'AIS233', 'AIS264', 'AIS299', 'AIS305', 'AIS320', 'AIS332', 'AIS364', 'AIS396', 'AIS399', 'AIS405', 'AIS408', 'AIS490', 'AIS495', 'AIS498', 'AIS499', 'ART290', 'DAK111', 'DAK112', 'ENL255', 'ENL355', 'OJB111', 'OJB112']
     section4 = ['GST200', 'MAT163', 'MAT164', 'PHI230']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some_upper(4, 3, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
         return major.get_done_classes()
     elif type == 2:
@@ -33,6 +34,7 @@ def art_history(transcript,type):
     major.do_some(1, section3)
     major.do_some(6, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -56,6 +58,7 @@ def art_education(transcript, type):
     major.do_some(1, section5)
     major.do_some(2, section6)
     major.do_some(1, section7)
+    major.build_course_list_csv()
     if type == 1:
         return major.get_done_classes()
     elif type == 2:
@@ -73,6 +76,7 @@ def graphic_design(transcript, type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
         return major.get_done_classes()
     elif type == 2:
@@ -90,6 +94,7 @@ def studio_art(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -111,6 +116,7 @@ def biology_bs(transcript,type):
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -128,6 +134,7 @@ def biology_ba(transcript,type):
     major.do_some(5, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -147,6 +154,7 @@ def biopsychology(transcript,type):
     major.do_some(2, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -168,6 +176,7 @@ def life_sciences(transcript,type):
     major.do_some(2, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -183,6 +192,7 @@ def accounting(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -202,6 +212,7 @@ def managment(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -219,6 +230,7 @@ def international_business(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -234,6 +246,7 @@ def finance(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -251,6 +264,7 @@ def music_business(transcript,type):
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -268,6 +282,7 @@ def managment_information_systems(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -287,6 +302,7 @@ def marketing(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -300,6 +316,7 @@ def cross_cultural_studies(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -315,6 +332,7 @@ def communication_studies(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -338,6 +356,7 @@ def chemistry_non_acs(transcript,type):
     major.do_some(3, section5)
     major.do_some(4, section6)
     major.do_some(1, section7)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -361,6 +380,7 @@ def chemistry(transcript,type):
     major.do_some(3, section5)
     major.do_some(4, section6)
     major.do_some(1, section7)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -380,6 +400,7 @@ def chemistry_acs(transcript,type):
     major.do_some(1, section3)
     major.do_all(section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -395,6 +416,7 @@ def computational_economics(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -412,6 +434,7 @@ def computer_science_bs(transcript,type):
     major.do_some(2, section2)
     major.do_some(3, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -429,6 +452,7 @@ def computer_science_ba(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -446,6 +470,7 @@ def computational_philosophy(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -465,6 +490,7 @@ def applied_economics(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -480,6 +506,7 @@ def mathematical_economics(transcript,type):
     major.do_all(section1)
     major.do_some_upper(2, 2, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -497,6 +524,7 @@ def economics(transcript,type):
     major.do_some_upper(3, 3, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -514,6 +542,7 @@ def business_economics(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -531,6 +560,7 @@ def elementary_education_general_science(transcript,type):
     major.do_some(1, section2)
     major.do_all(section3)
     major.do_all(section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -550,6 +580,7 @@ def elementary_education_comm_arts(transcript,type):
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -569,6 +600,7 @@ def elementary_education_social_studies(transcript,type):
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -588,6 +620,7 @@ def elementary_education_math(transcript,type):
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -607,6 +640,7 @@ def elementary_education(transcript,type):
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -630,6 +664,7 @@ def english_literature(transcript,type):
     major.do_some(1, section5)
     major.do_some(1, section6)
     major.do_all(section7)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -651,6 +686,7 @@ def english_creative_writing(transcript,type):
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_all(section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -672,6 +708,7 @@ def english_commication_arts(transcript,type):
     major.do_some(1, section4)
     major.do_some(1, section5)
     major.do_all(section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -689,6 +726,7 @@ def enviormental_studies(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -704,6 +742,7 @@ def enviormental_studies_HECUA(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -721,6 +760,7 @@ def secondary_education(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -736,6 +776,7 @@ def english_second_language(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -755,6 +796,7 @@ def social_studies(transcript,type):
     major.do_all(section3)
     major.do_some(1, section4)
     major.do_all(section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -772,6 +814,7 @@ def film_production(transcript,type):
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_all(section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -789,6 +832,7 @@ def theory_culture(transcript,type):
     major.do_some(1, section2)
     major.do_some(3, section3)
     major.do_all(section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -809,6 +853,7 @@ def history(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -824,6 +869,7 @@ def german(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -839,6 +885,7 @@ def french(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -858,6 +905,7 @@ def medieval_studies(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(2, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -875,6 +923,7 @@ def mathematics_teaching(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -896,6 +945,7 @@ def mathematics_bs(transcript,type):
     major.do_some(1, section4)
     major.do_all(section5)
     major.do_some(1, section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -915,6 +965,7 @@ def mathematics_ba(transcript,type):
     major.do_some(3, section3)
     major.do_all(section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -930,6 +981,7 @@ def music_business(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -943,6 +995,7 @@ def music(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -954,6 +1007,7 @@ def music_therapy(transcript,type):
     section1 = ['MUS113', 'MUS114', 'MUS135', 'MUS136', 'MUS152', 'MUS158', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS237', 'MUS238', 'MUS258', 'MUS271', 'MUS273', 'MUS315', 'MUS340', 'MUS345', 'MUS374', 'MUS375', 'MUS376', 'MUS385', 'MUS458', 'MUS474', 'MUS475', 'MUS480', 'MUS481', 'B10103', 'PSY105', 'PSY203', 'PSY215', 'PSY262']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -967,6 +1021,7 @@ def music_performance(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -980,6 +1035,7 @@ def music_education(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -997,6 +1053,7 @@ def new_media_game_design(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1014,6 +1071,7 @@ def new_media(transcript,type):
     major.do_some(1, section2)
     major.do_some(4, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1029,6 +1087,7 @@ def new_media_web_design(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1046,6 +1105,7 @@ def new_media_promotional_communication(transcript,type):
     major.do_some(1, section2)
     major.do_some(4, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1067,6 +1127,7 @@ def biophysics(transcript,type):
     major.do_some(2, section4)
     major.do_some(1, section5)
     major.do_some(1, section6)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1084,6 +1145,7 @@ def physics_bs(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1101,6 +1163,7 @@ def physics_ba(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1120,6 +1183,7 @@ def politcal_science(transcript,type):
     major.do_some(5, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1137,6 +1201,7 @@ def political_science_and_economics(transcript,type):
     major.do_some(1, section2)
     major.do_some(1, section3)
     major.do_some(2, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1160,6 +1225,7 @@ def political_science_public_policy(transcript,type):
     major.do_some(1, section5)
     major.do_some(1, section6)
     major.do_some(4, section7)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1177,6 +1243,7 @@ def political_science_prelaw(transcript,type):
     major.do_some(2, section2)
     major.do_some(3, section3)
     major.do_some(2, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1196,6 +1263,7 @@ def theater_performance(transcript,type):
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1215,6 +1283,7 @@ def theater_directing(transcript,type):
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1234,6 +1303,7 @@ def theater_design_technical(transcript,type):
     major.do_some(3, section3)
     major.do_some(2, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1251,6 +1321,7 @@ def theater(transcript,type):
     major.do_some(3, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1266,6 +1337,7 @@ def psychology(transcript,type):
     major.do_all(section1)
     major.do_some(2, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1281,6 +1353,7 @@ def social_psychology(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1304,6 +1377,7 @@ def internation_relations(transcript,type):
     major.do_some(2, section5)
     major.do_some(1, section6)
     major.do_some(5, section7)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1329,6 +1403,7 @@ def international_relations_business(transcript,type):
     major.do_some(1, section6)
     major.do_some(2, section7)
     major.do_some(2, section8)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1340,6 +1415,7 @@ def nursing(transcript,type):
     section1 = ['NUR300', 'NUR305', 'NUR306', 'NUR403', 'NUR410', 'NUR411', 'NUR490']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1355,6 +1431,7 @@ def religion(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1372,6 +1449,7 @@ def philosophy(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_all(section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1387,6 +1465,7 @@ def theology_and_public_leadership(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1402,6 +1481,7 @@ def spanish(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1417,6 +1497,7 @@ def special_education(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_all(section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1430,6 +1511,7 @@ def womens_studies(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1447,6 +1529,7 @@ def spacephysics(transcript,type):
     major.do_some(1, section2)
     major.do_some(2, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1464,6 +1547,7 @@ def clinicalpsychology(transcript,type):
     major.do_some(2, section2)
     major.do_some(1, section3)
     major.do_some(1, section4)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1479,6 +1563,7 @@ def psychologyandlaw(transcript,type):
     major.do_all(section1)
     major.do_some(1, section2)
     major.do_some(1, section3)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1492,6 +1577,7 @@ def sociology(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some_upper(5, 3, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1511,6 +1597,7 @@ def socialwork(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1530,6 +1617,7 @@ def urbanstudies(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(2, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1543,6 +1631,7 @@ def exercise_science_ba(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1562,6 +1651,7 @@ def exercise_science_pre_health_bs(transcript,type):
     major.do_some(1, section3)
     major.do_some(1, section4)
     major.do_some(1, section5)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1575,6 +1665,7 @@ def health_education(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1586,6 +1677,7 @@ def physical_education(transcript,type):
     section1 = ['HPE104', 'HPE114','HPE115','HPE205','HPE220','HPE254','HPE275','HPE324','HPE334','HPE335','HPE340','HPE350','HPE351','HPE357','HPE358','HPE473','BI0103']
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:
@@ -1599,6 +1691,7 @@ def interdisciplinary_studies(transcript,type):
     major = ConLib.ConLib(transcript)
     major.do_all(section1)
     major.do_some(1, section2)
+    major.build_course_list_csv()
     if type == 1:
             return major.get_done_classes()
     elif type == 2:

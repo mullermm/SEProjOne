@@ -179,18 +179,37 @@
                                     </form>
                                     <?php
                                         if(isset($_POST['submit'])){
-                                        $major = $_POST['major'];  // Storing Selected Value In Variable
-                                        echo "You have selected :" .$major;  // Displaying Selected Value
-                                        $output=shell_exec("python src\majors\Class_Progress.py $major");
+                                            $major = $_POST['major'];  // Storing Selected Value In Variable
+                                            $output = shell_exec('python C:\xampp\htdocs\src\majors\Class_Progress.py ' . $major);
                                         }
-                                        ?>
+                                    ?>
+
                                 </div>
                         </div>
 
                     </div>
                 </div>
         </section>
-
+        <h1>
+        Completed Courses
+        </h1>
+        <section id="donecourses">
+            <div class="container">
+                <div class="row">
+                    <iframe src="donecourses.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
+        <h1>
+        Courses To Complete
+        </h1>
+        <section id="todocourses">
+            <div class="container">
+                <div class="row">
+                    <iframe src="todocourses.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
         <h1>
         Major Progress
         </h1>

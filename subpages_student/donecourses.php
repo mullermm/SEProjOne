@@ -36,7 +36,7 @@ print $output;
     }
 
     CsvToHtmlTable.init({
-        csv_path: 'major_progress.csv',
+        csv_path: 'done_courses.csv',
         element: 'table-container',
         allow_download: false,
         csv_options: {separator: '~', delimiter: '`'},
