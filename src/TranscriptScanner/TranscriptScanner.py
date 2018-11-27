@@ -1,3 +1,5 @@
+from tkinter import filedialog
+
 class scanner:
 
     # This function filters out courses from a transcript.txt file
@@ -29,10 +31,23 @@ class scanner:
                     # Get rid of newline char, put into classes array
                     line = words[i].rstrip()
                     classes.insert(i, line)
-                
-            return classes
+
+            file_name = filedialog.asksaveasfilename(defaultextension=".txt", initialdir = "/",title = "Choose Save file",filetypes = (("text files","*.txt"),("all files","*.*")))
+            print(file_name)
+            if (file_name == ""):
+                print("Canceled")
+                return
+            file = open(file_name, 'w')
+            for i in range (len(classes)):
+                file.write(classes[i] + "\n")
+            
+            #return classes
 
     if __name__ == "__main__":
-        file = "Transcript.txt"
-        list = read_file(file)
-        print(list)
+        file = filedialog.askopenfilename(initialdir = "/",title = "Select Transcript file",filetypes = (("text files","*.txt"),("all files","*.*")))
+        if (file == ""):
+                print("Cancelled")
+        else:
+            list = read_file(file)
+            #print(list)
+        
