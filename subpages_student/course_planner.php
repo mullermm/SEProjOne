@@ -14,6 +14,10 @@
 </head>
 
 <body>
+<?php
+$output = shell_exec('python ../htdocs/src/TranscriptScanner/TranscriptScanner.py');
+?>
+
 
    <!--Navigation Bar-->
    <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
@@ -87,7 +91,6 @@
                         Upload this file: <input type="file" name="file" />
                         <input type="submit" value="Submit File" />
                     </form>
-
 
                 </div>
             </div>
