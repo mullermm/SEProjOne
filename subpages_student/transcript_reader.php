@@ -1,9 +1,9 @@
 <?php
-  $targetdir = '../subpages_student/';   
+  $targetdir = '../';   
       // name of the directory where the files should be stored
       
 
-  $targetfile = "Transcript.txt";
+  $targetfile = "UploadedTranscript.txt";
 
   move_uploaded_file($_FILES['file']['tmp_name'], $targetdir . $targetfile);
 
