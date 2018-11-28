@@ -1,7 +1,7 @@
 <?php
   $targetdir = '../';   
       // name of the directory where the files should be stored
-     
+      
 
   $targetfile = "UploadedTranscript.txt";
 
@@ -9,7 +9,11 @@
 
   $output = shell_exec('python ../TranscriptScanner.py');
 
-
   header("Location: ../subpages_student/course_planner.php");
+
+
+
+
+
   
 ?>
