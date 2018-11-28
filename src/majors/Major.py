@@ -2,7 +2,7 @@ import sys
 import ConLib
 import csv
 
-transcript = ['AIS105', 'AIS205', 'HIS236', 'RLN370','AIS264', 'AIS299', 'AIS305', 'AIS320', 'AIS332',  'PHI230']
+transcript = []
 
 def american_indian_studies(transcript, type):
     section1 = ['AIS105', 'AIS205', 'HIS236', 'RLN370']
@@ -1894,6 +1894,12 @@ names = {
 def main():
     majors = []
     top = []
+    filename = "C:\\xampp\\htdocs\\subpages_student\\FormattedTranscript.txt"
+    with open(filename, "r") as f:
+        content = f.readlines()
+    for line in content:
+        transcript.append(line.rstrip())
+    print(transcript)
 
     for x in range(0, len(functions)):
         majors.append(functions[x](transcript, None))

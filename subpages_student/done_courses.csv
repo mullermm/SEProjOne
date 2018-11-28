@@ -1,1 +1,4 @@
 Course Number~Course Title~Credits~Course Description~Core Curiculum~Prerequisites
+CSC352~Database Management and Design~4~Structure of database management systems, query facilities, file organization and security, and the development of database systems.~Core Curriculum Component: None~Prerequisite(s): 1 of MAT105(Applied Algebra), MPL(Math Placement Level 3); CSC170(Introduction to Programming)
+CSC395~Topics in Computer Science~4~~Core Curriculum Component: None~Prerequisite(s): 1 of CSC320(Algorithms), CSC345(Principles of Computer Organization)
+MAT271~Discrete Mathematical Structures~4~Concepts of discrete mathematics including number theory, combinatorics, graph theory, recursion theory, set theory, and formal logic, with an emphasis on algorithmic thinking, mathematical reasoning, conjecturing, and proof.~Core Curriculum Component: None~Prerequisite(s): MAT145(Calculus I)

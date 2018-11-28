@@ -3,9 +3,16 @@ import ConLib
 import csv
 from Major import *
 
-transcript = ['AIS105', 'AIS205', 'HIS236', 'RLN370','AIS264', 'AIS299', 'AIS305', 'AIS320', 'AIS332',  'PHI230']
+transcript = []
 
 def main():
+    filename = "C:\\xampp\\htdocs\\subpages_student\\FormattedTranscript.txt"
+    with open(filename, "r") as f:
+        content = f.readlines()
+    for line in content:
+        transcript.append(line.rstrip())
+    print(transcript)
+
     major_number = int(sys.argv[1])
     done = functions[major_number](transcript, 1)
     todo = functions[major_number](transcript, 2)

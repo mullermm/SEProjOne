@@ -38,7 +38,7 @@ def read_file(userFile):
         
         #return classes
 def main():
-    file = "Transcript.txt"
+    file = "UploadedTranscript.txt"
     read_file(file)
     
 main()
