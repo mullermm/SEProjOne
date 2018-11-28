@@ -14,29 +14,43 @@
 </head>
 
 <body>
-
-<!-- N A V B A R -->
-<nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon ion-md-menu"></span>
-    </button>
-    <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <div class="container">
-            <a href="../src/home-student.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
-            <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-                <li class="nav-item nav-custom-link">
-                    <a class="nav-link" href="../src/home-student.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                </li>
-                <li class="nav-item nav-custom-link">
+<?php
+$output = shell_exec('python C:\xampp\htdocs\src\TranscriptScanner\TranscriptScanner.py');
+?>
 
 
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- E N D  N A V B A R -->
+   <!--Navigation Bar-->
+   <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon ion-md-menu"></span>
+            </button>
+            <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="container">
+                    <img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+                    <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+                        <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/course_catalog.php">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-item nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                        <li class="nav-time nav-custom-link">
+                            <a class="nav-link" href="../verify_admin.php">Admin Menu<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation Bar -->
 
+<!-- Page Header With Student Info -->
 <section id="hero">
     <div class="container">
         <div class="row">
@@ -48,8 +62,7 @@
                     echo $_SESSION['current_user'];
                     ?>
                     <br>
-                    <b>View Pending Courses</b></h1>
-                <p>Submit your current transcript to view future courses required for degree completion</p>
+                    
             </div>
         </div>
     </div>
@@ -73,13 +86,11 @@
             <div class="col-md-5">
                 <div class="content-box">
 
-                    <form action="../src/transcript_reader.php" method="post" onsubmit="return confirm('Are you sure you would like to submit this?');">
-                        <br><br>
-                        <input id = "a" type="file" name="transcript" value="">
-                        <br>
-                        <input onclick="verify()" type="submit" value="Enter" class="btn btn-regular">
+                    <form enctype="multipart/form-data" action="transcript_reader.php" method="post">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                        Upload this file: <input type="file" name="file" />
+                        <input type="submit" value="Submit File" />
                     </form>
-
 
                 </div>
             </div>

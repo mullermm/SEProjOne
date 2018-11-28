@@ -59,6 +59,9 @@ public class CourseScanner {
             scanner = new Scanner(fileIn);              //Our scanner to read in the file from the customer
             createCourseCSV(scanner, fileIn, tempFile); //Turns course list file into our database file
 
+            scanner = new Scanner(fileIn);
+            //cleanupFinalText(scanner, fileIn, tempFile);
+
 
         }
         catch (FileNotFoundException e){
@@ -83,8 +86,8 @@ public class CourseScanner {
         CourseDescriptions.txt.
          */
         final String headerRegex = "([A-Z]{2})(\\s)(–|-).*|([A-Z]{3})(\\s)(–|-).*|([A-Z]{5})(\\s)(–|-).*";
-        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$";
-
+        final String prereqRegex = "[A-Z]{3}[0-9]{3}$|[A-Z]{2}[0-9]{3}$|[A-Z]{3}[0-9]{3}[A-Z]{2}$|[A-Z]{3}[0-9]{4}[A-Z]{2}$|[A-Z]{3}[0-9]{3}[L]{1}$|[A-Z]{3}[0-9]{3}[P]{1}$|[A-Z]{5}[0-9]{1}$]";
+        final String augexRegex = "[A-Z]{5}[0-9]{1}";
         int lineCount = 0;
 
         scanner.nextLine();                                 //Eats the first line of the file. We don't need it
@@ -150,6 +153,9 @@ public class CourseScanner {
                         }
                         temp = scanner.nextLine();
                         lineCount++;
+                        if(temp.matches(augexRegex)){
+                            break;
+                        }
                     }
                 } catch (NoSuchElementException e) {
                     //End of the file has been reached. THIS IS THE CLEANUP WORK!
