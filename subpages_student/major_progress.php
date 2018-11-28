@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en-US">
     <head>
@@ -16,8 +15,17 @@
 
     <body>
 
+<<<<<<< HEAD
        <!--Navigation Bar-->
    <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+=======
+        <?php
+            $output=shell_exec('python C:\xampp\htdocs\src\majors\Major.py');
+        ?>
+
+        <!-- N A V B A R -->
+        <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+>>>>>>> Nghia
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
             </button>
@@ -187,21 +195,65 @@
                                     </form>
                                     <?php
                                         if(isset($_POST['submit'])){
+<<<<<<< HEAD
                                         $major = $_POST['major'];  // Storing Selected Value In Variable
                                         echo "You have selected :" .$major;  // Displaying Selected Value
                                         }
                                         ?>
+=======
+                                            $major = $_POST['major'];  // Storing Selected Value In Variable
+                                            $output = shell_exec('python C:\xampp\htdocs\src\majors\Class_Progress.py ' . $major);
+                                        }
+                                    ?>
+
+>>>>>>> Nghia
                                 </div>
                         </div>
 
                     </div>
                 </div>
         </section>
-
+        <h1>
+        Completed Courses
+        </h1>
+        <section id="donecourses">
+            <div class="container">
+                <div class="row">
+                    <iframe src="donecourses.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
+        <h1>
+        Courses To Complete
+        </h1>
+        <section id="todocourses">
+            <div class="container">
+                <div class="row">
+                    <iframe src="todocourses.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
         <h1>
         Major Progress
         </h1>
         <section id="addmajors">
+            <div class="container">
+                <div class="row">
+                    <iframe src="major_picker.php" seamless></iframe>
+                </div>
+            </div>
+        </section>
+
+        <h1>
+<<<<<<< HEAD
+        Major Progress
+        </h1>
+        <section id="addmajors">
+=======
+        Minor Progress
+        </h1>
+        <section id="addminors">
+>>>>>>> Nghia
             <div class="container">
                 <div class="row">
                     <iframe src="major_picker.php" seamless></iframe>
@@ -255,4 +307,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> Nghia
