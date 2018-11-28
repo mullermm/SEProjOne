@@ -8,7 +8,8 @@
 <div class="container-fluid">
     
 <?php
-$output=shell_exec('python src\majors\Major.py');
+//$output=shell_exec('python src\majors\Major.py');
+$output=shell_exec('python ../src/majors/Major.py');
 print $output;
 
 ?>

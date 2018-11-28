@@ -973,22 +973,6 @@ def mathematics_ba(transcript,type):
     else: 
         return major.completion_percent()
 
-def music_business(transcript,type):
-    section1 = ['ACC221', 'ECO113', 'MIS260', 'MUS113', 'MUS114', 'MUS162', 'MUS205', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS335', 'MUS336', 'BUS339', 'MUS399', 'MUS408', 'MUS458']
-    section2 = ['MUS331', 'MUS332', 'MUS333', 'MUS334']
-    section3 = ['BUS200', 'BUS242', 'BUS254']
-    major = ConLib.ConLib(transcript)
-    major.do_all(section1)
-    major.do_some(1, section2)
-    major.do_some(1, section3)
-    major.build_course_list_csv()
-    if type == 1:
-            return major.get_done_classes()
-    elif type == 2:
-        return major.get_todo_classes()
-    else: 
-        return major.completion_percent()
-
 def music(transcript,type):
     section1 = ['MUS113', 'MUS114', 'MUS213', 'MUS214', 'MUS231', 'MUS232', 'MUS341', 'MUS458']
     section2 = ['MUS331', 'MUS332', 'MUS333', 'MUS334']
@@ -1914,4 +1898,4 @@ def main():
     
 
 if __name__ == "__main__":
-main()
+    main()
