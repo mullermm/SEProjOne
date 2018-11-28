@@ -15,50 +15,33 @@
 
     <body>
 
-<<<<<<< HEAD
-       <!--Navigation Bar-->
-   <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
-=======
         <?php
-            $output=shell_exec('python C:\xampp\htdocs\src\majors\Major.py');
+            $output=shell_exec('python ../src/majors/Major.py');
         ?>
 
         <!-- N A V B A R -->
         <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
->>>>>>> Nghia
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon ion-md-menu"></span>
             </button>
             <img src="../src/images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="container">
-                    <img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+                    <a href="../src/home-student.php"><img src="../src/images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
                     <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/home-student.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                            <a class="nav-link" href="../src/home-student.php">Return to Portal Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
                         </li>
                         <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/course_catalog.php">Course Catalog<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
-                        <li class="nav-item nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/major_progress.php">Major Progress<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
-                        <li class="nav-time nav-custom-link">
-                            <a class="nav-link" href="../subpages_student/course_planner.php">Course Planner<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
-                        <li class="nav-time nav-custom-link">
-                            <a class="nav-link" href="../verify_admin.php">Admin Menu<i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
-                        </li>
+
+
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- End Navigation Bar -->
+        <!-- E N D  N A V B A R -->
 
-
-
-        <!-- Page Header With Student Info -->
-       <section id="hero">
+        <section id="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 content-box hero-content">
@@ -195,18 +178,11 @@
                                     </form>
                                     <?php
                                         if(isset($_POST['submit'])){
-<<<<<<< HEAD
-                                        $major = $_POST['major'];  // Storing Selected Value In Variable
-                                        echo "You have selected :" .$major;  // Displaying Selected Value
-                                        }
-                                        ?>
-=======
                                             $major = $_POST['major'];  // Storing Selected Value In Variable
-                                            $output = shell_exec('python C:\xampp\htdocs\src\majors\Class_Progress.py ' . $major);
+                                            $output = shell_exec('python ../src/majors/Class_Progress.py' . $major);
                                         }
                                     ?>
 
->>>>>>> Nghia
                                 </div>
                         </div>
 
@@ -245,23 +221,6 @@
         </section>
 
         <h1>
-<<<<<<< HEAD
-        Major Progress
-        </h1>
-        <section id="addmajors">
-=======
-        Minor Progress
-        </h1>
-        <section id="addminors">
->>>>>>> Nghia
-            <div class="container">
-                <div class="row">
-                    <iframe src="major_picker.php" seamless></iframe>
-                </div>
-            </div>
-        </section>
-
-        <h1>
         Minor Progress
         </h1>
         <section id="addminors">
@@ -271,7 +230,6 @@
                 </div>
             </div>
         </section>
-
 
         <footer>
             <div class="container">
@@ -307,8 +265,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> Nghia
